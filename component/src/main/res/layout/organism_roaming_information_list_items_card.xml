@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    android:elevation="@dimen/mud_dimens_3dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:padding="@dimen/mud_dimens_16dp">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/imageView"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            app:imageSource="?attr/roamingIconNew"
+            app:imageSourceType="DRAWABLE" />
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mud_dimens_8dp"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/informationItemListRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mud_dimens_8dp"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/organism_roaming_information_item_row" />
+
+        <Button
+            android:id="@+id/primaryButtonView"
+            style="@style/ButtonAppearance.MudComponents.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp" />
+
+        <Button
+            android:id="@+id/secondaryButtonView"
+            style="@style/ButtonAppearance.MudComponents.Secondary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="-4dp"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

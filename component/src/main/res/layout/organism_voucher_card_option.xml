@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/ic_voucher_base"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:id="@+id/parentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/mud_dimens_12dp"
+        android:paddingVertical="@dimen/mud_dimens_12dp"
+        android:paddingEnd="@dimen/mud_dimens_12dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/imageView"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="@dimen/mud_dimens_4dp"
+            app:imageSource="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"
+            app:imageSourceType="BASE64"
+            app:layout_constraintEnd_toStartOf="@id/title"
+            app:layout_constraintStart_toStartOf="@id/parentView"
+            app:layout_constraintTop_toTopOf="@id/parentView" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingHorizontal="@dimen/mud_dimens_16dp"
+                android:text="Mobile Legend Mobile Legend Mobile Legend  "
+                android:textColor="@color/mud_palette_basic_black"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_weight="1"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toTopOf="@id/parentView" />
+
+            <TextView
+                android:id="@+id/dateExpired"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/mud_dimens_16dp"
+                android:paddingTop="@dimen/mud_dimens_4dp"
+                android:text="Aktif Sampai 11 Januari 2020"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/title" />
+
+            <TextView
+                android:id="@+id/reddemButtonActive"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/mud_dimens_16dp"
+                android:paddingTop="@dimen/mud_dimens_12dp"
+                android:text="@string/organism_voucher_card_option_reddem_active"
+                android:textColor="?attr/colorBackgroundPrimary"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/dateExpired" />
+
+            <TextView
+                android:id="@+id/reddemButtonInactive"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/mud_dimens_16dp"
+                android:paddingTop="@dimen/mud_dimens_8dp"
+                android:text="@string/organism_voucher_card_option_reddem_expired"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                android:visibility="gone"
+                app:layout_constraintStart_toEndOf="@id/imageView"
+                app:layout_constraintTop_toBottomOf="@+id/dateExpired" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

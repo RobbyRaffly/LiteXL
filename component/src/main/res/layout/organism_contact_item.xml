@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/alphabetView"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="24dp"
+        android:background="@color/mud_palette_basic_light_grey">
+        <TextView
+            android:id="@+id/firstLetterView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            style="@style/TextAppearance.MudComponents.H6"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp"
+        android:foregroundGravity="center">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            app:cardBackgroundColor="@color/mud_palette_aquamarine"
+            android:gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+            <TextView
+                android:id="@+id/initialView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:textAlignment="center"
+                android:gravity="center"
+                android:textColor="@color/mud_palette_basic_white"
+                />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/nameView"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:textColor="@color/mud_palette_basic_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/msisdnView"
+                android:paddingTop="16dp"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mud_palette_pale_blue"/>
+</LinearLayout>

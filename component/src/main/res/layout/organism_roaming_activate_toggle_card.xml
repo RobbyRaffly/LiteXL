@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:id="@+id/enabledView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mud_dimens_24dp"
+        android:paddingVertical="@dimen/mud_dimens_16dp"
+        android:gravity="center_vertical"
+        android:visibility="gone">
+
+        <TextView
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/organism_roaming_service_roaming_toggle_text"/>
+
+        <com.google.android.material.switchmaterial.SwitchMaterial
+            android:id="@+id/switchView"
+            android:layout_width="48dp"
+            android:layout_height="24dp"
+            android:thumb="@drawable/switch_thumb"
+            app:thumbTint="#fff"
+            app:trackTint="@color/switch_track_color"
+            app:track="@drawable/switch_track"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/disabledView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingLeft="@dimen/mud_dimens_16dp"
+        android:paddingRight="8dp"
+        android:paddingVertical="8dp"
+        android:gravity="center_vertical">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:text="@string/organism_roaming_service_roaming_toggle_automatic_title"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:text="@string/organism_roaming_service_roaming_toggle_automatic_description"
+                />
+        </LinearLayout>
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/disabledImageView"
+            android:layout_width="80dp"
+            android:layout_height="68dp"
+            app:imageSource="@drawable/ic_roaming_aktif_otomatis_prepaid"
+            app:imageSourceType="DRAWABLE" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

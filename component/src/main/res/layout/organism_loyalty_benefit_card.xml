@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mud_dimens_4dp"
+        app:cardCornerRadius="@dimen/mud_dimens_16dp"
+        app:cardElevation="@dimen/mud_dimens_3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/containerLoyaltyBenefitCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mud_dimens_16dp">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/iconWrapperView"
+                android:layout_width="@dimen/mud_dimens_32dp"
+                android:layout_height="@dimen/mud_dimens_32dp"
+                android:foregroundGravity="center"
+                android:orientation="horizontal"
+                app:cardCornerRadius="@dimen/mud_dimens_16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/iconView"
+                    android:layout_width="26dp"
+                    android:layout_height="26dp"
+                    android:layout_gravity="center"
+                    app:imageSourceType="BASE64" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+
+
+            <TextView
+                android:id="@+id/lockIconView"
+                style="@style/IconAppearance.MudComponents.H4"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                android:layout_gravity="top"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/mud_palette_basic_dark_grey"
+                android:gravity="center"
+                android:text="@string/xl_lock"
+                android:textAlignment="center"
+                android:textColor="@color/mud_palette_basic_white"
+                app:layout_constraintTop_toTopOf="@id/iconWrapperView"
+                app:layout_constraintBottom_toBottomOf="@id/iconWrapperView"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:visibility="visible" />
+
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_8dp"
+                android:textColor="@color/mud_palette_basic_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/iconWrapperView" />
+
+            <TextView
+                android:id="@+id/bonusText"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_32dp"
+                android:text="@string/loyalty_tiering_benefit_card_bonus_until_title"
+                android:textColor="@color/mud_palette_basic_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleView"
+                android:visibility="gone"/>
+
+
+            <TextView
+                android:id="@+id/bonusAmountView"
+                android:visibility="gone"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_8dp"
+                android:paddingBottom="@dimen/mud_dimens_12dp"
+                android:textColor="@color/mud_palette_basic_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bonusText"
+                app:layout_constraintBottom_toTopOf="@id/lineView" />
+
+
+            <TextView
+                android:id="@+id/increaseText"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_16dp"
+                android:text="@string/loyalty_tiering_benefit_card_increase_text_title"
+                android:textColor="@color/mud_palette_basic_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleView"
+                android:visibility="visible"/>
+
+            <LinearLayout
+                android:id="@+id/iconGroupView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginVertical="8dp"
+                android:background="@drawable/border_background"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/mud_dimens_8dp"
+                android:paddingVertical="@dimen/mud_dimens_4dp"
+                app:layout_constraintBottom_toTopOf="@id/lineView"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/increaseText">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/tieringIconRv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/lineView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mud_dimens_1dp"
+                android:background="@color/mud_palette_basic_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/detailCta"/>
+
+            <TextView
+                android:id="@+id/detailCta"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_12dp"
+                android:text="@string/loyalty_tiering_benefit_card_see_detail_title"
+                android:textColor="@color/mud_palette_basic_white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:layout_marginTop="@dimen/mud_dimens_2dp"
+    android:background="@color/mud_palette_basic_white"
+    android:elevation="@dimen/mud_dimens_4dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/mud_dimens_24dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_shape="linear">
+
+        <include layout="@layout/shimmering_transaction_total_price" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <LinearLayout
+        android:id="@+id/originalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="bottom"
+                android:gravity="bottom">
+
+                <TextView
+                    android:id="@+id/titleFooterView"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organism_top_up_selected_nominal_footer_title"
+                    android:textColor="@color/mud_palette_basic_dark_grey" />
+
+                <TextView
+                    android:id="@+id/topDetailButtonView"
+                    style="@style/IconAppearance.MudComponents.H2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="bottom"
+                    android:textColor="?attr/colorPrimary"
+                    android:paddingStart="@dimen/mud_dimens_8dp"
+                    android:text="@string/xl_chevron_up" />
+
+                <LinearLayout
+                    android:id="@+id/redDotCountLayout"
+                    android:layout_width="@dimen/mud_dimens_16dp"
+                    android:layout_height="@dimen/mud_dimens_16dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/mud_palette_basic_red"
+                    android:gravity="center"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/tvCount"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/basicWhite"
+                        tool:text="3" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/priceView"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mud_dimens_4dp"
+                android:textColor="?attr/colorBackgroundPrimary"
+                tool:text="Rp15.000" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/detailButtonView"
+            style="@style/IconAppearance.MudComponents.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/mud_dimens_8dp"
+            android:paddingEnd="@dimen/mud_dimens_16dp"
+            android:text="@string/xl_chevron_up" />
+
+
+        <Button
+            android:id="@+id/buyButtonView"
+            style="@style/ButtonAppearance.MudComponents.Primary"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:text="@string/organism_top_up_selected_nominal_footer_button_text" />
+    </LinearLayout>
+
+</LinearLayout>

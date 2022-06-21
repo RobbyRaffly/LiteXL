@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mud_palette_basic_white"
+    android:orientation="horizontal"
+    android:padding="@dimen/mud_dimens_24dp">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center_vertical"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleText"
+            style="@style/TextAppearance.MudComponents.H6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/basicDarkGrey"
+            tools:text="Total Cashback Desember" />
+
+        <TextView
+            android:id="@+id/amountText"
+            style="@style/TextAppearance.MudComponents.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/mud_palette_basic_black"
+            tools:text="Rp180.000" />
+
+        <TextView
+            android:id="@+id/datePeriodText"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            android:ellipsize="end"
+            android:maxLines="2"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            tools:text="Periode tanggal 1 Des 2020 - 31 Des 2020" />
+
+        <LinearLayout
+            android:id="@+id/tncButtonView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mud_palette_basic_white"
+            android:layout_marginTop="@dimen/mud_dimens_12dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/IconAppearance.MudComponents.H2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                android:text="@string/xl_information"
+                android:textColor="?attr/colorBackgroundPrimary" />
+
+            <TextView
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/organism_title_tnc_cashback"
+                android:textColor="?attr/colorBackgroundPrimary" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/backgroundView"
+        android:layout_width="@dimen/mud_dimens_32dp"
+        android:layout_height="@dimen/mud_dimens_32dp"
+        android:src="@drawable/ic_icon_bill_trans"/>
+
+</LinearLayout>

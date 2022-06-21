@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llNoticeCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/notice_background"
+    android:backgroundTint="@color/mud_palette_red_soft"
+    android:gravity="center"
+    android:minHeight="94dp"
+    android:orientation="vertical"
+    android:paddingHorizontal="@dimen/mud_dimens_16dp"
+    android:paddingVertical="@dimen/mud_dimens_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/titleView"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:paddingBottom="@dimen/mud_dimens_6dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_red"
+        tools:text="Pembayaran Otomatis Gagal" />
+
+        <TextView
+            android:id="@+id/closeBtnView"
+            style="@style/IconAppearance.MudComponents.H4"
+            android:layout_width="@dimen/mud_dimens_16dp"
+            android:layout_height="wrap_content"
+            android:paddingBottom="@dimen/mud_dimens_4dp"
+            android:gravity="top"
+            android:visibility="gone"
+            android:textColor="@color/mud_palette_basic_red"
+            android:text="@string/xl_close"/>
+
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/informationView"
+        style="@style/TextAppearance.MudComponents.Body3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_red"
+        tools:text="Nomor 0817123456 belum berhasil ditambahkan menjadi anggota, silakan coba lagi." />
+
+</LinearLayout>

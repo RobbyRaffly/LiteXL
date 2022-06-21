@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/button_background"
+    android:backgroundTint="@color/mud_palette_ice_blue"
+    android:padding="4dp"
+    android:gravity="center"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_shape="linear">
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_32dp"
+            app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+            app:cardCornerRadius="@dimen/mud_dimens_16dp"
+            app:cardElevation="@dimen/mud_dimens_0dp" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.myxlultimate.component.atom.tabswitchItem.TabSwitchItem
+        android:id="@+id/firstTabView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:isActive="true"/>
+
+    <com.myxlultimate.component.atom.tabswitchItem.TabSwitchItem
+        android:id="@+id/secondTabView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:visibility="gone"
+        android:layout_height="wrap_content"/>
+
+    <com.myxlultimate.component.atom.tabswitchItem.TabSwitchItem
+        android:id="@+id/thirdTabView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <com.myxlultimate.component.atom.tabswitchItem.TabSwitchItem
+        android:id="@+id/fourthTabView"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+</LinearLayout>

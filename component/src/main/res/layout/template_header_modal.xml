@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerLeftIconView"
+        style="@style/IconAppearance.MudComponents.H2"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="24dp"
+        android:gravity="center"
+        android:text="@string/xl_close"
+        android:textColor="@color/mud_palette_basic_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/headerTitleView"
+        style="@style/TextAppearance.MudComponents.H4"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Syarat dan Ketentuan" />
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/headerRightIconView"
+        android:layout_width="@dimen/mud_dimens_24dp"
+        android:layout_height="@dimen/mud_dimens_24dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="24dp"
+        android:visibility="gone"
+        app:imageSource="@drawable/ic_trash"
+        app:imageSourceType="DRAWABLE"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

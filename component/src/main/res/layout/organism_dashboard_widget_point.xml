@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/parentSkeletonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"
+        android:visibility="gone">
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_shape="linear"
+            app:shimmer_direction="left_to_right">
+            <include layout="@layout/shimmering_balance_dashboard"/>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.myxlultimate.component.molecule.balanceWidget.BalanceWidget
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionButtonLabel="@string/organism_point_dashboard_widget_action_button_label"
+        app:icon="?attr/pointIcon"
+        app:label="@string/organism_point_dashboard_widget_label" />
+</LinearLayout>

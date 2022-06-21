@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/activeContainerView"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/mud_palette_basic_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mud_dimens_12dp"
+        android:paddingVertical="@dimen/mud_dimens_4dp">
+        <TextView
+            android:id="@+id/activeLabelView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:textColor="?android:attr/colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="label"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/inactiveContainerView"
+        android:background="@drawable/bordered_button_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mud_dimens_12dp"
+        android:paddingVertical="@dimen/mud_dimens_4dp"
+        android:alpha=".5"
+        android:visibility="gone">
+        <TextView
+            android:id="@+id/inactiveLabelView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:textColor="@color/mud_palette_basic_white"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="label"/>
+    </LinearLayout>
+
+</LinearLayout>

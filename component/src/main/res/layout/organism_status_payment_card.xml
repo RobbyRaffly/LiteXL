@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/borderContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="24dp"
+        >
+        <LinearLayout
+            android:id="@+id/layoutTop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/titlePayment"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mud_dimens_16dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="1"
+                android:paddingBottom="16dp"
+                android:text="@string/organism_status_payment_card_label_total"
+                android:textColor="@color/mud_palette_basic_black" />
+
+            <TextView
+                android:id="@+id/priceTotalView"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="16dp"
+                android:textColor="?attr/colorBackgroundPrimary"
+                app:layout_constraintBottom_toTopOf="@id/line" />
+        </LinearLayout>
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginBottom="16dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            app:layout_constraintTop_toBottomOf="@id/layoutTop"
+            app:layout_constraintBottom_toTopOf="@id/ctaBottomView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/iconContainerView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="@id/ctaBottomView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            >
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/iconView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:imageSourceType="BASE64"
+                app:imageSource="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"
+                />
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ctaBottomView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="4dp"
+            android:text="Menunggu Pembayaran"
+            android:textColor="@color/mud_palette_basic_black"
+            style="@style/TextAppearance.MudComponents.H5"
+            app:layout_constraintTop_toBottomOf="@id/line"
+            app:layout_constraintStart_toEndOf="@id/iconContainerView"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+        <TextView
+            android:id="@+id/refreshView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Refresh"
+            android:textColor="?attr/colorBackgroundPrimary"
+            style="@style/TextAppearance.MudComponents.H5"
+            app:layout_constraintTop_toTopOf="@id/ctaBottomView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

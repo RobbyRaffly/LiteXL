@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/colorItem">
+            <shape>
+                <corners android:radius="@dimen/mud_dimens_20dp"/>
+                <gradient
+                    android:startColor="@color/mud_palette_prio_gold"
+                    android:centerY="0.75"
+                    android:endColor="@color/mud_palette_yellow_soft"
+                    android:angle="360"/>
+            </shape>
+    </item>
+</layer-list>

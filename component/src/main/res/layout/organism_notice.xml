@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/Notice"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="12dp"
+    android:paddingHorizontal="16dp"
+    android:background="@drawable/notice_background"
+    android:orientation="horizontal"
+    android:gravity="center">
+
+    <com.myxlultimate.component.token.icon.IconXl
+        android:id="@+id/NoticeElIcon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:size="50"
+        app:iconCode="@string/xl_sos" />
+
+    <com.myxlultimate.component.token.text.TextBody3
+        android:id="@+id/NoticeElContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"/>
+
+</LinearLayout>

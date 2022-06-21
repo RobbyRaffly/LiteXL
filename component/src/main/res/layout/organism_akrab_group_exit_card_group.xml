@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleView"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="Grup sebagai Anggota"
+        android:paddingBottom="@dimen/mud_dimens_16dp"
+        android:paddingHorizontal="@dimen/mud_dimens_4dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/organism_akrab_group_exit_card" />
+</LinearLayout>

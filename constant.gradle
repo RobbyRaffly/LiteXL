@@ -1,0 +1,11 @@
+project.ext {
+
+    componentVersion = [
+            major: 1,
+            minor: 0,
+            patch: 97
+    ]
+
+    artifactVersion = "${componentVersion.major}.${componentVersion.minor}.${componentVersion.patch}"
+    artifactId = "component"
+}

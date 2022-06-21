@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    android:elevation="@dimen/mud_dimens_3dp"
+    android:minHeight="74dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/mud_dimens_16dp"
+        android:paddingBottom="@dimen/mud_dimens_12dp"
+        android:paddingHorizontal="@dimen/mud_dimens_16dp">
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.Body2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mud_dimens_16dp" />
+
+        <TextView
+            android:id="@+id/titleBoldView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mud_dimens_4dp"
+            android:visibility="gone"/>
+
+        <TextView
+            android:id="@+id/subTitleView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mud_dimens_16dp"
+            android:visibility="gone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/applyButtonDecline"
+                style="@style/ButtonAppearance.MudComponents.Secondary.Red"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="@dimen/mud_dimens_16dp"/>
+
+            <Button
+                android:id="@+id/applyButtonAccept"
+                style="@style/ButtonAppearance.MudComponents.Secondary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1" />
+
+            <Button
+                android:id="@+id/applyButtonPrimaryAccept"
+                style="@style/ButtonAppearance.MudComponents.Primary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="@dimen/mud_dimens_16dp"
+                android:visibility="gone"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

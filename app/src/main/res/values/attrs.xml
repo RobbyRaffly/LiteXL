@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="AlbumComponentAttr">
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+        <attr name="useDarkBackground" format="boolean"/>
+        <attr name="withoutPadding" format="boolean" />
+    </declare-styleable>
+
+    <!-- Other values-->
+    <attr name="colorAccentDark" format="reference"/>
+    <attr name="colorBackgroundPrimary" format="reference"/>
+    <attr name="balanceIcon" format="reference"/>
+    <attr name="prioFlexBalanceIcon" format="reference" />
+    <attr name="pointIcon" format="reference"/>
+    <attr name="packageIcon" format="reference" />
+    <attr name="colorBackgroundLight" format="reference"/>
+    <attr name="iconHajj" format="reference"/>
+    <attr name="tentangXLPassIcon" format="reference"/>
+    <attr name="iconAboutBaseRate" format="reference"/>
+    <attr name="backgroundQuickLink" format="reference"/>
+
+    <attr name="contextItemTitleColor" format="reference"/>
+    <attr name="loadingIcon" format="reference"/>
+    <attr name="successIcon" format="reference"/>
+    <attr name="errorIcon" format="reference"/>
+    <attr name="searchIcon" format="reference"/>
+    <attr name="addIcon" format="reference"/>
+    <attr name="warningIcon" format="reference"/>
+    <attr name="talkIcon" format="reference"/>
+    <attr name="timesUp" format="reference"/>
+    <attr name="iconAddPoint" format="reference"/>
+    <attr name="iconRoamingActive" format="reference"/>
+    <attr name="iconRoamingNonActive" format="reference"/>
+    <attr name="iconEmptyTrasaction" format="reference"/>
+    <attr name="iconAboutTarif" format="reference"/>
+
+    <attr name="iconFamyliPlanHeader" format="reference"/>
+    <attr name="patternImage" format="reference"/>
+    <attr name="quotaWidgetColor" format="reference"/>
+    <attr name="quotaWidgetImage" format="reference"/>
+    <attr name="addOnPrepaid" format="reference"/>
+
+
+    <attr name="iconAdjustSpendLimit" format="reference"/>
+    <attr name="topUpImage" format="reference"/>
+
+    <attr name="pointLoyaltyImage" format="reference"/>
+
+    <attr name="prioFlexFeatureBoosterIcon" format="reference" />
+    <attr name="arrowRightIcon" format="reference" />
+    <attr name="arrowRightCustomIcon" format="reference" />
+
+    <attr name="billInfoIcon" format="reference" />
+    <attr name="billInfoValueColor" format="reference" />
+    <attr name="handWithPhone" format="reference" />
+    <attr name="globeIcon" format="reference"/>
+
+    <attr name="myPointIcon" format="reference"/>
+
+    <attr name="questionIcon" format="reference"/>
+
+    <attr name="prioFlexFeatureTopUpIcon" format="reference"/>
+    <attr name="prioFlexFeaturBoosterIcon" format="reference"/>
+    <attr name="prioFlexFeaturePayBillsIcon" format="reference"/>
+    <attr name="recurringBoosterIcon" format="reference"/>
+    <attr name="roamingActiveIcon" format="reference" />
+    <attr name="roamingNonActiveIcon" format="reference" />
+
+    <attr name="creditCardCcvIcon" format="reference"/>
+    <attr name="creditCardExpIcon" format="reference"/>
+
+    <attr name="checkboxBackground" format="reference"/>
+    <attr name="checkboxBackgroundChecked" format="reference"/>
+    <attr name="checkboxDarkBackground" format="reference"/>
+    <attr name="checkboxDarkBackgroundChecked" format="reference"/>
+    <attr name="checkboxIcon" format="reference"/>
+
+    <attr name="emptyPlusIcon" format="reference"/>
+    <attr name="nextIcon" format="reference"/>
+
+    <attr name="changeToCreditCardIcon" format="reference"/>
+    <attr name="successNewIcon" format="reference"/>
+    <attr name="unsuccessfulNewIcon" format="reference"/>
+    <attr name="popUpInfoBackgroundColor" format="reference"/>
+
+    <attr name="tickIcon" format="reference"/>
+    <attr name="axisAccountIcon" format="reference"/>
+    <attr name="addAccountSuccessIcon" format="reference"/>
+    <attr name="inActiveAccountIcon" format="reference"/>
+    <attr name="accountIsUsedIcon" format="reference"/>
+    <attr name="cancelNewPasswordIcon" format="reference"/>
+    <attr name="shareIcon" format="reference"/>
+    <attr name="limitForgetPasswordIcon" format="reference"/>
+    <attr name="limitChangePasswordIcon" format="reference"/>
+    <attr name="limitOtpIcon" format="reference"/>
+    <attr name="billingEstimationIcon" format="reference"/>
+    <attr name="deactivateBiometricIcon" format="reference"/>
+    <attr name="deactivateBiometricSuccessIcon" format="reference"/>
+    <attr name="deactivateBiometricConfirmationIcon" format="reference"/>
+    <attr name="changeBirthdayConfirmationIcon" format="reference"/>
+    <attr name="changeBirthdaySuccessIcon" format="reference"/>
+    <attr name="confirmationIcon" format="reference"/>
+    <attr name="confirmationIcon2" format="reference"/>
+    <attr name="depositNotEnoughIcon" format="reference"/>
+    <attr name="depositSuccessIcon" format="reference"/>
+    <attr name="emailSuccessfulChangeIcon" format="reference"/>
+    <attr name="failedAutoLoginIcon" format="reference"/>
+    <attr name="eraseAccountIcon" format="reference"/>
+    <attr name="passwordLimitEntryIcon" format="reference"/>
+    <attr name="passwordCreatedIcon" format="reference"/>
+    <attr name="passwordChangeSuccessIcon" format="reference"/>
+    <attr name="pukCodeIcon" format="reference"/>
+    <attr name="goPayConfirmationIcon" format="reference"/>
+    <attr name="logOutIcon" format="reference"/>
+    <attr name="tryAgainIcon" format="reference"/>
+    <attr name="unregisteredNumberIcon" format="reference"/>
+    <attr name="numberHasAddedIcon" format="reference"/>
+    <attr name="nonActivatePasswordIcon" format="reference"/>
+    <attr name="notEnoughCreditIcon" format="reference"/>
+    <attr name="emptyNotificationIcon" format="reference"/>
+    <attr name="paymentFailedIcon" format="reference"/>
+    <attr name="paymentHistoryEmptyIcon" format="reference"/>
+    <attr name="redemptionEntryIcon" format="reference"/>
+    <attr name="roamingEmptyIcon" format="reference"/>
+    <attr name="roamingIconNew" format="reference"/>
+    <attr name="searchIconNew" format="reference"/>
+    <attr name="searchNoResultIcon" format="reference"/>
+    <attr name="secureAccountIcon" format="reference"/>
+    <attr name="unSubPackIcon" format="reference"/>
+    <attr name="unsuccessfulIconNew" format="reference"/>
+    <attr name="waitingIconNew" format="reference"/>
+    <attr name="welcomeRoamingIconNew" format="reference"/>
+    <attr name="xlCenterEmptyIcon" format="reference"/>
+
+    <attr name="foreverLoginIcon" format="reference"/>
+    <attr name="surveyIcon" format="reference"/>
+    <attr name="emptyPackageIcon" format="reference"/>
+
+    <attr name="emptyPackagePngIcon" format="reference"/>
+    <attr name="emptyInboxIconNew" format="reference"/>
+    <attr name ="emptyStoreIconNew" format="reference"/>
+
+    <attr name="cashMethodIconNew" format="reference"/>
+    <attr name="customBackgroundTabColor" format="reference"/>
+    <attr name="roamingDeactivateIcon" format="reference"/>
+    <attr name="helloHandIcon" format="reference"/>
+
+    <attr name="pointAndPlayNew" format="reference" />
+    <attr name="inActiveFeatureIcon" format="reference" />
+    <attr name="topUpPulsaNewIcon" format="reference"/>
+
+    <attr name="changePlanNewIcon" format="reference"/>
+
+    <attr name="promoTapeBackground" format="reference" />
+    <attr name="inactiveNumberIcon" format="reference"/>
+
+    <attr name="contextualImageDefault" format="reference" />
+    <attr name="contextualImageXLCare" format="reference" />
+    <attr name="mainDashboardBackground" format="reference" />
+    <attr name="icChecked" format="reference" />
+    <attr name="icCheckedSquare" format="reference" />
+    <attr name="bizOnLevelOne" format="reference" />
+    <attr name="bizOnLevelTwo" format="reference" />
+    <attr name="bizOnLevelThree" format="reference" />
+    <attr name="bizOnLevelFour" format="reference" />
+
+    <attr name="pinLockShareIcon" format="reference"/>
+    <attr name="icConfirmationCancelPin" format="reference"/>
+    <attr name="icMaximumForgetPin" format="reference"/>
+    <attr name="icMaximumVerificationPin" format="reference"/>
+    <attr name="icMaximumInputPin" format="reference"/>
+    <attr name="icSuccessCreatePin" format="reference"/>
+    <attr name="icSuccessUpdatePin" format="reference"/>
+
+    <attr name="icErrorCantAccessPage" format="reference"/>
+    <attr name="icDefaultTransaction" format="reference" />
+    <attr name="icDefaultData" format="reference" />
+    <attr name="icDefaultPhone" format="reference" />
+    <attr name="icDefaultSms" format="reference" />
+
+    <attr name="icLiveChat" format="reference"/>
+    <attr name="icLastTransaction" format="reference"/>
+    <attr name="icFaq" format="reference"/>
+
+    <attr name="icAccountDeactivate" format="reference"/>
+    <attr name="icEmailNotListed" format="reference"/>
+
+    <attr name="icLoadingErrorIcon" format="reference"/>
+
+    <attr name="icClock24Hours" format="reference"/>
+    <attr name="icAddCCOtc" format="reference"/>
+    <attr name="icBillingReady" format="reference"/>
+
+    <attr name="icTroubleshootAcsModem" format="reference"/>
+    <attr name="icMaintenance" format="reference"/>
+    <attr name="icNoInternet" format="reference"/>
+
+    <attr name="extensionCardBG" format="reference"/>
+    <attr name="darkModeTextColor" format="reference"/>
+
+    <attr name="icConsentYes" format="reference"/>
+    <attr name="icConsentNo" format="reference"/>
+    <attr name="icDeviceIcon"   format="reference"/>
+    <attr name="icDeviceExclm" format="reference"/>
+    <attr name="icDeviceConnected" format="reference"/>
+
+    <attr name="icBackgroundInterceptor" format="reference"/>
+
+</resources>

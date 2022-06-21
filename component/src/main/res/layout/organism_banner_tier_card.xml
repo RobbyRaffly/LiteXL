@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cobaView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="@dimen/mud_dimens_12dp">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="@dimen/mud_dimens_12dp"
+            android:layout_weight="1"
+            android:paddingVertical="@dimen/mud_dimens_12dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleText"
+                    style="@style/TextAppearance.MudComponents.H4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:textColor="@color/mud_palette_basic_black"
+                    tools:text="Tingkat 4" />
+
+                <TextView
+                    android:id="@+id/descriptionText"
+                    style="@style/TextAppearance.MudComponents.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_4dp"
+                    android:ellipsize="end"
+                    android:maxLines="2"
+                    android:textColor="@color/mud_palette_basic_black"
+                    tools:text="Minimum 50 Member" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/availabilityView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/mud_dimens_4dp"
+                android:paddingHorizontal="@dimen/mud_dimens_8dp"
+                android:background="@drawable/button_background_availability">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/availabilityIcon"
+                    style="@style/TextAppearance.MudComponents.H7"
+                    android:layout_width="@dimen/mud_dimens_12dp"
+                    android:layout_height="@dimen/mud_dimens_12dp"
+                    android:layout_marginRight="@dimen/mud_dimens_4dp"
+                    android:visibility="gone"
+                    app:imageSource="@drawable/ic_lock"
+                    app:imageSourceType="DRAWABLE"/>
+                <TextView
+                    android:id="@+id/availabilityLabelView"
+                    style="@style/TextAppearance.MudComponents.H7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mud_palette_basic_white"
+                    android:text="Tambah 45 Member lagi" />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/backgroundView"
+            android:layout_width="124dp"
+            android:layout_height="124dp"
+            app:imageSourceType="BASE64"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

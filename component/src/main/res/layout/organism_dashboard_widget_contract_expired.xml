@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myxlultimate.component.template.cardWidget.CardWidget
+    android:id="@+id/containerView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cwaIconMode="LARGE"
+    app:label="@string/organism_dashboard_widget_contract_expired_label"
+    app:cwaCardMode="SMALL"
+    app:icon="?attr/emptyPackageIcon">
+
+    <TextView
+        android:id="@+id/contentView"
+        style="@style/TextAppearance.MudComponents.H4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:text="@string/organism_dashboard_widget_contract_expired_title"/>
+
+</com.myxlultimate.component.template.cardWidget.CardWidget>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:gravity="center_vertical">
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/imageView"
+        android:layout_width="@dimen/mud_dimens_24dp"
+        android:layout_height="@dimen/mud_dimens_24dp"
+        app:imageSourceType="BASE64"
+        android:scaleType="center"/>
+    <TextView
+        style="@style/TextAppearance.MudComponents.H5"
+        android:id="@+id/titleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginHorizontal="@dimen/mud_dimens_8dp"
+        android:text="Ke Indonesia"/>
+    <TextView
+        style="@style/TextAppearance.MudComponents.H5"
+        android:id="@+id/priceView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RP15.000/Menit"/>
+
+
+</LinearLayout>

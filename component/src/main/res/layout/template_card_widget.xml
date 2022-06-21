@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/parentSkeletonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_shape="linear">
+
+            <include layout="@layout/shimmering_balance_dashboard" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cardMainView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mud_dimens_4dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="14dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/topContainerView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="16dp"
+                    android:paddingTop="16dp"
+                    android:paddingBottom="8dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingBottom="8dp">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1">
+
+                            <LinearLayout
+                                android:id="@+id/labelContainer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toStartOf="@id/cardExclamationMark"
+                                app:layout_constraintHorizontal_bias="0.0"
+                                app:layout_constraintHorizontal_chainStyle="packed"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintWidth_default="wrap">
+
+                                <TextView
+                                    android:id="@+id/labelView"
+                                    style="@style/TextAppearance.MudComponents.H6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/organism_roaming_quota_summary_dashboard_widget_label"
+                                    android:textColor="@color/mud_palette_basic_dark_grey"
+                                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua" />
+
+                                <TextView
+                                    android:id="@+id/labelViewLight"
+                                    style="@style/TextAppearance.MudComponents.Body3"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:gravity="center_vertical"
+                                    android:text="@string/organism_roaming_quota_summary_dashboard_widget_label"
+                                    android:textColor="@color/mud_palette_basic_dark_grey"
+                                    android:visibility="gone"
+                                    tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua"
+                                    tools:visibility="visible" />
+
+                            </LinearLayout>
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/cardExclamationMark"
+                                android:layout_width="0dp"
+                                android:layout_height="@dimen/mud_dimens_20dp"
+                                android:layout_marginStart="@dimen/mud_dimens_8dp"
+                                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                                android:src="@drawable/ic_circle_exclamation_mark"
+                                android:visibility="gone"
+                                app:layout_constraintEnd_toStartOf="@id/statusFlagView"
+                                app:layout_constraintStart_toEndOf="@id/labelContainer"
+                                app:layout_constraintTop_toTopOf="parent"
+                                app:layout_constraintWidth_default="wrap"
+                                tools:visibility="visible" />
+
+                            <LinearLayout
+                                android:id="@+id/statusFlagView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/button_background"
+                                android:backgroundTint="@color/mud_palette_basic_red"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal"
+                                android:paddingHorizontal="8dp"
+                                android:paddingVertical="4dp"
+                                app:layout_constraintEnd_toStartOf="@+id/viewExclamationMargin"
+                                app:layout_constraintTop_toTopOf="parent">
+
+                                <TextView
+                                    android:id="@+id/statusFlagIcon"
+                                    style="@style/IconAppearance.MudComponents.H6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginEnd="4dp"
+                                    android:text="@string/xl_plane"
+                                    android:textColor="@color/mud_palette_basic_white" />
+
+                                <TextView
+                                    android:id="@+id/statusLabelView"
+                                    style="@style/TextAppearance.MudComponents.H6"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:textColor="@color/mud_palette_basic_white"
+                                    tools:text="@string/organism_roaming_quota_summary_dashboard_widget_status_flag_prio_basic_price" />
+
+                            </LinearLayout>
+
+                            <View
+                                android:id="@+id/viewExclamationMargin"
+                                android:layout_width="@dimen/mud_dimens_8dp"
+                                android:layout_height="1dp"
+                                android:visibility="gone"
+                                tools:visibility="visible"
+                                app:layout_constraintEnd_toStartOf="@+id/cardExclamationMarkEnd"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/cardExclamationMarkEnd"
+                                android:layout_width="@dimen/mud_dimens_24dp"
+                                android:layout_height="@dimen/mud_dimens_24dp"
+                                android:src="@drawable/ic_exclamation_mark"
+                                android:tint="@color/basicBlack"
+                                android:visibility="gone"
+                                app:layout_constraintBottom_toBottomOf="@+id/statusFlagView"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintTop_toTopOf="@+id/statusFlagView"
+                                tools:visibility="visible" />
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/mainView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" />
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/iconViewContainer"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0">
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/iconViewFullRight"
+                        android:layout_width="104dp"
+                        android:layout_height="104dp"
+                        android:visibility="gone"
+                        app:imageSourceType="DRAWABLE" />
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/iconViewLarge"
+                        android:layout_width="106dp"
+                        android:layout_height="106dp"
+                        android:layout_marginEnd="16dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"
+                        app:imageSourceType="DRAWABLE" />
+
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/iconViewMedium"
+                        android:layout_width="52dp"
+                        android:layout_height="52dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"
+                        app:imageSourceType="DRAWABLE" />
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/iconViewSmall"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginTop="24dp"
+                        android:layout_marginEnd="24dp"
+                        android:layout_marginBottom="8dp"
+                        android:visibility="gone"
+                        app:imageSourceType="DRAWABLE" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingHorizontal="16dp"
+                android:paddingBottom="2dp">
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginBottom="8dp"
+                    android:background="@color/mud_palette_basic_light_grey" />
+
+                <LinearLayout
+                    android:id="@+id/actionButtonView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/actionButtonLabelView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:textColor="?android:attr/colorPrimary"
+                        tools:text="action" />
+
+                    <LinearLayout
+                        android:id="@+id/arrowRightView"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="?attr/colorAccentDark"
+                        android:gravity="center"
+                        android:paddingStart="2dp">
+
+                        <TextView
+                            style="@style/IconAppearance.MudComponents.Body1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/xl_chevron_right"
+                            android:textColor="?android:attr/colorPrimary" />
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

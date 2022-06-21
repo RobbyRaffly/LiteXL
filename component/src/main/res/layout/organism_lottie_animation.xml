@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/arrowLeftBtnView"
+            android:layout_width="@dimen/mud_dimens_20dp"
+            android:layout_height="@dimen/mud_dimens_20dp"
+            android:layout_marginTop="@dimen/mud_dimens_6dp"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/button_background_rounded_white"
+            android:elevation="@dimen/mud_dimens_4dp"
+            android:foregroundGravity="center"
+            android:rotation="-180"
+            app:imageSource="@drawable/ic_arrow_gold"
+            app:imageSourceType="DRAWABLE"/>
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/arrowRightBtnView"
+            android:layout_width="@dimen/mud_dimens_20dp"
+            android:layout_height="@dimen/mud_dimens_20dp"
+            android:layout_marginTop="@dimen/mud_dimens_6dp"
+            android:layout_alignParentEnd="true"
+            android:fitsSystemWindows="true"
+            android:background="@drawable/button_background_rounded_white"
+            android:elevation="@dimen/mud_dimens_4dp"
+            android:foregroundGravity="center"
+            app:imageSource="@drawable/ic_arrow_gold"
+            app:imageSourceType="DRAWABLE"/>
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/lottieView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_speed="1" />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/textViewLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/button_background"
+        android:backgroundTint="@color/mud_palette_basic_black"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <TextView
+            android:id="@+id/titleView"
+            android:paddingHorizontal="@dimen/mud_dimens_4dp"
+            android:paddingVertical="@dimen/mud_dimens_4dp"
+            style="@style/TextAppearance.MudComponents.H8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/mud_palette_basic_white" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

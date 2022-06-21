@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:id="@+id/volteCard"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/mud_palette_basic_white"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/mud_dimens_16dp"
+        android:paddingEnd="@dimen/mud_dimens_16dp"
+        android:paddingTop="@dimen/mud_dimens_16dp"
+        android:paddingBottom="@dimen/mud_dimens_16dp">
+
+        <TextView
+            android:id="@+id/iconBar"
+            style="@style/IconAppearance.MudComponents.H3"
+            android:layout_width="@dimen/mud_dimens_28dp"
+            android:layout_height="@dimen/mud_dimens_28dp"
+            android:gravity="center"
+            android:text="@string/xl_bars"
+            android:textColor="@color/mud_palette_basic_white"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/primaryBlue"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <TextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mud_dimens_8dp"
+            android:layout_marginEnd="@dimen/mud_dimens_8dp"
+            android:text="@string/xl_volte_ready"
+            app:layout_constraintBottom_toBottomOf="@+id/iconBar"
+            app:layout_constraintEnd_toStartOf="@id/iconChevron"
+            app:layout_constraintStart_toEndOf="@id/iconBar"
+            app:layout_constraintTop_toTopOf="@id/iconBar" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/iconChevron"
+            android:layout_width="@dimen/mud_dimens_24dp"
+            android:layout_height="@dimen/mud_dimens_24dp"
+            app:imageSourceType="DRAWABLE"
+            app:imageSource="@drawable/ic_arrow_right_prepaid"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/payment_container"
+    android:orientation="horizontal"
+    >
+
+
+    <TextView
+        android:id="@+id/textViewDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="15 Des 2021"
+        style="@style/TextAppearance.MudComponents.Body3"
+        android:textColor="@color/basicMediumGrey"
+        android:layout_marginHorizontal="@dimen/mud_dimens_16dp"
+        android:layout_marginBottom="1dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewTypePayment"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PRIO"
+        android:layout_marginTop="@dimen/mud_dimens_4dp"
+        app:layout_constraintStart_toStartOf="@+id/textViewDate"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate" />
+
+    <TextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="30.500"
+        android:layout_marginRight="@dimen/mud_dimens_16dp"
+        style="@style/TextAppearance.MudComponents.H5"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTypePayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDate"
+        />
+
+    <ImageView
+        android:id="@+id/imgInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5.33dp"
+        app:layout_constraintBottom_toBottomOf="@+id/textViewTypePayment"
+        app:layout_constraintStart_toEndOf="@+id/textViewTypePayment"
+        app:layout_constraintTop_toTopOf="@+id/textViewTypePayment"
+        app:srcCompat="@drawable/ic_exclamation_mark" />
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="9dp"
+        android:background="@color/mud_palette_basic_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTypePayment" />
+</androidx.constraintlayout.widget.ConstraintLayout>

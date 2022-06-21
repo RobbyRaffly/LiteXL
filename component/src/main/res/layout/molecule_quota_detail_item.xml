@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/parentLayout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/topContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:orientation="horizontal">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/iconView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            android:text="@string/xl_internet"
+            app:imageSource=""
+            app:imageSourceType="BASE64" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nameView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:minHeight="24dp"
+                    tools:text="Name" />
+
+                <LinearLayout
+                    android:id="@+id/unlimitedFlagView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="?attr/colorBackgroundPrimary"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/IconAppearance.MudComponents.H7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="@string/xl_infinite"
+                        android:textColor="@color/mud_palette_basic_white" />
+
+                    <TextView
+                        android:id="@+id/statusLabelView"
+                        style="@style/TextAppearance.MudComponents.H8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Unlimited"
+                        android:textColor="@color/mud_palette_basic_white" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/informationUnlimitedView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                android:visibility="gone"
+                tools:text="Information" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/remainingView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:foregroundGravity="center_vertical"
+            android:gravity="center_vertical"
+            tools:text="Remaining" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
+
+    <LinearLayout
+        android:id="@+id/barContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="8dp"
+            android:gravity="center_vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="6dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/mud_palette_basic_light_grey" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View
+                    android:id="@+id/progressView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="?attr/quotaWidgetColor" />
+
+                <View
+                    android:id="@+id/progressSpacerView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.50" />
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/informationView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                tools:text="Information" />
+
+            <TextView
+                android:id="@+id/totalView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                tools:text="Total" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

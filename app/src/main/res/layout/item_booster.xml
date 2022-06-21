@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/CardBooster"
+    android:layout_width="380dp"
+    android:layout_height="140dp"
+    android:layout_gravity="center|top"
+    android:elevation="15dp"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="20dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    tools:layout_editor_absoluteX="16dp"
+    tools:layout_editor_absoluteY="5dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleBooster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="PRIO Apps"
+                android:textColor="#000000"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/descBooster"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:lineSpacingExtra="5sp"
+                android:paddingTop="10dp"
+                android:text="Internet tanpa batas di aplikasi-aplikasi favorit Anda"
+                android:textColor="#000000" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgBooster"
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:layout_margin="20dp"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/logo_prioapps" />
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

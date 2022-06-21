@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="4dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:padding="@dimen/mud_dimens_20dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                tools:text="Sisa Saldo"
+                android:paddingBottom="@dimen/mud_dimens_8dp"/>
+
+            <TextView
+                android:id="@+id/priceView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.H3"
+                android:textColor="?attr/colorPrimary"
+                tools:text="Rp 10000000"
+                android:paddingBottom="@dimen/mud_dimens_8dp"/>
+
+            <TextView
+                android:id="@+id/buttonTextView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:textColor="?attr/colorBackgroundPrimary"
+                tools:text="Lihat Riwayat"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/buttonTopUpView"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_black"
+            android:backgroundTint="?attr/colorOnSecondary"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/mud_dimens_8dp"
+            android:paddingVertical="@dimen/mud_dimens_8dp"  >
+
+            <LinearLayout
+                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                android:id="@+id/addButtonView"
+                android:layout_width="@dimen/mud_dimens_16dp"
+                android:layout_height="@dimen/mud_dimens_16dp"
+                android:layout_marginLeft="@dimen/mud_dimens_2dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="#FFF"
+                android:gravity="center"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/IconAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="+"
+                    android:textColor="@color/basicBlack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/titleButtonView"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Topup"
+                android:textColor="@color/mud_palette_basic_white" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/mud_dimens_16dp">
+
+            <TextView
+                android:id="@+id/periodInformationView"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                tools:text="16 Juli - 15 Agustus 2020" />
+
+            <TextView
+                android:id="@+id/priceView"
+                style="@style/TextAppearance.MudComponents.H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_8dp"
+                android:paddingBottom="@dimen/mud_dimens_16dp"
+                android:textColor="?attr/billInfoValueColor"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mud_dimens_32dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/organism_billing_summary_card_billing_status"
+                        android:textColor="@color/mud_palette_basic_dark_grey" />
+
+                    <TextView
+                        android:id="@+id/statusView"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/mud_dimens_8dp"
+                        tools:text="Belum Dibayar" />
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/dividerViewHorizontal"
+                    android:layout_width="1dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="16dp"
+                    android:layout_marginVertical="@dimen/mud_dimens_2dp"
+                    android:background="@color/mud_palette_basic_light_grey" />
+
+                <LinearLayout
+                    android:id="@+id/layoutDueDate"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/organism_billing_summary_card_due_date"
+                        android:textColor="@color/mud_palette_basic_dark_grey" />
+
+                    <TextView
+                        android:id="@+id/dateView"
+                        style="@style/TextAppearance.MudComponents.Body3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/mud_dimens_8dp"
+                        tools:text="11 September 2020" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mud_palette_basic_light_grey" />
+
+            <TextView
+                style="@style/TextAppearance.MudComponents.H6"
+                android:id="@+id/subscriptionTypeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_16dp"
+                android:layout_marginHorizontal="@dimen/mud_dimens_16dp"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                tools:text="PRIO Flex" />
+
+            <TextView
+                android:id="@+id/informationView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_marginHorizontal="@dimen/mud_dimens_16dp"
+                android:paddingTop="@dimen/mud_dimens_8dp"
+                android:paddingBottom="@dimen/mud_dimens_16dp"
+                tools:text="Rp300.000"/>
+
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

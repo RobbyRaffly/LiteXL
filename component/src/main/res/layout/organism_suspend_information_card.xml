@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/pop_up_information_card_background"
+    android:backgroundTint="@color/redSoft"
+    android:minHeight="100dp"
+    android:orientation="horizontal"
+    android:paddingVertical="10dp"
+    android:paddingStart="@dimen/mud_dimens_16dp"
+    android:paddingEnd="@dimen/mud_dimens_8dp">
+
+    <TextView
+        android:id="@+id/titleView"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/mud_dimens_4dp"
+        android:textColor="@color/mud_palette_basic_red"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@id/descriptionView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed"
+        tools:text="Akun diblokir" />
+
+    <TextView
+        android:id="@+id/descriptionView"
+        style="@style/TextAppearance.MudComponents.Body3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_red"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/titleView"
+        tools:text="Pastikan perangkat Anda dapat menerima kode verifikasi" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

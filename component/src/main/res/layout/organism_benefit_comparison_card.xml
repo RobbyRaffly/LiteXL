@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBaseCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_8dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBaseConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mud_dimens_16dp"
+        android:paddingVertical="18dp">
+
+        <com.myxlultimate.component.molecule.packageBenefit.PackageBenefitItem
+            android:id="@+id/currentBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/baseLine"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/currentBenefit">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/organism_benefit_comparison_card_compare"
+                android:textColor="@color/mud_palette_basic_dark_grey" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="@dimen/mud_dimens_4dp"
+                android:layout_weight="1"
+                android:background="@color/mud_palette_basic_light_grey" />
+
+        </LinearLayout>
+
+        <com.myxlultimate.component.molecule.packageBenefit.PackageBenefitItem
+            android:id="@+id/newBenefit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/baseLine" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

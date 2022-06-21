@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBaseCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_8dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mud_dimens_16dp"
+        android:orientation="vertical">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mud_dimens_8dp">
+            <TextView
+                android:id="@+id/tvTitleRefunded"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/mud_palette_basic_black"
+                tools:text="Dana" />
+            <TextView
+                android:id="@+id/tvAmountRefunded"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/mud_palette_basic_black"
+                tools:text="Rp66" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mud_dimens_8dp">
+            <TextView
+                android:id="@+id/tvTitleBalance"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/mud_palette_basic_black"
+                tools:text="Saldo Pascabayar" />
+            <TextView
+                android:id="@+id/tvAmountBalance"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="@color/mud_palette_basic_black"
+                tools:text="Rp10.000" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:background="@color/mud_palette_basic_light_grey"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mud_dimens_8dp">
+            <TextView
+                android:id="@+id/tvTitleTotalBalance"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:textColor="@color/mud_palette_basic_black"
+                tools:text="Total Saldo " />
+            <TextView
+                android:id="@+id/tvAmountTotalBalance"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:textColor="?attr/colorBackgroundPrimary"
+                tools:text="Rp16.000" />
+        </RelativeLayout>
+        <com.myxlultimate.component.atom.informationView.InformationView
+            android:id="@+id/informationWithWarning"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mud_dimens_2dp"
+            app:title="some text"/>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

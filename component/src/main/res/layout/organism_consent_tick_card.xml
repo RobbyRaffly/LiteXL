@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:minWidth="164dp"
+    android:minHeight="144dp"
+    android:layout_height="wrap_content"
+    android:background="@drawable/consent_background">
+
+    <RelativeLayout
+        android:id="@+id/borderContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <TextView
+            android:id="@+id/checkView"
+            style="@style/IconAppearance.MudComponents.H4"
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/rounded_check"
+            android:backgroundTint="@color/mud_palette_basic_white"
+            android:gravity="center"
+            android:text="@string/xl_check"
+            android:textColor="?android:attr/colorPrimary" />
+
+        <LinearLayout
+            android:id="@+id/insideLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:background="@color/transparent"
+            android:orientation="vertical"
+            android:layout_marginTop="@dimen/mud_dimens_24dp"
+            android:layout_marginBottom="@dimen/mud_dimens_24dp"
+            android:paddingStart="@dimen/mud_dimens_16dp"
+            android:paddingEnd="@dimen/mud_dimens_16dp">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/imageView"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:background="@color/transparent"
+                app:imageSourceType="DRAWABLE"
+                app:imageSource="@drawable/ic_yes_consent_xl_satu"/>
+
+            <TextView
+                android:id="@+id/titleView"
+                android:background="@color/transparent"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/mud_dimens_12dp"
+                android:gravity="center"
+                tools:text="YES"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:textColor="@color/mud_palette_basic_white"
+                android:paddingTop="14dp"
+                android:paddingBottom="18dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

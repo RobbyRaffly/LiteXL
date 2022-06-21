@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/mud_dimens_4dp"
+    android:layout_marginVertical="@dimen/mud_dimens_8dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="24dp"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            app:imageSourceType="DRAWABLE"
+            app:imageSource="@drawable/ic_family_plan_member_type"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="24dp">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvTitle"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:maxLines="1"
+                tools:text="Admin" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvError"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mud_palette_basic_red"
+                android:ellipsize="end"
+                tools:text="Admin" />
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvButton"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:layout_marginStart="24dp"
+            android:textColor="?attr/colorBackgroundPrimary"
+            android:ellipsize="end"
+            android:maxLines="1"
+            tools:text="Admin" />
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

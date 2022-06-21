@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:minHeight="74dp"
+        android:padding="@dimen/mud_dimens_16dp">
+
+        <TextView
+            android:id="@+id/addIconView"
+            style="@style/IconAppearance.MudComponents.H2"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:text="@string/xl_plus"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/mud_dimens_8dp"
+            app:layout_constraintBottom_toTopOf="@id/subtitleView"
+            app:layout_constraintEnd_toStartOf="@id/radioButtonView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/addIconView"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Akrab 150GB utk 4 Anggota" />
+
+        <TextView
+            android:id="@+id/subtitleView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/mud_dimens_8dp"
+            android:paddingTop="@dimen/mud_dimens_4dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/radioButtonView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/addIconView"
+            app:layout_constraintTop_toBottomOf="@id/titleView"
+            tools:text="Aktifkan sebelum 23 Juli 2022" />
+
+        <LinearLayout
+            android:id="@+id/radioButtonView"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_marginStart="@dimen/mud_dimens_8dp"
+            android:background="@drawable/circle_background_stroke"
+            android:gravity="center"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleView"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:id="@+id/selectedView"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:visibility="gone"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="?attr/colorBackgroundPrimary"
+                android:gravity="center"
+                android:orientation="horizontal" />
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

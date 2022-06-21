@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:id="@+id/containerView"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="74dp"
+    app:cardCornerRadius="@dimen/loginOptionCardRadius"
+    app:cardElevation="@dimen/loginOptionCardElevation"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_gravity="center_vertical"
+        android:paddingHorizontal="24dp"
+        android:paddingVertical="16dp">
+
+        <TextView
+            android:id="@+id/iconView"
+            style="@style/IconAppearance.MudComponents.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="24dp"
+            android:gravity="center"
+            tools:text="@string/xl_phone"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Nomor XL"/>
+
+            <TextView
+                android:id="@+id/subtitleView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:paddingTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="XL Prabayar, PRIORITAS, XL GO, PRIO GO"/>
+
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

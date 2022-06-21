@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    android:elevation="@dimen/mud_dimens_4dp"
+    android:minHeight="74dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="74dp"
+        android:orientation="vertical">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:visibility="gone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_shape="linear">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingHorizontal="@dimen/mud_dimens_12dp"
+                android:paddingVertical="@dimen/mud_dimens_16dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="@dimen/mud_dimens_32dp"
+                    android:layout_height="@dimen/mud_dimens_32dp"
+                    android:layout_gravity="center_vertical"
+                    app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+                    app:cardElevation="@dimen/mud_dimens_0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false" />
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginHorizontal="@dimen/mud_dimens_8dp"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="120dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="center_vertical"
+                        app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                        app:cardCornerRadius="@dimen/mud_dimens_6dp"
+                        app:cardElevation="@dimen/mud_dimens_0dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false" />
+
+
+                    <com.google.android.material.card.MaterialCardView
+                        android:layout_width="82dp"
+                        android:layout_height="14dp"
+                        android:layout_marginTop="@dimen/mud_dimens_8dp"
+                        android:layout_gravity="center_vertical"
+                        app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                        app:cardCornerRadius="@dimen/mud_dimens_6dp"
+                        app:cardElevation="@dimen/mud_dimens_0dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false" />
+
+                </LinearLayout>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:layout_width="82dp"
+                    android:layout_height="14dp"
+                    android:layout_gravity="center_vertical"
+                    app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                    app:cardCornerRadius="@dimen/mud_dimens_6dp"
+                    app:cardElevation="@dimen/mud_dimens_0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false" />
+
+            </LinearLayout>
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <LinearLayout
+            android:id="@+id/mainView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/mud_dimens_16dp"
+            android:paddingTop="16dp"
+            android:paddingEnd="@dimen/mud_dimens_16dp"
+            android:paddingBottom="16dp">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/iconView"
+                android:layout_width="42dp"
+                android:layout_height="42dp"
+                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                app:imageSourceType="BASE64" />
+
+            <LinearLayout
+                android:id="@+id/topView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:minHeight="42dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ellipsize="end"
+                        android:gravity="center_vertical"
+                        android:maxLines="2"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/mud_palette_basic_black" />
+
+                    <TextView
+                        android:id="@+id/validityView"
+                        style="@style/TextAppearance.MudComponents.Body3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:ellipsize="end"
+                        android:textColor="@color/mud_palette_basic_dark_grey" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:foregroundGravity="center"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/priceView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:foregroundGravity="left"
+                        android:gravity="end"
+                        android:textColor="?attr/colorBackgroundPrimary" />
+
+                    <TextView
+                        android:id="@+id/originalPriceView"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="end"
+                        android:layout_marginTop="@dimen/mud_dimens_2dp"
+                        android:gravity="end"
+                        android:textColor="@color/mud_palette_blue_grey" />
+
+                </LinearLayout>
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/removedIconView"
+                    android:layout_width="@dimen/mud_dimens_24dp"
+                    android:layout_height="@dimen/mud_dimens_24dp"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="@dimen/mud_dimens_12dp"
+                    app:imageSource="@drawable/ic_remove_colored"
+                    app:imageSourceType="DRAWABLE" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

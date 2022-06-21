@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardAlbumView"
+    android:layout_width="116dp"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_8dp"
+    app:cardElevation="0dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/rectangleImageView"
+            android:layout_width="116dp"
+            android:layout_height="156dp"
+            android:scaleType="centerCrop"
+            app:imageSourceType="URL" />
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

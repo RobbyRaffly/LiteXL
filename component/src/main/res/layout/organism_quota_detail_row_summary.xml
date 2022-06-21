@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/mud_dimens_4dp"
+    android:layout_marginVertical="4dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/containerCardDompet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mud_dimens_24dp"
+            android:layout_marginVertical="22dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/iconView"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                android:layout_marginEnd="@dimen/mud_dimens_16dp"
+                app:imageSource="@string/xl_globe_black_base64"
+                app:imageSourceType="BASE64" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Gopay"
+                    android:textAppearance="@style/TextAppearance.MudComponents.H5"
+                    android:textColor="@color/mud_palette_basic_black" />
+
+                <TextView
+                    android:id="@+id/subTitleView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_4dp"
+                    android:text="Belum dihubungkan"
+                    android:textAppearance="@style/TextAppearance.MudComponents.Body3"
+                    android:textColor="@color/mud_palette_basic_dark_grey" />
+
+                <LinearLayout
+                    android:id="@+id/informationContainerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_8dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:id="@+id/informationIconView"
+                        style="@style/IconAppearance.MudComponents.H6"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_gravity="top"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/mud_palette_red_soft"
+                        android:gravity="center"
+                        android:text="!"
+                        android:textAlignment="center"
+                        android:textColor="@color/mud_palette_basic_black" />
+
+                    <TextView
+                        android:id="@+id/informationTitleView"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="8dp"
+                        android:layout_weight="1"
+                        android:text="Kartu Telah Kadaluarsa"
+                        android:textColor="@color/mud_palette_basic_red" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/rightIconView"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                app:imageSource="?attr/goPayConfirmationIcon"
+                app:imageSourceType="BASE64" />
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingTop="16dp"
+        android:paddingBottom="@dimen/mud_dimens_8dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:gravity="center"
+            app:cardBackgroundColor="?attr/colorPrimary"
+            app:cardCornerRadius="20dp"
+            app:cardPreventCornerOverlap="false"
+            app:cardUseCompatPadding="false">
+
+            <TextView
+                android:id="@+id/initialView"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textAlignment="center"
+                android:textColor="@color/mud_palette_basic_white" />
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_weight="99"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:maxLines="1"
+                android:maxLength="15"
+                android:ellipsize="end"
+                android:textColor="@color/mud_palette_basic_black" />
+
+            <TextView
+                android:id="@+id/subtitleView"
+                style="@style/TextAppearance.MudComponents.Body2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_4dp"
+                android:textColor="@color/mud_palette_basic_black" />
+        </LinearLayout>
+
+        <com.myxlultimate.component.atom.inputField.OutlineTextField
+            android:id="@+id/formView"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:inputType="number"
+            app:color="?attr/colorPrimary"
+            app:textHint="0" />
+
+        <TextView
+            style="@style/TextAppearance.MudComponents.H6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="@dimen/mud_dimens_4dp"
+            android:paddingEnd="@dimen/mud_dimens_0dp"
+            android:text="@string/organism_set_limit_family_card_quota_title"
+            android:textColor="@color/mud_palette_basic_dark_grey" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvInformation"
+        style="@style/TextAppearance.MudComponents.Body3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_dark_grey"
+        tools:text="Limit dibawah kuota terpakai, anggota ini tidak akan bisa melanjutkan pemakaian kuota internet bersama" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/mud_dimens_16dp"
+        android:background="@color/mud_palette_basic_light_grey" />
+</LinearLayout>

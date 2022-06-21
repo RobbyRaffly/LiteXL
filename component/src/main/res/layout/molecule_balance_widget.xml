@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.myxlultimate.component.template.cardWidget.CardWidget
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cwaIconMode="SMALL">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/remainingView"
+                    style="@style/TextAppearance.MudComponents.H2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="value" />
+
+                <Button
+                    android:id="@+id/buttonCta"
+                    style="@style/ButtonAppearance.MudComponents.Primary"
+                    android:layout_width="81dp"
+                    android:layout_height="@dimen/mud_dimens_40dp"
+                    android:layout_marginVertical="-5dp"
+                    android:maxHeight="@dimen/mud_dimens_40dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/informationView"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:textColor="@color/mud_palette_blue_grey"
+                    android:visibility="gone"
+                    tools:text="information" />
+
+                <LinearLayout
+                    android:id="@+id/informationFlaggedContainer"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:visibility="gone">
+
+                    <RelativeLayout
+                        android:id="@+id/informationFlaggedIconContainerView"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_marginEnd="4dp"
+                        android:background="@drawable/circle_background"
+                        android:backgroundTint="@color/mud_palette_primary_blue"
+                        android:gravity="center">
+
+                        <TextView
+                            android:id="@+id/exclamationMarkView"
+                            style="@style/TextAppearance.MudComponents.H6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="!"
+                            android:textColor="@color/mud_palette_basic_white" />
+                    </RelativeLayout>
+
+                    <TextView
+                        android:id="@+id/informationFlaggedTextView"
+                        style="@style/TextAppearance.MudComponents.Body3"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="information" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </com.myxlultimate.component.template.cardWidget.CardWidget>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/smallCardView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="16dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="@dimen/mud_dimens_16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mud_dimens_6dp">
+
+                    <TextView
+                        android:id="@+id/labelSmallCardView"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/mud_palette_basic_dark_grey"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/smallCardExclamationMark"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintHorizontal_chainStyle="packed"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_default="wrap"
+                        tools:text="Sisa Pulsa" />
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/smallCardExclamationMark"
+                        android:layout_width="@dimen/mud_dimens_20dp"
+                        android:layout_height="@dimen/mud_dimens_20dp"
+                        android:layout_marginStart="@dimen/mud_dimens_8dp"
+                        android:src="@drawable/ic_circle_exclamation_mark"
+                        android:visibility="gone"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/labelSmallCardView"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:layout_constraintWidth_default="wrap" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/balanceSmallCardView"
+                        style="@style/TextAppearance.MudComponents.H2"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <Button
+                        android:id="@+id/buttonSmallCardView"
+                        style="@style/ButtonAppearance.MudComponents.FlatPrimaryWithoutInset"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:id="@+id/informationSmallView"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:textColor="@color/mud_palette_blue_grey"
+                        android:visibility="gone"
+                        tools:text="information" />
+
+                    <LinearLayout
+                        android:id="@+id/informationFlaggedSmallContainer"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <RelativeLayout
+                            android:id="@+id/informationFlaggedIconSmallContainerView"
+                            android:layout_width="16dp"
+                            android:layout_height="16dp"
+                            android:layout_marginEnd="4dp"
+                            android:background="@drawable/circle_background"
+                            android:backgroundTint="@color/mud_palette_primary_blue"
+                            android:gravity="center">
+
+                            <TextView
+                                android:id="@+id/exclamationSmallMarkView"
+                                style="@style/TextAppearance.MudComponents.H6"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="!"
+                                android:textColor="@color/mud_palette_basic_white" />
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/informationSmallFlaggedTextView"
+                            style="@style/TextAppearance.MudComponents.Body3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:text="information" />
+
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/skeletonLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_shape="linear">
+
+            <include
+                android:id="@+id/shimmerDefault"
+                layout="@layout/shimmering_balance_dashboard" />
+
+            <include
+                android:id="@+id/shimmerSmall"
+                layout="@layout/shimmering_balance_dashboard_prepaid"
+                android:visibility="gone" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

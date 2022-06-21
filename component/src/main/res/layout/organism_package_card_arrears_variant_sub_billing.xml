@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/basicWhite"
+        app:cardCornerRadius="@dimen/mud_dimens_16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mud_dimens_4dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleFirst"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_weight="1"
+                    android:textSize="14sp"
+                    android:gravity="start"
+                    android:text="Bonus"
+                    android:textColor="@color/basicBlack" />
+
+                <TextView
+                    android:id="@+id/titleSecond"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="16.57dp"
+                    android:gravity="end"
+                    android:textSize="14sp"
+                    android:text="0"
+                    android:textColor="@color/basicBlack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textItemFirst"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mud_dimens_16dp"
+                android:layout_weight="1"
+                android:lineSpacingExtra="6sp"
+                android:text="Periode"
+                android:textColor="@color/basicMediumGrey" />
+
+            <TextView
+                android:id="@+id/textItemSecond"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_marginStart="@dimen/mud_dimens_16dp"
+                android:layout_marginBottom="18.52dp"
+                android:layout_weight="1"
+                android:layout_marginTop="6sp"
+                android:text="Jatuh Tempo"
+                android:textColor="@color/basicMediumGrey"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mud_dimens_16dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleThird"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:textSize="14sp"
+                    android:text="Status Tagihan"
+                    android:textColor="@color/basicBlack" />
+
+                <TextView
+                    android:id="@+id/titleStatusTxt"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="16.57dp"
+                    android:gravity="end"
+                    android:text="Lunas"
+                    android:textSize="14sp"
+                    android:textColor="@color/basicBlack" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/variantPackageContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/loyaltyBottomLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/mud_dimens_4dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/loyalty_item_gradient_package_variant"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mud_dimens_16dp"
+        android:paddingBottom="@dimen/mud_dimens_8dp"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <Button
+                android:id="@+id/btnHowToRead"
+                style="@style/ButtonSecondary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Cara Baca Tagihan"
+                android:textColor="@color/basicBlack"
+                android:textSize="12sp"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintEnd_toStartOf="@id/btnDownloadBill"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Button
+                android:id="@+id/btnDownloadBill"
+                style="@style/ButtonPrimary"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toEndOf="@id/btnHowToRead"
+                android:text="Unduh .PDF"
+                android:textSize="12sp"
+                android:layout_marginStart="@dimen/mud_dimens_8dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

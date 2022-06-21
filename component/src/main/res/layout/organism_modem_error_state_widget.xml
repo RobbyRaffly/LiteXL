@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myxlultimate.component.template.cardWidget.CardWidget xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:actionButtonLabel="@string/organism_no_quota_dashboard_widget_action_button_label"
+    app:cwaIconMode="LARGE"
+    app:label="@string/organism_quota_summary_dashboard_widget_label">
+
+    <TextView
+        android:id="@+id/contentView"
+        style="@style/TextAppearance.MudComponents.H4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp" />
+
+</com.myxlultimate.component.template.cardWidget.CardWidget>

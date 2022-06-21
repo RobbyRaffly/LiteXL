@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start"
+    android:paddingHorizontal="@dimen/mud_dimens_24dp"
+    android:paddingTop="@dimen/mud_dimens_24dp"
+    android:paddingBottom="20dp"
+    android:orientation="vertical"
+    android:paddingVertical="@dimen/mud_dimens_16dp">
+
+    <com.myxlultimate.component.token.icon.IconXl
+        android:id="@+id/backIconEl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:layout_marginBottom="20dp"
+        app:iconCode="@string/xl_left_arrow"
+        app:size="55" />
+
+    <com.myxlultimate.component.token.text.TextHero
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:align="LEFT" />
+
+</LinearLayout>
+

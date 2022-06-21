@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools" tools:ignore="NewApi">
+
+    <style name="IconAppearance.MudComponents.H2" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">24sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.H3" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">20sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.H4" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.H5" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.H6" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.H7" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.Body1" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">16sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.Body2" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.Body3" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">12sp</item>
+    </style>
+
+    <style name="IconAppearance.MudComponents.Body4" parent="TextAppearance.AppCompat">
+        <item name="fontFamily">@font/myxl</item>
+        <item name="android:fontFamily">@font/myxl</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+</resources>

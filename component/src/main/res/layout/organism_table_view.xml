@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rvTableView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:nestedScrollingEnabled="false"
+    app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+    tools:listitem="@layout/organism_column_row"
+    android:background="@color/mud_palette_basic_light_grey"
+    android:layout_marginBottom="@dimen/mud_dimens_1dp"/>

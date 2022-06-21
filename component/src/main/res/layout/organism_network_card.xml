@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="4dp"
+    app:cardCornerRadius="16dp"
+    android:layout_margin="4dp"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <TextView
+            android:id="@+id/iconView"
+            style="@style/IconAppearance.MudComponents.H2"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            tools:text="@string/xl_phone"
+            android:gravity="center"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nameView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:textColor="@color/mud_palette_basic_black"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Gopay"
+                android:paddingStart="24dp"
+                android:paddingEnd="24dp"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+            <TextView
+                android:id="@+id/lookHereView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:textColor="?android:attr/colorPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/organism_network_card_see"/>
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/endIconImageView"
+                android:visibility="gone"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                app:imageSourceType="DRAWABLE"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

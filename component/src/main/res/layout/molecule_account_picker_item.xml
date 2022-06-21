@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+        <RelativeLayout
+            android:id="@+id/borderContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/top_up_nominal_option_background">
+
+            <TextView
+                android:id="@+id/checkView"
+                style="@style/IconAppearance.MudComponents.H4"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:background="@drawable/rounded_bottom_left"
+                android:backgroundTint="?android:attr/colorPrimary"
+                android:gravity="center"
+                android:text="@string/xl_check"
+                android:textColor="@color/mud_palette_basic_white" />
+            <LinearLayout
+                android:id="@+id/haveAccountView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginTop="@dimen/mud_dimens_24dp"
+                android:layout_marginBottom="@dimen/mud_dimens_24dp"
+                android:paddingStart="@dimen/mud_dimens_16dp"
+                android:paddingEnd="@dimen/mud_dimens_16dp">
+                <com.myxlultimate.component.organism.profileSelector.ProfileSelector
+                    android:id="@+id/profileSelectorView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    tools:layout_height="80dp"
+                    android:background="@color/transparent"
+                    app:strokeColor="?android:attr/colorPrimary"
+                    app:textColor="@color/mud_palette_basic_black"
+                    app:hasOnPress="false"/>
+            </LinearLayout>
+        </RelativeLayout>
+</androidx.cardview.widget.CardView>

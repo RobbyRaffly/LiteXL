@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="0dp"
+    android:layout_weight="1"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:background="@color/mud_palette_basic_light_grey"
+        android:gravity="center"
+        app:cardCornerRadius="@dimen/mud_dimens_28dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false"/>
+
+</LinearLayout>

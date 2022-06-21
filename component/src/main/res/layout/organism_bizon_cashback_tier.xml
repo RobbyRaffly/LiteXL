@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <LinearLayout
+        android:id="@+id/cashbackView"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/mud_dimens_8dp"
+        android:layout_marginBottom="8dp"
+        android:layout_height="wrap_content">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/casbackIconView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="8dp"
+            app:imageSource=""
+            app:imageSourceType="BASE64" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/iconView32"
+            android:layout_width="@dimen/mud_dimens_32dp"
+            android:layout_height="@dimen/mud_dimens_32dp"
+            android:layout_marginEnd="8dp"
+            android:visibility="gone"
+            app:imageSource=""
+            app:imageSourceType="BASE64" />
+
+        <LinearLayout
+            android:id="@+id/textsContainer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:minHeight="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/casbackNameView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                tools:text="Name" />
+
+            <TextView
+                android:id="@+id/casbackInformationView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="4dp"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                tools:text="Information" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/casbackPriceView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_marginStart="32dp"
+            android:gravity="center_vertical"
+            android:visibility="visible"
+            tools:text="Amount" />
+
+    </LinearLayout>
+</LinearLayout>

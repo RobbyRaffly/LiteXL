@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minWidth="165dp"
+    android:minHeight="176dp"
+    android:orientation="vertical"
+    android:padding="@dimen/mud_dimens_24dp">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="108dp"
+        android:layout_height="@dimen/mud_dimens_20dp"
+        android:layout_marginBottom="@dimen/mud_dimens_6dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+        app:cardCornerRadius="@dimen/mud_dimens_6dp"
+        app:cardElevation="@dimen/mud_dimens_0dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="108dp"
+        android:layout_height="@dimen/mud_dimens_20dp"
+        android:layout_marginBottom="73dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+        app:cardCornerRadius="@dimen/mud_dimens_6dp"
+        app:cardElevation="@dimen/mud_dimens_0dp" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="96dp"
+        android:layout_height="@dimen/mud_dimens_16dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+        app:cardCornerRadius="@dimen/mud_dimens_6dp"
+        app:cardElevation="@dimen/mud_dimens_0dp" />
+
+</LinearLayout>

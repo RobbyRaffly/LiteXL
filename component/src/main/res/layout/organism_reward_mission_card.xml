@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    android:elevation="@dimen/mud_dimens_3dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingVertical="@dimen/mud_dimens_16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingStart="@dimen/mud_dimens_16dp"
+                android:paddingEnd="0dp">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:textColor="@color/mud_palette_prio_dark_grey"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/informationView"
+                    style="@style/TextAppearance.MudComponents.H4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:minHeight="48dp"
+                    android:paddingTop="10dp"
+                    android:maxLines="3"
+                    android:ellipsize="end"/>
+            </LinearLayout>
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/imageView"
+                android:layout_width="104dp"
+                android:layout_height="104dp"
+                app:imageSourceType="DRAWABLE" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginHorizontal="@dimen/mud_dimens_16dp"
+            android:background="@color/mud_palette_basic_light_grey" />
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingHorizontal="@dimen/mud_dimens_16dp">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/buttonTitleView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="?attr/colorBackgroundPrimary" />
+
+                <TextView
+                    android:id="@+id/buttonTitleDisabledView"
+                    style="@style/TextAppearance.MudComponents.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mud_palette_basic_dark_grey" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/circleView"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="?attr/colorBackgroundLight"
+                android:gravity="center">
+
+                <TextView
+                    style="@style/IconAppearance.MudComponents.H4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mud_dimens_2dp"
+                    android:text="@string/xl_chevron_right"
+                    android:textColor="?android:attr/colorPrimary" />
+            </LinearLayout>
+            
+           <com.myxlultimate.component.token.imageView.ImageView
+               android:id="@+id/informationIconView"
+               android:layout_width="@dimen/mud_dimens_24dp"
+               android:layout_height="@dimen/mud_dimens_24dp"
+               app:imageSourceType="DRAWABLE"
+               android:visibility="gone"
+               app:imageSource="@drawable/ic_information_neutral"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    android:elevation="@dimen/mud_dimens_3dp"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    android:minHeight="94dp"
+    android:id="@+id/containerView">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mud_dimens_24dp"
+        android:paddingVertical="@dimen/mud_dimens_16dp">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:layout_width="@dimen/mud_dimens_24dp"
+            android:layout_height="@dimen/mud_dimens_24dp"
+            app:imageSourceType="DRAWABLE"
+            app:imageSource="?attr/pointLoyaltyImage"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:paddingStart="@dimen/mud_dimens_24dp"
+            android:paddingEnd="@dimen/mud_dimens_16dp">
+
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                tools:text="Poin Tertunda" />
+
+            <TextView
+                android:id="@+id/informationView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_4dp"
+                tools:text="+6.000 Poin akan Anda terima setelah tagihan ini lunas."/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nextButtonView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="?attr/colorAccentDark"
+            android:gravity="center"
+            android:paddingStart="@dimen/mud_dimens_2dp">
+
+            <TextView
+                style="@style/IconAppearance.MudComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xl_chevron_right"
+                android:textColor="?android:attr/colorPrimary" />
+        </LinearLayout>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

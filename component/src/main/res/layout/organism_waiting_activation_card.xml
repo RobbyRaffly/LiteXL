@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="@dimen/mud_dimens_16dp">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/iconView"
+            android:layout_width="@dimen/mud_dimens_32dp"
+            android:layout_height="@dimen/mud_dimens_32dp"
+            app:imageSourceType="BASE64"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingHorizontal="@dimen/mud_dimens_8dp"
+            app:layout_constraintBottom_toTopOf="@id/subtitleView"
+            app:layout_constraintEnd_toStartOf="@id/rightIconView"
+            app:layout_constraintHorizontal_weight="1"
+            tools:text="Akrab 150GB utk 4 Anggota"
+            app:layout_constraintStart_toEndOf="@id/iconView"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/subtitleView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            tools:text="Aktifkan sebelum 23 Juli 2022"
+            android:paddingTop="@dimen/mud_dimens_4dp"
+            android:paddingHorizontal="@dimen/mud_dimens_8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/rightIconView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toEndOf="@id/iconView"
+            app:layout_constraintTop_toBottomOf="@id/titleView" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/rightIconView"
+            android:layout_width="@dimen/mud_dimens_20dp"
+            android:layout_height="@dimen/mud_dimens_20dp"
+            app:imageSourceType="DRAWABLE"
+            app:imageSource="?attr/arrowRightIcon"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/titleView"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

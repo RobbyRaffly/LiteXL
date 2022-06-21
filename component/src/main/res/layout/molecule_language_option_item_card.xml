@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:elevation="4dp"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp">
+
+    <LinearLayout
+        android:id="@+id/contentView"
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="24dp">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/iconView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_gravity="center"
+            app:imageSourceType="DRAWABLE"
+            android:gravity="center"/>
+
+        <TextView
+            android:id="@+id/titleView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:paddingStart="24dp"
+            android:paddingEnd="24dp"
+            android:textColor="@color/mud_palette_basic_black"
+            style="@style/TextAppearance.MudComponents.H5"
+            tools:text="Bahasa Indonesia"/>
+
+        <LinearLayout
+            android:background="@drawable/circle_background_stroke"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:gravity="center">
+            <LinearLayout
+                android:id="@+id/selectedView"
+                android:orientation="horizontal"
+                android:layout_width="9dp"
+                android:layout_height="9dp"
+                android:gravity="center"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="?attr/colorBackgroundPrimary"/>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

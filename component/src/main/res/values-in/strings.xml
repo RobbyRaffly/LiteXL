@@ -1,0 +1,340 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="donation_card_donation_text">Donasi</string>
+
+    <string name="organism_contract_dashboard_widget_label">Kontrak</string>
+    <string name="organism_contract_dashboard_widget_action_button_label">Lihat Kontrak</string>
+    <string name="organism_contract_dashboard_widget_information">Berakhir : %s</string>
+    <string name="organism_contract_dashboard_widget_content">Bulan %d dari %d</string>
+
+    <string name="organism_inactive_account_dashboard_widget_label">Maaf</string>
+    <string name="organism_inactive_account_dashboard_widget_content">Akun Tidak\nAktif</string>
+    <string name="organism_inactive_account_dashboard_widget_action_button_label">Kunjungi XL Center</string>
+
+    <string name="organism_quota_summary_dashboard_widget_label">Sisa Kuota</string>
+    <string name="organism_quota_summary_dashboard_widget_action_button_label">Lihat Paket Saya</string>
+
+    <string name="organism_no_quota_dashboard_widget_label">Oops!</string>
+    <string name="organism_no_quota_dashboard_widget_content">Anda tidak memiliki\npaket aktif</string>
+    <string name="organism_no_quota_dashboard_widget_content_prepaid_enterprise">Beli paket favorit Anda di XL Store!</string>
+    <string name="organism_fail_quota_dashboard_widget_content">Gagal memuat data,\nsilakan coba lagi</string>
+    <string name="organism_no_quota_dashboard_widget_action_button_label">Beli Paket Sekarang</string>
+    <string name="organism_fail_quota_dashboard_widget_action_button_label">Coba Lagi</string>
+
+    <string name="organism_dashboard_widget_contract_expired_label">Plan Kontrak</string>
+    <string name="organism_dashboard_widget_contract_expired_title">Kontrak Anda telah berakhir, Anda belum memiliki Plan.</string>
+
+    <string name="organism_status_payment_card_label_total">Total Pembayaran</string>
+
+    <string name="organism_balance_dashboard_widget_label">Sisa Pulsa</string>
+    <string name="organism_balance_dashboard_widget_information_default">Aktif Sampai: %s</string>
+    <string name="organism_balance_dashboard_widget_information_grace_incoming">Masa tenggang dalam %d hari</string>
+    <string name="organism_balance_dashboard_widget_information_grace_incoming_hour">Masa aktif akan berakhir pada %s</string>
+    <string name="organism_balance_dashboard_widget_information_grace_over">Diblokir dalam %d hari</string>
+    <string name="organism_balance_dashboard_widget_information_grace_hour">Diblokir pada %s</string>
+    <string name="organism_balance_dashboard_widget_information_grace_until">Masa tenggang: %s</string>
+    <string name="organism_balance_dashboard_widget_action_button_label">Isi Pulsa</string>
+    <string name="organism_balance_dashboard_widget_information_grace_today">Hari Ini</string>
+    <string name="organism_balance_dashboard_widget_information_izi_top_up">Isi Kuota</string>
+
+    <string name="organism_balance_dashboard_widget_information_postpaid_credit">Saldo Pascabayar (%s)</string>
+    <string name="organism_balance_dashboard_widget_information_credit_limit">Batas Pemakaian: %s</string>
+    <string name="organism_balance_dashboard_widget_information_low_credit">Saldo pascabayar Anda sudah hampir habis</string>
+    <string name="organism_balance_dashboard_widget_information_empty_credit">Saldo pascabayar Anda sudah habis</string>
+    <string name="organism_balance_dashboard_widget_information_adjust_credit_limit">Atur Batas Pemakaian</string>
+
+    <string name="organism_balance_dashboard_widget_information_prio_flex">Saldo PRIO Flex</string>
+    <string name="organism_balance_dashboard_widget_information_prio_flex_top_up">Isi Saldo PRIO Flex</string>
+
+    <string name="organism_balance_dashboard_widget_deposit">Saldo Deposit</string>
+    <string name="organism_balance_dashboard_widget_deposit_top_up">Tambah Deposit</string>
+
+    <string name="organism_roaming_package_access_dashboard_widget_label">Tarif Internasional</string>
+    <string name="organism_roaming_package_access_dashboard_widget_button_label">Lihat Tarif Internasional</string>
+    <string name="organism_roaming_package_access_dashboard_widget_content">"Ingin tahu tarif\nroaming Internasional "</string>
+
+    <string name="organism_point_dashboard_widget_label">Poin Saya</string>
+    <string name="organism_point_dashboard_widget_information">Tukarkan poin sebelum 31 Des 2021</string>
+    <string name="organism_point_dashboard_widget_action_button_label">Lihat Rewards</string>
+
+    <string name="organism_xl_pass_access_dashboard_widget_label">XL PASS</string>
+    <string name="organism_xl_pass_access_dashboard_widget_content">Anda belum memiliki\nXL PASS</string>
+    <string name="organism_xl_pass_access_dashboard_widget_button_label">Lihat XL PASS</string>
+
+    <string name="organism_quota_detail_dashboard_widget_contract_plan">Plan Kontrak</string>
+    <string name="organism_quota_detail_dashboard_widget_expiration">Aktif sampai: %s</string>
+    <string name="organism_quota_detail_dashboard_widget_expirated">Aktif sampai</string>
+    <string name="organism_quota_detail_dashboard_widget_expirated_days">hari</string>
+    <string name="organism_quota_detail_dashboard_widget_expirated_months">bulan</string>
+    <string name="organism_quota_detail_dashboard_widget_expirated_today">hari ini</string>
+    <string name="organism_quota_detail_dashboard_widget_expirated_tomorrow">besok</string>
+    <string name="organism_quota_detail_dashboard_widget_cancel_button_label">Stop Paket</string>
+    <string name="organism_quota_detail_dashboard_widget_cancel_booster_button_label">Stop Booster</string>
+    <string name="organism_quota_detail_dashboard_widget_switch_plan_button_label">Ubah Plan</string>
+    <string name="organism_quota_detail_dashboard_widget_upgrade_plan_button_label">Upgrade</string>
+    <string name="organism_quota_detail_dashboard_widget_buy_again_button_label">Beli Lagi</string>
+    <string name="organism_quota_detail_dashboard_widget_extended_detail_label">Tanggal Reset Kuota</string>
+    <string name="organism_quota_detail_dashboard_widget_change_package">Ubah Paket</string>
+    <string name="organism_quota_detail_dashboard_widget_active_until_detail_label">Aktif sampai</string>
+    <string name="organism_quota_detail_dashboard_widget_valid_until_detail_label">Berlaku hingga</string>
+    <string name="organism_quota_detail_dashboard_widget_slot_fee">Biaya Slot</string>
+    <string name="organism_quota_detail_dashboard_widget_ended_detail_label">Berakhir</string>
+    <string name="organism_quota_detail_dashboard_widget_contract_ended_detail_label">Kontrak Berakhir</string>
+    <string name="organism_quota_detail_dashboard_widget_expiration_unlimited">Mengikuti Kartu</string>
+
+    <string name="organism_voucher_card_option_expired">Kadaluarsa pada</string>
+    <string name="organism_voucher_card_option_no_expired">Berlaku Hingga</string>
+    <string name="organism_voucher_card_option_reddem_expired">Kadaluarsa</string>
+    <string name="organism_voucher_card_option_reddem_active">Tukar Sekarang</string>
+
+    <string name="organism_roaming_quota_summary_dashboard_widget_label">Sisa Pemakaian</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_status_flag_active">Aktif</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_status_flag_inactive">Non-Aktif</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_status_flag_hajj">Haji</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_status_flag_prio_basic_price">Tarif Normal</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_status_flag_roaming_off">Tidak Aktif</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_status_flag_suspended">Akun diblokir</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_activate_button_label">Non-Aktifkan</string>
+    <string name="organism_roaming_quota_summary_dashboard_widget_deactivate_button_label">Aktifkan</string>
+
+    <string name="organism_package_option_validity">Masa aktif %s</string>
+
+    <string name="organism_hot_banner_store_segment_label">Spesial untuk Anda</string>
+    <string name="organism_package_family_store_segment_label">Paket Xtra Lainnya</string>
+    <string name="organism_device_banner_store_segment_label">Beli Smartphone Lebih Mudah</string>
+    <string name="organism_donation_store_segment_label">Bersama XL Lawan COVID</string>
+    <string name="organism_cross_sales_store_segment_label">Xtra Lebih dengan XL</string>
+    <string name="organism_button_context_item">Kunjungi XL Center</string>
+    <string name="organism_payment_method_option_card_change">Ubah</string>
+    <string name="organism_payment_method_option_card_top_up">Isi Ulang</string>
+    <string name="orgamism_payment_method_option_card_balance_not_enough"> , pulsa tidak cukup</string>
+    <string name="organism_suspended_dashboard_widget_label">Akun diblokir!</string>
+    <string name="organism_suspended_dashboard_widget_content">Bayar Tagihan Anda untuk mengaktifkan</string>
+    <string name="organism_suspended_dashboard_widget_button">Bayar Tagihan</string>
+
+    <string name="organism_transaction_selected_item_card_validity">Masa Aktif %s</string>
+
+    <string name="organism_transaction_success_summary_card_transaction_id">ID Transaksi</string>
+    <string name="organism_transaction_success_summary_card_see_detail">Lihat Detail</string>
+
+    <string name="organism_transaction_success_point_gained_amount">Anda mendapatkan %d Poin</string>
+
+    <string name="organism_network_card_see">Lihat Disini</string>
+
+
+    <string name="quota_data_value">%s %s</string>
+    <plurals name="quota_voice_value">
+        <item quantity="other">%d Menit</item>
+    </plurals>
+    <plurals name="quota_custom_value">
+        <item quantity="other">%d Mnt</item>
+    </plurals>
+    <string name="quota_text_value">%d SMS</string>
+    <plurals name="quota_family_package_value">
+        <item quantity="other">%d Akun</item>
+    </plurals>
+
+    <plurals name="quota_device_value">
+        <item quantity="other">%d Unit</item>
+    </plurals>
+    <string name="organism_transaction_summary_row_label_total">Total</string>
+    <string name="organism_transaction_summary_row_label_references">ID Transaksi</string>
+
+    <string name="organism_top_up_selected_nominal_footer_title">Total Harga</string>
+    <string name="organism_top_up_selected_nominal_footer_title_point">Total Poin</string>
+    <string name="organism_top_up_selected_nominal_footer_button_text">Beli</string>
+    <string name="organism_transaction_with_balance_point_gained_amount">+%s Poin untuk aktivasi menggunakan pulsa</string>
+
+    <string name="organism_history_card_point">%s Poin</string>
+    <string name="organism_history_card_expiration">Poin kedaluwarsa %d hari lagi</string>
+
+    <string name="molecule_account_link_card_erase">Hapus</string>
+
+    <string name="organism_language_option_card_indonesia">"Bahasa Indonesia "</string>
+    <string name="organism_language_option_card_english">Bahasa Inggris</string>
+    <string name="molecule_account_removal_card_remove">Hapus</string>
+    <string name="molecule_account_link_card_link">Tautkan</string>
+    <string name="organism_user_profile_progress_title">Lengkapi informasi akun Anda dan dapatkan +%d Poin!</string>
+    <string name="organism_user_profile_progress_button_text">Isi Informasi Akun</string>
+
+    <string name="organism_no_account_card_instruction">Tambah Akun Baru</string>
+    <string name="organism_redeemable_card_point">Poin</string>
+
+    <string name="organism_payment_confirmation_header_balance">Saldo</string>
+    <string name="from_fup">dari Unlimited</string>
+
+
+    <string name="organism_pending_payment_card_copy">Salin</string>
+    <string name="template_segment_view_all">Lihat Semua</string>
+    <string name="organism_bonus_card_title">Ambil Bonus Anda</string>
+    <string name="organism_bonus_card_subtitle">Aktifkan XTRA Unlimited Movie Gratis</string>
+    <string name="point_dashboard_widget">Poin</string>
+    <string name="indonesian_rupiah">Rp</string>
+    <string name="indonesian_rupiah_space">Rp </string>
+    <string name="indonesian_rupiah_balance_remaining">Rp%s</string>
+    <string name="indonesian_currency_rp">Rp</string>
+    <string name="organism_transaction_payment_method_option_card_balance">Saldo: Rp</string>
+
+    <string name="organism_top_up_contact_field_hint">Masukkan Nomor XL</string>
+
+    <string name="organism_transaction_history_widget">Pemakaian Berbayar</string>
+
+    <string name="organism_plan_dashboard_widget_label">Plan Saya</string>
+    <string name="organism_plan_dashboard_widget_action_button_label">Lihat Plan Saya</string>
+
+    <string name="organism_billing_summary_card_billing_status">Status Tagihan</string>
+    <string name="organism_billing_summary_card_due_date">Jatuh Tempo</string>
+
+    <string name="organism_billing_summary_card_status_paid">Lunas</string>
+    <string name="organism_billing_summary_card_status_unpaid">Belum Dibayar</string>
+    <string name="organism_billing_summary_card_status_arrears">Terbayar Sebagian</string>
+    <string name="organism_billing_summary_card_status_paid_in_part">Terbayar Sebagian</string>
+
+    <string name="organism_billing_breakdown_title">Rincian</string>
+
+    <string name="organism_billing_item_due_date">Jatuh Tempo %s</string>
+    <string name="organism_billing_item_paid">Lunas</string>
+    <string name="organism_billing_item_unpaid">Belum Dibayarkan</string>
+    <string name="organism_billing_item_debt">Tunggakan</string>
+    <string name="organism_billing_item_partially_paid">Dibayar Sebagian</string>
+    <string name="organism_billing_item_partially_paid_detail">Dibayar Sebagian \n%1$s</string>
+
+    <string name="organism_billing_item_paid_off">Terbayar Rp%s</string>
+
+    <string name="organism_billing_information_title">Total Sisa Tagihan</string>
+    <string name="organism_billing_information_due_date">Jatuh Tempo: %s</string>
+    <string name="organism_billing_detail_period">Periode Tagihan %s</string>
+    <string name="organism_billing_detail_used_payment">%s Telah digunakan untuk pembayaran tagihan ini</string>
+
+    <string name="organism_roaming_service_roaming_toggle_text">Layanan Roaming</string>
+    <string name="organism_roaming_service_roaming_toggle_automatic_title">Roaming Aktif Otomatis</string>
+    <string name="organism_roaming_service_roaming_toggle_automatic_description">Nyaman bepergian dengan aktivasi layanan roaming secara otomatis</string>
+
+    <string name="organism_roaming_service_status_setting">Pengaturan Layanan Roaming</string>
+
+    <string name="organism_promo_voucher_card_label">Kode Voucher</string>
+    <string name="organism_promo_voucher_card_bottom_label">Kode Keamanan</string>
+    <string name="organism_promo_voucher_card_copy">Salin</string>
+
+    <string name="molecule_user_account_information_warning_info">Tagihan fisik akan dikirim ke alamat penagihan</string>
+
+    <string name="organism_billing_delivery_method_card_button_title">Ubah</string>
+
+    <string name="organism_package_card_option_availability">Tersedia</string>
+    <string name="organism_package_card_option_almost_run_out">Segera Habis</string>
+    <string name="organism_package_card_option_run_out">Habis</string>
+
+    <string name="organism_bonus_item_card_action">Ambil Sekarang</string>
+    <string name="organism_bonus_item_card_validity">Berlaku sampai %s</string>
+
+    <string name="organism_family_plan_information_card_arrange">Atur</string>
+
+    <string name="organism_set_limit_family_card_quota_no_limit">Tanpa limit pemakaian</string>
+    <string name="organism_set_limit_family_card_quota_button_title">Terapkan</string>
+
+    <string name="organism_confirm_family_card_quota_button_title_accept">Terima</string>
+    <string name="organism_confirm_family_card_quota_button_title_decline">Tolak</string>
+
+    <string name="organism_family_plan_organizer_allocate_item_unlimited">Tanpa Batas</string>
+    <string name="organism_family_plan_organizer_allocate_item_turn_off">Dimatikan</string>
+
+    <string name="organism_quota_detail_widget_quota_breakdown_failed_text">Gagal Memuat Data, Mohon Coba Lagi</string>
+    <string name="organism_quota_detail_widget_quota_breakdown_failed_button_text">Coba Lagi</string>
+
+    <string name="organism_benefit_comparison_card_compare">menjadi</string>
+
+    <string name="organism_package_card_option_transaction_status_success">Berhasil</string>
+    <string name="organism_package_card_option_transaction_status_failed">Gagal</string>
+
+    <string name="fup_low">Mendekati Batas FUP</string>
+    <string name="fup_empty">Batas FUP Tercapai</string>
+
+    <string name="organism_title_tnc_cashback">Syarat &amp; Ketentuan Cashback</string>
+
+
+    <!-- MODEM STATUS -->
+    <string name="modem_status_on">Menyala</string>
+    <string name="modem_status_off">Tidak Menyala</string>
+    <string name="modem_status_failed">Gagal Memuat Data</string>
+    <string name="modem_label">Status Modem</string>
+    <string name="modem_off_information">Cek kabel dan pastikan lampu POWER menyala</string>
+    <string name="modem_failed_information">Klik Refresh Status Modem untuk memuat data</string>
+    <string name="modem_connected_device_label">Jumlah Perangkat Terhubung</string>
+    <string name="modem_connected_device_counted">%s Perangkat</string>
+    <string name="modem_connected_device_max_info">Max 32 Connected Device</string>
+    <string name="modem_having_problem">Mengalami masalah modem?</string>
+    <string name="modem_guidance">Panduan Modem</string>
+
+    <!-- BIZ OPTIMUS-->
+    <string name="biz_optimus_label_set_quota">Kuota Utama</string>
+    <string name="biz_optimus_detail_information_quota">Sisa slot anggota %d orang</string>
+    <string name="biz_optimus_remaining_quota_group">Sisa Kuota Group</string>
+    <string name="profile_modem_off_warning">Pastikan modem Anda menyala untuk melihat nama jaringan</string>
+    <string name="modem_just_refreshed">Baru saja direfresh</string>
+    <string name="modem_last_refresh_minutes">Terakhir refresh %d menit lalu</string>
+    <string name="modem_last_refresh_hours">Terakhir refresh %d jam lalu</string>
+    <string name="modem_last_refresh_days">Terakhir refresh %d hari lalu</string>
+    <string name="modem_last_refresh_weeks">Terakhir refresh %d minggu lalu</string>
+    <string name="modem_last_refresh_months">Terakhir refresh %d bulan lalu</string>
+    <string name="modem_last_refresh_years">Terakhir refresh %d tahun lalu</string>
+    <string name="modem_notice_change_ssid">Dengan mengubah Nama Jaringan dan Kata Sandi, perangkat yang terhubung akan terputus.</string>
+
+    <string name="xl_volte_ready">XL Sudah VoLTE Ready!</string>
+    <string name="volte_see_more_info">Masih butuh Informasi lebih lanjut?</string>
+    <string name="volte_see_here">Lihat disini!</string>
+    <string name="modem_see_information_cta">Lihat Informasi Modem</string>
+    <string name="modem_not_detected">Modem Tidak Terdeteksi</string>
+    <string name="modem_call_820">Silakan hubungi 820 untuk bantuan lebih lanjut.</string>
+    <string name="modem_cta_call_820">Hubungi 820</string>
+    <string name="modem_profile_label">Profil Modem</string>
+    <string name="modem_profile_network_name_title">Name Jaringan</string>
+    <string name="modem_profile_button_title">Ubah Nama Jaringan &amp; Kata Sandi</string>
+
+    <!-- LOYALTY TIERING -->
+    <string name="loyalty_tiering_benefit_card_increase_text_title">Tingkatkan terus level Anda dan dapatkan bonus di level berikut</string>
+    <string name="loyalty_tiering_benefit_card_see_detail_title">Lihat Detail</string>
+    <string name="loyalty_tiering_benefit_card_bonus_until_title">Bonus Sampai</string>
+
+    <!-- PRIO HYBRID -->
+    <string name="hybrid_top_label">Paket Berlangganan Anda</string>
+    <string name="hybrid_mid_label">Berakhir Pada</string>
+    <string name="hybrid_bottom_cta_text">Detail Paket Berlangganan Saya</string>
+    <string name="about_prio_hybrid">Tentang PRIO Hybrid</string>
+    <string name="hybrid_beli_sekarang_button_text">Beli Sekarang</string>
+    <string name="subscription_detail_hybrid_more_info_title">Apa itu PRIORITAS Upfront?</string>
+    <string name="subscription_detail_hybrid_more_info_subtitle">Klik disini untuk informasi lebih lanjut</string>
+
+    <!-- BIZ ON-->
+    <string name="biz_on_title">Biz On</string>
+    <string name="biz_on_title_action">Cek BIZ On Saya</string>
+    <string name="xl_bizon_level_title">Tingkat %s</string>
+    <string name="xl_bizon_title_owner">Owner</string>
+    <string name="xl_bizon_title_member">Member</string>
+    <string name="xl_bizon_title_container_column_one">Paket</string>
+    <string name="xl_bizon_title_container_column_two">Cashback dari Aktivasi</string>
+    <string name="xl_bizon_title_cta">Lihat Selengkapnya</string>
+    <string name="xl_bizon_landing_title_bottom">Informasi BIZ On</string>
+    <string name="xl_bizon_landing_desc_bottom">Informasi tambah member &amp; mekanisme cashback</string>
+    <string name="xl_bizon_title_total_cashback">Total Cashback</string>
+
+    <!-- TRANSFER QUOTA-->
+    <string name="transfer_quota_information_title">Pindahkan kuota pada paket ini ke paket tujuan yang tersedia</string>
+    <string name="transfer_quota_button_title">Pindahkan Kuota</string>
+
+    <string name="text_fab_xl_store">XL Store</string>
+
+    <!-- AKRAB M2M -->
+    <string name="family_group_additional_text">Tambah Kuota Sekarang</string>
+    <string name="family_group_status_primary">Utama</string>
+    <string name="family_group_organizer">Pengelola</string>
+    <string name="family_group_member">Anggota</string>
+    <string name="family_group_no_quota">Kuota habis</string>
+    <string name="family_group_usage_limit_exceeded">Mencapai Batas Pemakaian</string>
+    <string name="akrab_exit_text">Keluar</string>
+
+    <string name="family_akrab_change_member">Ubah Anggota</string>
+    <string name="family_akrab_remove_member">Keluarkan Anggota</string>
+    <string name="family_akrab_remove_slot">Hapus Slot</string>
+    <string name="family_akrab_change_member_limit_info">Anda sudah mencapai batas maksimum pengubahan anggota pada slot ini.</string>
+
+</resources>

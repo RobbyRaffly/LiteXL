@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="@dimen/mud_dimens_20dp" />
+            <solid android:color="#33000000"/>
+            <stroke
+                android:width="@dimen/mud_dimens_1dp"
+                android:color="#80FFFFFF" />
+        </shape>
+    </item>
+    <item android:id="@+id/progress">
+        <scale android:scaleWidth="100%">
+            <shape>
+                <corners android:radius="@dimen/mud_dimens_20dp" />
+                <solid android:color="@color/basicWhite" />
+            </shape>
+        </scale>
+    </item>
+
+</layer-list>

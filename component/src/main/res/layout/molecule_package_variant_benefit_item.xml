@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:shimmer_shape="linear"
+        android:visibility="visible"
+        app:shimmer_direction="left_to_right">
+        <include layout="@layout/shimmering_package_variant_benefit_item"/>
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/iconView"
+        android:layout_width="@dimen/mud_dimens_24dp"
+        android:layout_height="@dimen/mud_dimens_24dp"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        android:visibility="gone"
+        app:imageSourceType="BASE64"
+        app:imageSource=""/>
+
+    <TextView
+        android:id="@+id/nameView"
+        android:visibility="gone"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="match_parent"
+        android:minHeight="24dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:paddingStart="0dp"
+        android:paddingEnd="8dp"
+        tools:text="Kuota Anti Hangus Maks 1 GB"/>
+
+</LinearLayout>

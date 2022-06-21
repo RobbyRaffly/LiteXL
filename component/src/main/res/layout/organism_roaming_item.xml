@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+    <LinearLayout
+        android:id="@+id/singleInformationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/imageView"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                app:imageSourceType="BASE64"
+                android:scaleType="center"/>
+            <TextView
+                style="@style/TextAppearance.MudComponents.H5"
+                android:id="@+id/titleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="@dimen/mud_dimens_8dp"
+                android:text="Ke Indonesia"/>
+            <TextView
+                style="@style/TextAppearance.MudComponents.H5"
+                android:id="@+id/priceView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="RP15.000/Menit"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/detailTextView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mud_dimens_32dp"
+            android:textColor="@color/basicDarkGrey"
+            android:text="Max Rp.84.900/hari"
+            />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/multipleInformationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible">
+
+        <TextView
+            style="@style/TextAppearance.MudComponents.H5"
+            android:id="@+id/listTitleView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ke Indonesia"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/roamingItemRowRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:listitem="@layout/organism_roaming_item_row"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomLineView"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/mud_dimens_16dp"
+        android:background="@color/basicLightGrey"/>
+</LinearLayout>

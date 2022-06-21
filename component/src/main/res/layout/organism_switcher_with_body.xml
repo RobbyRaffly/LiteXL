@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardElevation="@dimen/mud_dimens_4dp"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/headerSwitcherView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="0dp"
+            app:cardElevation="@dimen/mud_dimens_8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/titleHeader"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/mud_dimens_16dp"
+                    android:text="@string/organism_roaming_service_roaming_toggle_text"
+                    app:layout_constraintBottom_toBottomOf="@id/switchView"
+                    app:layout_constraintEnd_toStartOf="@id/switchView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/switchView" />
+
+                <com.google.android.material.switchmaterial.SwitchMaterial
+                    android:id="@+id/switchView"
+                    android:layout_width="48dp"
+                    android:layout_height="24dp"
+                    android:layout_marginEnd="@dimen/mud_dimens_16dp"
+                    android:thumb="@drawable/switch_thumb"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    android:layout_marginBottom="@dimen/mud_dimens_16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    app:thumbTint="#fff"
+                    app:track="@drawable/switch_track"
+                    app:trackTint="@color/switch_track_color" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/topLabelText"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mud_dimens_24dp"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:textColor="@color/basicDarkGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/headerSwitcherView"
+            tools:text="Nama Paket" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/topValueText"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mud_dimens_24dp"
+            android:layout_marginTop="@dimen/mud_dimens_4dp"
+            android:textColor="@color/mud_palette_basic_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topLabelText"
+            tools:text="myPRIO GoldX" />
+
+        <View
+            android:id="@+id/separatorValue"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:layout_marginHorizontal="@dimen/mud_dimens_24dp"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            android:background="@color/basicLightGrey"
+            app:layout_constraintTop_toBottomOf="@id/topValueText" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bottomLabelText"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mud_dimens_24dp"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            android:textColor="@color/basicDarkGrey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/separatorValue"
+            tools:text="Nama Paket" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/bottomValueText"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/mud_dimens_24dp"
+            android:layout_marginTop="@dimen/mud_dimens_4dp"
+            android:layout_marginBottom="@dimen/mud_dimens_16dp"
+            android:textColor="@color/mud_palette_basic_black"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bottomLabelText"
+            tools:text="myPRIO GoldX" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

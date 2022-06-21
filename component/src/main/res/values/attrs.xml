@@ -1,0 +1,2732 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- COMMON -->
+
+    <declare-styleable name="customAttr">
+        <attr name="text" format="string" />
+        <attr name="color" format="color" />
+        <attr name="iconCode" format="string" />
+        <attr name="size" format="integer" />
+        <attr name="mode" format="string" />
+        <attr name="isActive" format="boolean" />
+        <attr name="errorMessage" format="string" />
+
+        <attr name="imageSource" format="reference|string" />
+        <attr name="title" format="string" />
+        <attr name="subtitle" format="string" />
+        <attr name="titleTotal" format="string" />
+        <attr name="instruction" format="string" />
+        <attr name="buttonText" format="string" />
+        <attr name="secondaryButtonText" format="string" />
+        <attr name="numberOfChars" format="integer" />
+        <attr name="detail" format="string" />
+        <attr name="isDisabled" format="boolean" />
+
+        <attr name="name" format="string" />
+        <attr name="id" format="string" />
+        <attr name="iconImage" format="string" />
+        <attr name="remaining" format="integer" />
+        <attr name="expiredAt" format="integer" />
+        <attr name="isHideExpiry" format="boolean" />
+        <attr name="actionButtonLabel" format="string" />
+        <attr name="iconDrawable" format="integer" />
+        <attr name="price" format="integer" />
+        <attr name="validity" format="string" />
+        <attr name="originalPrice" format="integer" />
+        <attr name="backgroundImage" format="string" />
+        <attr name="category" format="string" />
+        <attr name="categoryColor" format="string" />
+        <attr name="normalColor" format="color" />
+        <attr name="selectedColor" format="color" />
+        <attr name="normalTextColor" format="color" />
+        <attr name="selectedTextColor" format="color" />
+        <attr name="quotaType" format="enum">
+            <enum name="DATA" value="0" />
+            <enum name="TEXT" value="1" />
+            <enum name="VOICE" value="2" />
+            <enum name="FAMILY_SLOT" value="3" />
+            <enum name="DEVICE" value="4" />
+            <enum name="CUSTOM" value="5" />
+        </attr>
+        <attr name="sizeMode" format="enum">
+            <enum name="FULL" value="0" />
+            <enum name="COMPACT" value="1" />
+        </attr>
+        <attr name="backgroundColorMode" format="enum">
+            <enum name="LIGHT" value="0" />
+            <enum name="DARK" value="1" />
+            <enum name="CUSTOM" value="2" />
+        </attr>
+        <attr name="isShimmerOn" format="boolean" />
+        <attr name="showExclamationMark" format="boolean" />
+
+        <attr name="avatarBorderStartColor" format="integer" />
+        <attr name="avatarBorderEndColor" format="integer" />
+        <attr name="subscriptionTypeText" format="string" />
+        <attr name="subscriptionTypeBgColor" format="integer" />
+    </declare-styleable>
+
+
+    <!-- TEXT -->
+
+    <declare-styleable name="textAttr">
+        <attr name="text" />
+        <attr name="color" />
+        <attr name="mode" />
+        <attr name="align" format="string" />
+        <attr name="hasUnderline" format="boolean" />
+        <attr name="hasStrike" format="boolean" />
+    </declare-styleable>
+
+    <!-- ICON -->
+
+    <declare-styleable name="iconAttr">
+        <attr name="color" />
+        <attr name="iconCode" />
+        <attr name="size" />
+        <attr name="mode" />
+    </declare-styleable>
+
+    <!-- BUTTON -->
+
+    <declare-styleable name="buttonAttr">
+        <attr name="text" />
+        <attr name="color" />
+        <attr name="mode" />
+    </declare-styleable>
+
+    <!-- CHECKBOX -->
+
+    <declare-styleable name="checkboxAttr">
+        <attr name="isActive" />
+        <attr name="mode" />
+    </declare-styleable>
+
+    <!-- TEXT FIELD -->
+
+    <declare-styleable name="textfieldAttr">
+        <attr name="label" format="string" />
+        <attr name="value" format="string" />
+        <attr name="hint" format="string" />
+        <attr name="errorMessage" />
+        <attr name="mode" />
+        <attr name="color" />
+    </declare-styleable>
+
+    <!-- SLIDE INDICATOR DOT -->
+
+    <declare-styleable name="imageAttr">
+        <attr name="source" format="string" />
+    </declare-styleable>
+
+    <!-- SLIDE INDICATOR -->
+
+    <declare-styleable name="sliderIndicatorAttr">
+        <attr name="isActive" />
+        <attr name="mode" />
+        <attr name="numberOfSlides" format="integer" />
+        <attr name="activeIndex" format="integer" />
+    </declare-styleable>
+
+    <!-- MISC/HELPERS -->
+
+    <declare-styleable name="colorBoxAttr">
+        <attr name="colorBoxColor" format="color" />
+        <attr name="colorBoxName" format="string" />
+    </declare-styleable>
+
+
+    <!-- LOGIN OPTION CARD -->
+
+    <declare-styleable name="LoginOptionCardAttr">
+        <attr name="icon" />
+        <attr name="title" />
+        <attr name="subtitle" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoyaltyBenefitCardAttr">
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="bonusAmountString" format="string" />
+        <attr name="title" />
+        <attr name="isLock" />
+        <attr name="icon" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyTopRibbon">
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="title" />
+    </declare-styleable>
+
+    <!-- LOGIN TYPE CARD -->
+
+    <declare-styleable name="LoginTypeCardAttr">
+        <attr name="logo" />
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="verticalLineColor" format="color" />
+    </declare-styleable>
+
+    <!-- FULL ERROR -->
+    <declare-styleable name="fullModalAttr">
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="instruction" />
+        <attr name="buttonText" />
+        <attr name="buttonTextTitle" format="string" />
+        <attr name="secondaryButtonText" />
+    </declare-styleable>
+
+    <!-- HALF MODAL -->
+    <declare-styleable name="halfModalAttr">
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="instruction" />
+        <attr name="buttonText" />
+        <attr name="secondaryButtonText" />
+        <attr name="hasHeader" format="boolean" />
+        <attr name="headerTitle" format="string" />
+        <attr name="headerIcon" format="string" />
+        <attr name="isHeaderRightIconVisible" format="boolean" />
+        <attr name="headerRightIcon" format="integer" />
+        <attr name="halfModalMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="SMALLBUTTON" value="1" />
+        </attr>
+        <attr name="isSwitchButton" format="boolean" />
+        <attr name="halfModalHeaderMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="BOOSTER" value="1" />
+        </attr>
+        <attr name="imageIcon" />
+        <attr name="isButtonPrimaryEnabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="quatreModalAttr">
+        <attr name="title" />
+        <attr name="iconCode" />
+    </declare-styleable>
+
+    <!-- NOTICE -->
+    <declare-styleable name="noticeAttr">
+        <attr name="iconCode" />
+        <attr name="description" format="string" />
+        <attr name="color" />
+    </declare-styleable>
+
+
+    <!-- PROGRESS DIALOG -->
+    <declare-styleable name="progressDialogAttr">
+        <attr name="color" />
+    </declare-styleable>
+
+    <!-- OTP HOLDER SINGLE -->
+    <declare-styleable name="otpHolderSingleAttr">
+        <attr name="value" />
+    </declare-styleable>
+
+    <declare-styleable name="PinHolderSingle">
+        <attr name="value" />
+    </declare-styleable>
+
+    <!-- OTP HOLDER -->
+    <declare-styleable name="otpHolderAttr">
+        <attr name="value" />
+        <attr name="numberOfChars" />
+    </declare-styleable>
+
+    <declare-styleable name="PinHolder">
+        <attr name="value" />
+        <attr name="numberOfChars" />
+    </declare-styleable>
+
+    <!-- OTP FORM -->
+    <declare-styleable name="otpFormAttr">
+        <attr name="value" />
+        <attr name="numberOfChars" />
+        <attr name="resendText" format="string" />
+        <attr name="resendDelay" format="integer" />
+        <attr name="errorMessage" />
+        <attr name="color" />
+    </declare-styleable>
+
+    <declare-styleable name="PinForm">
+        <attr name="value" />
+        <attr name="numberOfChars" />
+        <attr name="resendText" />
+        <attr name="resendDelay" />
+        <attr name="errorMessage" />
+        <attr name="color" />
+    </declare-styleable>
+
+    <!-- PROGRESS SPINNER-->
+    <declare-styleable name="progressSpinnerAttr">
+        <attr name="color" />
+    </declare-styleable>
+
+    <!-- XL NUMBER CARD -->
+    <declare-styleable name="xlNumberCardAttr">
+        <attr name="imageSource" />
+        <attr name="name" />
+        <attr name="detail" />
+    </declare-styleable>
+
+    <!-- WELCOME HEADER -->
+    <declare-styleable name="welcomeHeaderAttr">
+        <attr name="title" />
+        <attr name="topTitle" format="string" />
+        <attr name="bottomTitle" format="string" />
+        <attr name="backgroundColor" />
+        <attr name="textColor" format="color" />
+        <attr name="topTitleColor" format="color" />
+        <attr name="bottomTitleColor" format="color" />
+        <attr name="iconCode" />
+        <attr name="imageSource" />
+        <attr name="isShimmerOn" />
+        <attr name="paddingBottom" format="dimension" />
+        <attr name="bottomTitleMode" format="enum">
+            <enum name="ACTION" value="0" />
+            <enum name="INFO" value="1" />
+        </attr>
+        <attr name="hasRightArrow" />
+    </declare-styleable>
+
+    <declare-styleable name="simpleHeaderAttr">
+        <attr name="title" />
+        <attr name="backgroundColor" />
+        <attr name="textColor" />
+        <attr name="endTextColor" format="color" />
+        <attr name="endBubbleBackgroundColor" format="color" />
+        <attr name="iconCode" />
+        <attr name="endTitle" format="string" />
+        <attr name="endBubbleText" format="string" />
+        <attr name="hasEndBubble" format="boolean" />
+        <attr name="endIconDrawable" />
+        <attr name="endIconVisible" format="boolean" />
+    </declare-styleable>
+
+    <!-- PRODUCT FAMILY CARD-->
+    <declare-styleable name="productFamilyCardAttr">
+        <attr name="sizeMode" />
+        <attr name="label" />
+        <attr name="description" />
+        <attr name="imageSource" />
+    </declare-styleable>
+
+    <!-- QUOTA CARD -->
+    <declare-styleable name="quotaCardAttr">
+        <attr name="title" />
+        <attr name="dataAmount" format="string" />
+        <attr name="voiceAmount" format="string" />
+        <attr name="messageAmount" format="string" />
+        <attr name="seeMoreText" format="string" />
+        <attr name="hasUnlimited" />
+        <attr name="dataAmountHasUnlimited" format="boolean" />
+        <attr name="voiceAmountHasUnlimited" format="boolean" />
+        <attr name="messageAmountHasUnlimited" format="boolean" />
+    </declare-styleable>
+
+    <!-- QUOTA ITEM -->
+    <declare-styleable name="quotaItemAttr">
+        <attr name="iconCode" />
+        <attr name="amount" format="string" />
+        <attr name="hasUnlimited" format="boolean" />
+        <attr name="isUnlimited" />
+    </declare-styleable>
+
+
+    <!-- CONTEXT ITEM -->
+    <declare-styleable name="contextItemAttr">
+        <attr name="category" />
+        <attr name="title" />
+        <attr name="buttonText" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <!-- BALANCE CARD -->
+    <declare-styleable name="balanceCardAttr">
+        <attr name="title" />
+        <attr name="detail" />
+        <attr name="imageSource" />
+        <attr name="information" format="string" />
+        <attr name="actionText" format="string" />
+        <attr name="mode" />
+        <attr name="imageMode" format="string" />
+    </declare-styleable>
+
+    <!-- PROMO CARD -->
+    <!--    <declare-styleable name="promoCardAttr">-->
+    <!--        <attr name="title"/>-->
+    <!--        <attr name="backgroundImage" format="string"/>-->
+    <!--        <attr name="sizeMode"/>-->
+    <!--        <attr name="originalPrice" format="integer"/>-->
+    <!--        <attr name="discountPrice" format="integer"/>-->
+    <!--        <attr name="backgroundMode" format="string"/>-->
+    <!--    </declare-styleable>-->
+
+    <!-- NOTICE CARD -->
+    <declare-styleable name="noticeCardAttr">
+        <attr name="mode" />
+        <attr name="title" />
+        <attr name="hasArrow" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="DompetWarningCardAttr">
+        <attr name="information" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationInformationCard">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="hasCloseButton" />
+        <attr name="titleColor" format="integer" />
+        <attr name="informationColor" format="integer" />
+        <attr name="bgColorTint" format="integer" />
+    </declare-styleable>
+
+    <!-- PAYMENT METHOD OPTION CARD -->
+    <declare-styleable name="TransactionPaymentMethodOptionCardAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="imageSourceType" />
+        <attr name="hasTopUpButton" format="boolean" />
+        <attr name="balance" format="integer" />
+        <attr name="balanceString" format="string" />
+        <attr name="isBalanceEnough" format="boolean" />
+        <attr name="isCardSelected" format="boolean" />
+        <attr name="inactiveRadio" format="boolean" />
+        <attr name="detachFeedback" format="boolean" />
+        <attr name="cashbackPercentage" format="integer" />
+        <attr name="isBalance" format="boolean" />
+        <attr name="information" />
+        <attr name="description" />
+        <attr name="ribbonLabel" />
+        <attr name="buttonLabel" />
+        <attr name="promoTitle" format="string" />
+        <attr name="promoButtonTitle" format="string" />
+        <attr name="bottomInformation" />
+        <attr name="bottomInformationUnderCardView" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactionPaymentMethodOptionCardGroup">
+        <attr name="label" />
+        <attr name="textColor" />
+    </declare-styleable>
+
+    <!--BADGED ICON-->
+    <declare-styleable name="badgedIconAttr">
+        <attr name="mode" />
+        <attr name="counter" format="integer" />
+        <attr name="iconCode" />
+        <attr name="size" />
+        <attr name="color" />
+        <attr name="gapSize" format="integer" />
+    </declare-styleable>
+
+    <!-- FOOTER ITEM -->
+    <declare-styleable name="footerItemAttr">
+        <attr name="iconCode" />
+        <attr name="title" />
+        <attr name="isActive" />
+        <attr name="counter" />
+    </declare-styleable>
+
+    <!-- FOOTER MENU-->
+    <declare-styleable name="footerMenuAttr">
+        <attr name="numberOfIcon" format="integer" />
+        <attr name="activeIndex" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactionTotalPriceFooterAttr">
+        <attr name="price" />
+        <attr name="hasDetailButton" format="boolean" />
+        <attr name="buttonText" />
+        <attr name="isFooterEnabled" format="boolean" />
+        <attr name="point" />
+        <attr name="isShimmerOn" />
+        <attr name="hasRedDot"/>
+        <attr name="redDotCount"/>
+        <attr name="footerMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="TOP_CHEVRON" value="1" />
+        </attr>
+        <attr name="topTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionPackageCard">
+        <attr name="name" />
+        <attr name="validity" />
+        <attr name="price" />
+        <attr name="discountedPrice" format="string" />
+        <attr name="rightIcon" format="reference" />
+    </declare-styleable>
+
+    <!-- Store Segment -->
+    <declare-styleable name="StoreSegment">
+        <attr name="label" />
+        <attr name="action" format="string" />
+    </declare-styleable>
+
+
+    <!--  DASHBOARD WIDGET  -->
+
+    <!--  BASE TEMPLATE  -->
+    <declare-styleable name="CardWidgetAttr">
+        <attr name="cwaIconMode" format="enum">
+            <enum name="NO_ICON" value="0" />
+            <enum name="SMALL" value="1" />
+            <enum name="LARGE" value="2" />
+            <enum name="FULL_RIGHT" value="3" />
+            <enum name="MEDIUM" value="4" />
+        </attr>
+        <attr name="cwaCardMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="SMALL" value="1" />
+        </attr>
+        <attr name="quotaSummaryStatusType" format="enum">
+            <enum name="NONE" value="0" />
+            <enum name="PASS" value="1" />
+            <enum name="XL_PASS" value="2" />
+            <enum name="HAJJ" value="3" />
+            <enum name="BASIC_PRICE" value="4" />
+            <enum name="ROAMING_OFF" value="5" />
+            <enum name="SUSPENDED" value="6" />
+            <enum name="CUSTOM" value="7" />
+            <enum name="FUP_LOW" value="8" />
+            <enum name="FUP_EMPTY" value="9" />
+        </attr>
+        <attr name="label" />
+        <attr name="icon" />
+        <attr name="actionButtonLabel" />
+        <attr name="hasRightArrow" format="boolean" />
+        <attr name="isShimmerOn" />
+        <attr name="showExclamationMark" />
+    </declare-styleable>
+
+    <!--  BASE TEMPLATE  -->
+    <declare-styleable name="BalanceWidgetAttr">
+        <attr name="label" />
+        <attr name="icon" />
+        <attr name="actionButtonLabel" />
+        <attr name="informationMode" format="enum">
+            <enum name="DEFAULT" value="0" />
+            <enum name="WARNING" value="1" />
+            <enum name="DANGER" value="2" />
+            <enum name="NONE" value="3" />
+        </attr>
+        <attr name="showExclamationMark" />
+    </declare-styleable>
+
+    <declare-styleable name="PlanWidgetAttr">
+        <attr name="label" />
+        <attr name="icon" />
+        <attr name="actionButtonLabel" />
+        <attr name="bottomLabel" />
+        <attr name="bottomTitle" />
+        <attr name="hasWarning" />
+        <attr name="isButtonDisable" format="boolean" />
+        <attr name="isBottomTitleDisable" format="boolean" />
+        <attr name="bottomInformation" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactionHistoryWidget">
+        <attr name="label" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardWidgetContractAttr">
+        <attr name="current" format="integer" />
+        <attr name="total" />
+        <attr name="expiredAt" />
+        <attr name="currentString" format="string" />
+        <attr name="cardTitle" format="string" />
+        <attr name="hideInformationView" format="boolean" />
+        <attr name="cardWidgetTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardWidgetBalanceAttr">
+        <attr name="widgetIcon" format="reference|string" />
+        <attr name="remaining" />
+        <attr name="expiredAt" />
+        <attr name="canceledAt" format="integer" />
+        <attr name="label" />
+        <attr name="actionButtonLabel" />
+        <attr name="creditLimit" format="integer" />
+        <attr name="balanceWidgetMode" format="enum">
+            <enum name="DEFAULT" value="0" />
+            <enum name="POSTPAID" value="1" />
+            <enum name="PRIOFLEX" value="2" />
+            <enum name="DEPOSIT" value="3" />
+            <enum name="CUSTOM" value="4" />
+        </attr>
+        <attr name="isHideActionButton" format="boolean" />
+        <attr name="isActionButtonEnabled" format="boolean" />
+        <attr name="cycleStart" format="integer" />
+        <attr name="cycleEnd" format="integer" />
+        <attr name="showExclamationMark" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardWidgetModemStatusAttr">
+        <attr name="isModemActive" format="boolean" />
+        <attr name="label" />
+        <attr name="information" />
+        <attr name="deviceInformation" format="string" />
+        <attr name="hasBottomView" />
+        <attr name="lastOnlineNotice" format="string" />
+        <attr name="buttonText" />
+        <attr name="bottomLabel" />
+        <attr name="isPrimaryButtonEnabled" />
+        <attr name="hasBottomCta" format="boolean" />
+        <attr name="lastSession" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardWidgetNoQuotaAttr">
+        <attr name="isFailedFromApi" format="boolean" />
+        <attr name="noQuotaIcon" format="reference|string" />
+        <attr name="label" />
+    </declare-styleable>
+
+    <declare-styleable name="RoamingPackageAccessDashboardWidgetAttr">
+        <attr name="label" />
+        <attr name="icon" />
+        <attr name="content" />
+        <attr name="actionButtonLabel" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardWidgetPointAttr">
+        <attr name="total" format="integer" />
+        <attr name="expiring" format="integer" />
+        <attr name="expiredAt" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardPlanAttr">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="isShimmerOn" />
+        <attr name="iconImage" />
+        <attr name="buttonLabel" />
+        <attr name="label" />
+        <attr name="bottomLabel" />
+        <attr name="bottomCtaLabel" format="string" />
+        <attr name="bottomInformation" />
+        <attr name="bottomTitle" />
+        <attr name="hasWarning" format="boolean" />
+        <attr name="isBottomCtaDisable" format="boolean" />
+        <attr name="isBottomTitleDisable" />
+    </declare-styleable>
+
+    <declare-styleable name="StopPackageReasonItemAttr">
+        <attr name="label" />
+        <attr name="iconImage" />
+        <attr name="isActive" />
+    </declare-styleable>
+
+    <declare-styleable name="QuotaSummaryDashboardWidgetAttr">
+        <attr name="actionButtonLabel" />
+        <attr name="quotaSummaryStatusType" />
+        <attr name="statusLabel" format="string" />
+        <attr name="title" />
+        <attr name="separatorCount" format="integer" />
+        <attr name="customFlagIcon" format="string" />
+        <attr name="customFlagText" format="string" />
+        <attr name="customFlagBackgroundColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="QuotaSummaryGroupAttr">
+        <attr name="isDisabled" />
+        <attr name="lineQuantity" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="QuotaSummaryItemAttr">
+        <attr name="total" />
+        <attr name="remaining" />
+        <attr name="fupTotal" format="integer" />
+        <attr name="fupRemaining" format="integer" />
+        <attr name="quotaType" />
+        <attr name="fupLimitRule" format="enum">
+            <enum name="DAY" value="0" />
+            <enum name="WEEK" value="1" />
+            <enum name="MONTH" value="2" />
+            <enum name="NONE" value="3" />
+        </attr>
+        <attr name="hasUnlimited" />
+        <attr name="isUnlimited" />
+        <attr name="hasQuota" format="boolean" />
+        <attr name="hasAddButton" format="boolean" />
+        <attr name="lowQuotaPercent" format="float" />
+        <attr name="isIgnoreLowQuota" format="boolean" />
+        <attr name="isFup" format="boolean" />
+        <attr name="FupInformation" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="XlPassAccessDashboardWidgetAttr">
+        <attr name="label" />
+        <attr name="icon" />
+        <attr name="content" />
+        <attr name="actionButtonLabel" />
+    </declare-styleable>
+
+    <declare-styleable name="DashboardSummaryCardAttr">
+        <attr name="label" />
+        <attr name="icon" />
+        <attr name="actionButtonLabel" />
+        <attr name="information" />
+        <attr name="title" />
+        <attr name="cwaIconMode" />
+        <attr name="cwaCardMode" />
+        <attr name="fontSizeMode" format="enum">
+            <enum name="LARGE" value="0" />
+            <enum name="MEDIUM" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="QuotaDetailItemAttr">
+        <attr name="name" />
+        <attr name="quotaType" />
+        <attr name="information" />
+        <attr name="iconImage" />
+        <attr name="total" />
+        <attr name="remaining" />
+        <attr name="isUnlimited" format="boolean" />
+        <attr name="isFup" />
+        <attr name="fupText" format="string" />
+        <attr name="fupNote" format="string" />
+        <attr name="lowThreshold" format="float" />
+        <attr name="disableDetailItem" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfilePictureSettingAttr">
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+    </declare-styleable>
+    <declare-styleable name="QuotaBreakdownQuotaDetailWidgetAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="expiredAt" />
+        <attr name="remainingContractMonthStr" format="string" />
+        <attr name="remainingContractMonth" format="integer" />
+        <attr name="isRecurring" format="boolean" />
+        <attr name="quotaDetailType" format="enum">
+            <enum name="PACKAGE_CANCELLABLE" value="0" />
+            <enum name="PACKAGE_NON_CANCELLABLE" value="1" />
+            <enum name="EXPIRATION_UNLIMITED" value="2" />
+            <enum name="BOOSTER_RECURRING" value="3" />
+            <enum name="BOOSTER_ONE_TIME" value="4" />
+            <enum name="BASIC_PLAN_SWITCHABLE" value="5" />
+            <enum name="BASIC_PLAN_SWITCHED" value="6" />
+            <enum name="CONTRACT_PLAN" value="7" />
+            <enum name="ROAMING_ACTIVE" value="8" />
+            <enum name="ROAMING_INACTIVE" value="9" />
+            <enum name="GROUPED_BOOSTER_NON_CANCELLABLE" value="10" />
+            <enum name="GROUPED_BOOSTER_CANCELLABLE" value="11" />
+            <enum name="GROUPED_ADDON_NON_CANCELLABLE" value="12" />
+            <enum name="FTTH_UPGRADABLE" value="13" />
+            <enum name="FAMILY_PLAN_CANCELLABLE" value="14" />
+            <enum name="FAMILY_PLAN_NON_CANCELLABLE" value="15" />
+            <enum name="FAMILY_PLAN_MEMBER_DETAIL" value="16" />
+            <enum name="FAMILY_PLAN_UPGRADABLE" value="17" />
+            <enum name="FAMILY_PLAN_NON_UPGRADABLE" value="18" />
+            <enum name="FAMILY_PLAN_ADD_SLOT" value="19" />
+            <enum name="CUSTOM" value="20" />
+        </attr>
+        <attr name="topLeftTitle" format="string" />
+        <attr name="subtitle" />
+        <attr name="bottomStatusDescription" format="string" />
+        <attr name="bottomNoteDescription" format="string" />
+        <attr name="isCancellable" format="boolean" />
+        <attr name="hasBonus" format="boolean" />
+        <attr name="bonusIcon" format="reference|string" />
+        <attr name="imageSourceType" />
+        <attr name="bonusTitle" format="string" />
+        <attr name="bonusInformation" format="string" />
+        <attr name="bonusHasSeeDetail" format="boolean" />
+        <attr name="profileName" format="string" />
+        <attr name="profileId" format="string" />
+        <attr name="imageSource" />
+        <attr name="quotaDetailWidgetMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="PROFILE" value="1" />
+            <enum name="FAILED" value="2" />
+        </attr>
+        <attr name="slotFee" format="string" />
+        <attr name="disableDetailItem" />
+        <attr name="isValidateDateVisible" format="boolean" />
+        <attr name="disableCard" format="boolean" />
+        <attr name="primaryButtonSecondaryStyleText" format="string" />
+        <attr name="isTrashIconVisible" format="boolean" />
+        <attr name="isInformationHeader" format="boolean" />
+        <attr name="bottomLabelText" format="string" />
+        <attr name="bottomValueText" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="QuotaDetailWidgetRoamingQuotaSummaryAttr">
+        <attr name="isActive" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageBenefitItemAttr">
+        <attr name="name" />
+        <attr name="information" />
+        <attr name="msisdn" format="string" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="amount" />
+        <attr name="quotaType" />
+        <attr name="isUnlimited" />
+        <attr name="isShimmerOn" />
+        <attr name="isImageSize32" format="boolean" />
+        <attr name="labelCta" format="string" />
+        <attr name="bigLabelCta" format="string" />
+        <attr name="benefitMode" format="enum">
+            <enum name="WITHOUTCTA" value="0" />
+            <enum name="WITHCTA" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BannerCardBannerAttr">
+        <attr name="backgroundImage" />
+        <attr name="backgroundColorMode" />
+        <attr name="sizeMode" />
+        <attr name="category" />
+        <attr name="categoryColor" />
+        <attr name="title" />
+        <attr name="price" />
+        <attr name="originalPrice" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerCardDeviceAttr">
+        <attr name="backgroundImage" />
+        <attr name="backgroundColorMode" />
+        <attr name="category" />
+        <attr name="categoryColor" />
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageCardFamilyAttr">
+        <attr name="backgroundImage" />
+        <attr name="backgroundImageCardUrl" format="string" />
+        <attr name="sizeMode" />
+        <attr name="name" />
+        <attr name="description" />
+        <attr name="showLabelPromo" format="boolean" />
+        <attr name="label" />
+        <attr name="backgroundMode" format="enum">
+            <enum name="LIGHT" value="0" />
+            <enum name="DARK" value="1" />
+        </attr>
+        <attr name="rightImage" format="string" />
+        <attr name="showTopLabel" format="boolean" />
+        <attr name="rightBase64Icon" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="boxCardFamilyAttr">
+        <attr name="backgroundImage" />
+        <attr name="name" />
+        <attr name="imageItem" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BannerTireCardAttr">
+        <attr name="title" />
+        <attr name="description" />
+        <attr name="label" />
+        <attr name="tireMode" format="enum">
+            <enum name="CURRENT_LEVEL" value="0" />
+            <enum name="PASSED_LEVEL" value="1" />
+            <enum name="NOT_PASSED_LEVEL" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SmallMenuCard">
+        <attr name="title"/>
+        <attr name="backgroundImageCardUrl"/>
+        <attr name="backgroundMode"/>
+    </declare-styleable>
+
+    <declare-styleable name="CashbackTotalHeaderCardAttr">
+        <attr name="title" />
+        <attr name="amount" />
+        <attr name="datePeriod" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="CashbackActivationItemCard">
+        <attr name="title" />
+        <attr name="iconItem" format="string" />
+        <attr name="label" />
+        <attr name="amount" />
+        <attr name="isShowArrow" format="boolean" />
+        <attr name="isShowButtonLine" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="CashbackHistoryItemCard">
+        <attr name="label" />
+        <attr name="amount" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="information" />
+        <attr name="showButtonTitle" format="boolean" />
+        <attr name="buttonTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="BizOnSummaryCard">
+        <attr name="imageDrawable" format="reference" />
+        <attr name="information" />
+        <attr name="value" />
+        <attr name="cardType" format="enum">
+            <enum name="HEADER" value="0" />
+            <enum name="ITEM" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BizOnQuotaSummaryCard">
+        <attr name="title" />
+        <attr name="actionLabel" format="string" />
+        <attr name="dataValue" format="integer" />
+        <attr name="voiceValue" format="integer" />
+        <attr name="isDataUnlimited" format="boolean" />
+        <attr name="isVoiceUnlimited" format="boolean" />
+        <attr name="isBottomView" format="boolean" />
+        <attr name="labelTitleBottom" format="string" />
+        <attr name="labelDescBottom" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="ActiveMemberInfoCard">
+        <attr name="title" />
+        <attr name="imageDrawable" />
+        <attr name="value" />
+        <attr name="otherValue" format="string" />
+        <attr name="information" />
+        <attr name="otherInformation" format="string" />
+        <attr name="bottomInformation" />
+        <attr name="hasBottomInformation" />
+    </declare-styleable>
+
+    <declare-styleable name="QuotaChooserItem">
+        <attr name="label" />
+        <attr name="quotaValue" />
+    </declare-styleable>
+
+    <declare-styleable name="SetQuotaCard">
+        <attr name="profileId" />
+        <attr name="currentQuota" format="integer" />
+        <attr name="labelChooser" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BizOptimusAddMemberCardDetailQuota">
+        <attr name="label" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageCardOptionAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="information" />
+        <attr name="validity" />
+        <attr name="price" />
+        <attr name="originalPrice" />
+        <attr name="hasNextButton" format="boolean" />
+        <attr name="hasTextNextButton" format="boolean" />
+        <attr name="ribbonLabel" format="string" />
+        <attr name="isActive" />
+        <attr name="optionMode" format="enum">
+            <enum name="SINGLE" value="0" />
+            <enum name="MULTIPLE" value="1" />
+            <enum name="MULTIPLE_SMALL" value="2" />
+            <enum name="SELECT_SMALL" value="3" />
+        </attr>
+        <attr name="showZeroValue" format="boolean" />
+        <attr name="availability" format="enum">
+            <enum name="AVAILABLE" value="0" />
+            <enum name="RUNOUTSOON" value="1" />
+            <enum name="RUNOUT" value="2" />
+            <enum name="NONE" value="3" />
+        </attr>
+        <attr name="transactionStatus" format="enum">
+            <enum name="FAILED" value="0" />
+            <enum name="SUCCESS" value="1" />
+            <enum name="NONE" value="2" />
+        </attr>
+        <attr name="hasPromo" format="boolean" />
+        <attr name="isShimmerOn" />
+        <attr name="subtitle" />
+        <attr name="upperRightIcon" format="string" />
+        <attr name="isDisabled" />
+        <attr name="isLock" format="boolean" />
+        <attr name="optionTextSizeMode" format="enum">
+            <enum name="HUGE" value="0" />
+            <enum name="SMALL" value="1" />
+        </attr>
+        <attr name="bottomTitle" />
+        <attr name="bottomTitleColor" />
+        <attr name="tierLogo" format="string" />
+        <attr name="isForHistory" format="boolean" />
+        <attr name="isBackground" format="boolean" />
+        <attr name="colorBackground" format="string" />
+        <attr name="colorTextCard" format="string" />
+        <attr name="colorTextSubCard" format="string" />
+        <attr name="loyaltyRibbonTitle" format="string" />
+        <attr name="loyaltySmallIcon" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="useSmallTitle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionVoucherCardAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="expiredAt" />
+        <attr name="expiredLabel" format="string" />
+        <attr name="buttonLabel" />
+        <attr name="isDisabled" />
+        <attr name="dateString" />
+    </declare-styleable>
+
+    <declare-styleable name="VoucherInputAttr">
+        <attr name="voucherNumber" format="string" />
+        <attr name="splitNumber" format="integer" />
+        <attr name="isRedBorder" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyPlanMemberTypeCard">
+        <attr name="title" />
+        <attr name="errorMessage" />
+        <attr name="actionButtonLabel" />
+    </declare-styleable>
+
+    <declare-styleable name="StatusPaymentCardAttr">
+        <attr name="name" />
+        <attr name="priceString" />
+        <attr name="titleStatus" format="string" />
+        <attr name="hasRefresh" format="boolean" />
+        <attr name="hasTopView" format="boolean" />
+        <attr name="price" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageCardOptionSummarizeGroupAttr">
+        <attr name="date" />
+        <attr name="dateString" format="string" />
+        <attr name="customDateFormat" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyHistoryGroup">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="labelButton" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageCardDonationAttr">
+        <attr name="title" />
+        <attr name="amount" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationCardAttr">
+        <attr name="title" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="isRead" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="TabSwitchItemAttr">
+        <attr name="backgroundColorMode" />
+        <attr name="label" />
+        <attr name="isActive" />
+    </declare-styleable>
+
+    <declare-styleable name="TabSwitchAttr">
+        <attr name="backgroundColorMode" />
+        <attr name="firstLabel" format="string" />
+        <attr name="secondLabel" format="string" />
+        <attr name="thirdLabel" format="string" />
+        <attr name="fourthLabel" format="string" />
+        <attr name="normalColor" />
+        <attr name="selectedColor" />
+        <attr name="normalTextColor" />
+        <attr name="selectedTextColor" />
+        <attr name="isShimmerOn" />
+        <attr name="activeIndex" />
+    </declare-styleable>
+
+    <declare-styleable name="SegmentWidgetAttr">
+        <attr name="label" />
+        <attr name="hasViewAllButton" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageVariantBenefitItemAttr">
+        <attr name="iconImage" />
+        <attr name="name" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="PackageVariantArrearsItem">
+        <attr name="name" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+
+    <declare-styleable name="VariantPackageCardAttr">
+        <attr name="isShimmerOn" />
+        <attr name="showLoyaltyBottom" format="boolean" />
+        <attr name="loyaltyBottomIcon" format="string" />
+        <attr name="loyaltyBottomTitle" format="string" />
+        <attr name="price" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PackageVariantBenefitGroupAttr">
+        <attr name="name" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TopUpNominalOptionCardAttr">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="bottomFlag" format="string" />
+        <attr name="isActive" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="TopUpSubscriptionItemAttr">
+        <attr name="title" />
+        <attr name="imageSource" />
+        <attr name="isShimmerOn" />
+        <attr name="imageSourceType" />
+    </declare-styleable>
+
+    <declare-styleable name="TopUpHistoryItem">
+        <attr name="price" />
+        <attr name="priceString" />
+        <attr name="date" />
+        <attr name="hasLine" />
+        <attr name="hasReload" format="boolean" />
+        <attr name="detail" />
+    </declare-styleable>
+
+    <declare-styleable name="QuickMenuItemAttr">
+        <attr name="label" />
+        <attr name="iconImage" />
+        <attr name="isDisabled" />
+        <attr name="isRedDot" format="boolean" />
+        <attr name="isRemove" format="boolean" />
+        <attr name="isAdd" format="boolean" />
+        <attr name="isEmpty" format="boolean" />
+        <attr name="bubbleLabel" format="string" />
+        <attr name="isLock" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuPrioFlexCardItemAttr">
+        <attr name="label" />
+        <attr name="iconImage" />
+        <attr name="imageSourceType" />
+    </declare-styleable>
+
+    <declare-styleable name="TopUpPrioFlexCardAttr">
+        <attr name="title" />
+        <attr name="price" />
+        <attr name="buttonText" />
+        <attr name="titleButton" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MenuPrioFlexCardGroupAttr">
+        <attr name="labelGroup" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="QuickMenuGroupAttr">
+        <attr name="isDisabled" />
+        <attr name="enabledSingleDisabled" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FlatQuickMenuItemAttr">
+        <attr name="label" />
+        <attr name="iconImage" />
+        <attr name="isActive" />
+        <attr name="labelColor" format="color" />
+        <attr name="labelHexStringColor" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="FlatQuickMenuGroupAttr">
+        <attr name="activeIndex" />
+    </declare-styleable>
+
+    <declare-styleable name="TabMenuItemAttr">
+        <attr name="label" />
+        <attr name="isActive" />
+        <attr name="textColorActive" format="color" />
+        <attr name="textColorInactive" format="color" />
+        <attr name="activeMenuColor" format="color" />
+        <attr name="inactiveMenuColor" format="color" />
+        <attr name="android:paddingHorizontal" />
+        <attr name="android:paddingVertical" />
+        <attr name="iconCode" />
+    </declare-styleable>
+
+    <declare-styleable name="TabMenuGroupAttr">
+        <attr name="activeIndex" />
+        <attr name="textColorActive" />
+        <attr name="textColorInactive" />
+        <attr name="activeMenuColor" />
+        <attr name="layoutMode" format="enum">
+            <enum name="HORIZONTAL" value="0"/>
+            <enum name="VERTICAL" value="1"/>
+        </attr>
+        <attr name="inactiveMenuColor" />
+        <attr name="itemPaddingHorizontal" format="dimension" />
+        <attr name="itemPaddingVertical" format="dimension" />
+        <attr name="itemInactiveAlpha" format="float" />
+    </declare-styleable>
+
+    <declare-styleable name="ProfileSelectorAttr">
+        <attr name="name" />
+        <attr name="avatar" format="reference|string" />
+        <attr name="avatarBorderStartColor" />
+        <attr name="avatarBorderEndColor" />
+        <attr name="id" />
+        <attr name="textColor" />
+        <attr name="hasOnPress" format="boolean" />
+        <attr name="imageSourceType" />
+        <attr name="customValidity" />
+        <attr name="profileMode" format="enum">
+            <enum name="AVATAR" value="0" />
+            <enum name="INITIAL" value="1" />
+        </attr>
+        <attr name="subscriptionTypeText" />
+        <attr name="subscriptionTypeBgColor" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyMemberCardItem">
+        <attr name="name" />
+        <attr name="profileMode" />
+        <attr name="avatar" />
+        <attr name="id" />
+        <attr name="isRadioActive" format="boolean" />
+        <attr name="imageSourceType" />
+        <attr name="customValidity" />
+        <attr name="memberStatus" format="string" />
+        <attr name="cardModeFamily">
+            <enum name="PROFILE" value="0" />
+            <enum name="ADD" value="1" />
+            <enum name="REMOVE" value="2" />
+        </attr>
+        <attr name="cardListenerMode">
+            <enum name="CLICK" value="0" />
+            <enum name="RADIO" value="1" />
+            <enum name="CHECKBOX" value="2" />
+        </attr>
+        <attr name="isDisabled" />
+        <attr name="memberTitle" format="string" />
+        <attr name="validityMemberTitle" format="string" />
+        <attr name="addMemberButtonText" format="string" />
+        <attr name="endButtonViewColor" format="color" />
+        <attr name="memberStateColor" format="color" />
+        <attr name="hasCloseButton" format="boolean" />
+        <attr name="removeDisabledPress" format="boolean" />
+        <attr name="memberStatusTextColor" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyPlanInformationCard">
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="title" />
+        <attr name="quotaLimitText" format="string" />
+        <attr name="quotaUsedText" format="string" />
+        <attr name="buttonTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyPlanInformationConfirmCard">
+        <attr name="title" />
+        <attr name="titleBold" format="string" />
+        <attr name="subtitle" />
+        <attr name="buttonTitleAccept" format="string" />
+        <attr name="buttonLabelPrimary" />
+        <attr name="buttonTitleDecline" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyHeaderSummaryCard">
+        <attr name="title" />
+        <attr name="quotaValue" format="string" />
+        <attr name="description" />
+        <attr name="buttonDetailLabel" format="string" />
+        <attr name="isShimmerOn" />
+        <attr name="isDisableViewDetail" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SettingRow">
+        <attr name="title" />
+        <attr name="ribbonLabel"/>
+        <attr name="iconCode" />
+        <attr name="iconDrawable" />
+        <attr name="hasBottomLine" />
+        <attr name="redDotCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="ContactItemAttr">
+        <attr name="name" />
+        <attr name="msisdn" />
+        <attr name="isTheFirst" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyPlanOrganizerItem">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="buttonLabel" format="string" />
+        <attr name="quotaAccessPermissionLabel" format="string" />
+        <attr name="quotaAccessPermissionCheckInit" format="boolean" />
+        <attr name="quotaAccessNoLimit" format="string" />
+        <attr name="quotaAccessNoLimitCheckInit" format="boolean" />
+        <attr name="allocateQuota" format="string" />
+        <attr name="allocateQuotaInitialValue" format="integer" />
+        <attr name="allocateQuotaUnit" format="string" />
+        <attr name="allocateQuotaErrorMessage" format="string" />
+        <attr name="internetQuotaLimitLabel" format="string" />
+        <attr name="internetQuotaLimitMode" format="enum">
+            <enum name="ON" value="0" />
+            <enum name="OFF" value="0" />
+            <enum name="UNLIMITED" value="0" />
+        </attr>
+        <attr name="internetQuotaLimitValue" format="string" />
+        <attr name="isExpanded" format="boolean" />
+        <attr name="isDisabled" />
+        <attr name="isReservedMember" format="boolean" />
+    </declare-styleable>
+
+
+    <declare-styleable name="FamilyPlanBenefitInputCard">
+        <attr name="name" />
+        <attr name="msisdn" />
+        <attr name="saveLabel" format="string" />
+        <attr name="editLabel" format="string" />
+        <attr name="familyPlanBenefitInputCardMode" format="enum">
+            <enum name="FORM" value="0" />
+            <enum name="TOGGLE" value="1" />
+        </attr>
+        <attr name="isExpanded" />
+        <attr name="isDisabled" />
+    </declare-styleable>
+
+    <declare-styleable name="headerAccountVerificationAttr">
+        <attr name="title" />
+        <attr name="image" format="string" />
+        <attr name="name" />
+        <attr name="id" />
+    </declare-styleable>
+
+    <declare-styleable name="transactionSelectedItemCardAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="validity" />
+        <attr name="customValidity" format="string" />
+        <attr name="price" />
+        <attr name="originalPrice" />
+        <attr name="hasRemovedIcon" format="boolean" />
+        <attr name="isGoneWhenZeroPrice" format="boolean" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="transactionSuccessSummaryCardAttr">
+        <attr name="total" />
+        <attr name="point" />
+        <attr name="totalString" format="string" />
+        <attr name="transactionCode" format="string" />
+        <attr name="buttonTitle" format="string" />
+        <attr name="isPoint" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="addonCardAttr">
+        <attr name="title" />
+        <attr name="expRemain" format="string" />
+        <attr name="afterPrice" format="integer" />
+        <attr name="beforePrice" format="integer" />
+        <attr name="hasDetailButton" />
+        <attr name="iconImage" />
+        <attr name="subtitle" />
+    </declare-styleable>
+
+    <declare-styleable name="transactionSuccessPointGainedAttr">
+        <attr name="amount" />
+    </declare-styleable>
+
+    <declare-styleable name="packagePointGainedAttr">
+        <attr name="imageSourceType" />
+        <attr name="iconImage" />
+        <attr name="amount" />
+        <attr name="title" />
+        <attr name="isCentered" format="boolean" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="BonusItemCard">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="dateTime" />
+        <attr name="information" />
+        <attr name="hasNextButton" />
+        <attr name="hasTextNextButton" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="BonusCardProductItem">
+        <attr name="imageSource" />
+        <attr name="imageSwitchIcon" format="reference|string" />
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="BonusCardProductMode" format="enum">
+            <enum name="SWITCH" value="0" />
+            <enum name="RADIOBUTTON" value="1" />
+        </attr>
+        <attr name="isChecked" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TransactionSummaryRowAttr">
+        <attr name="point" />
+        <attr name="value" />
+        <attr name="amount" />
+        <attr name="label" />
+        <attr name="rowValueType">
+            <enum name="TOTAL" value="0" />
+            <enum name="ID" value="1" />
+            <enum name="DETAIL" value="2" />
+            <enum name="TOTAL_TRX" value="3" />
+        </attr>
+        <attr name="textColor" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactionSummaryBreakdownAttr">
+        <attr name="total" />
+        <attr name="detail" />
+        <attr name="label" />
+        <attr name="isHideDetail" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="footerMenuBottomNavigationAttr">
+        <attr name="badgeDashboard" format="integer" />
+        <attr name="badgeXlStore" format="integer" />
+        <attr name="badgeXlCare" format="integer" />
+        <attr name="badgeProfile" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TopUpContactFieldAttr">
+        <attr name="value" />
+    </declare-styleable>
+
+
+    <declare-styleable name="CustomImageViewAttr">
+        <attr name="imageSourceType" format="enum">
+            <enum name="ASSET" value="0" />
+            <enum name="URL" value="1" />
+            <enum name="DRAWABLE" value="2" />
+            <enum name="BASE64" value="3" />
+            <enum name="BITMAP" value="4" />
+        </attr>
+        <attr name="imageSource" />
+    </declare-styleable>
+
+    <declare-styleable name="OutlineTextField">
+        <attr name="text" />
+        <attr name="hint" />
+        <attr name="textHint" format="string" />
+        <attr name="helperText" format="string" />
+        <attr name="android:enabled" />
+        <attr name="android:inputType" />
+        <attr name="startIconDrawable" />
+        <attr name="startIconTint" />
+        <attr name="startIconCheckable" />
+        <attr name="endIconMode" />
+        <attr name="endIconDrawable" />
+        <attr name="endIconTint" />
+        <attr name="endIconCheckable" />
+        <attr name="isError" format="boolean" />
+        <attr name="isTextDisabled" format="boolean" />
+        <attr name="removeHelper" format="boolean" />
+        <attr name="endText" format="string" />
+        <attr name="rightText" format="string" />
+        <attr name="color" />
+        <attr name="blurColor" format="color" />
+        <attr name="boxWidth" format="integer" />
+        <attr name="boxColor" format="color" />
+        <attr name="fontColor" format="color" />
+        <attr name="isNoPadding" format="boolean" />
+        <attr name="isReadOnly" format="boolean" />
+        <attr name="maximalText" format="integer"/>
+        <attr name="showTextCounter" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="SocmedLinkCardAttr">
+        <attr name="name" />
+        <attr name="socmedType" format="enum">
+            <enum name="FACEBOOK" value="0" />
+            <enum name="GOOGLE" value="1" />
+        </attr>
+        <attr name="information" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyHistoryCardAttr">
+        <attr name="title" />
+        <attr name="dateTime" format="string" />
+        <attr name="point" format="integer" />
+        <attr name="validity" />
+        <attr name="hasPointIcon" format="boolean" />
+        <attr name="isPendingPoint" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyBonusCouponCard">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="label" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyMenuCardAttr">
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="name" />
+        <attr name="topName" format="string" />
+        <attr name="isShimmerOn" />
+        <attr name="hasRightArrow" />
+    </declare-styleable>
+
+    <declare-styleable name="LanguageOptionItemCardAttr">
+        <attr name="title" />
+        <attr name="imageSource" />
+        <attr name="isActive" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionItemCardAttr">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="isActive" />
+    </declare-styleable>
+
+    <declare-styleable name="AccountPickerItemAttr">
+        <attr name="name" />
+        <attr name="avatar" />
+        <attr name="avatarBorderStartColor" />
+        <attr name="avatarBorderEndColor" />
+        <attr name="id" />
+        <attr name="isActive" />
+        <attr name="imageSourceType" />
+        <attr name="subscriptionTypeText" />
+        <attr name="subscriptionTypeBgColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ConsentTickCard">
+        <attr name="title"/>
+        <attr name="isActive"/>
+        <attr name="imageSource"/>
+    </declare-styleable>
+
+    <declare-styleable name="AccountRemovalCardAttr">
+        <attr name="name" />
+        <attr name="avatar" />
+        <attr name="avatarBorderStartColor" />
+        <attr name="avatarBorderEndColor" />
+        <attr name="id" />
+        <attr name="imageSourceType" />
+        <attr name="subscriptionTypeText" />
+        <attr name="subscriptionTypeBgColor" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationCardSummarizeGroupAttr">
+        <attr name="date" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="SettingRowGroup">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="UserAccountInformationItem">
+        <attr name="title" />
+        <attr name="name" />
+        <attr name="isActive" />
+        <attr name="hasWarningLabel" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="UserAccountInformationGroupAttr">
+        <attr name="lineNumber" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LanguageOptionCardAttr">
+        <attr name="activeIndex" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionCardAttr">
+        <attr name="activeIndex" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyMemberCardItemAttr">
+        <attr name="activeIndex" />
+    </declare-styleable>
+
+    <declare-styleable name="UserProfileProgressAttr">
+        <attr name="title" />
+        <attr name="point" />
+        <attr name="progress" format="integer" />
+        <attr name="colorProgress" format="color" />
+        <attr name="progressIcon" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="TermsAndConditionLineAttr">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="TemplateCardDetailAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="imageSourceType" />
+        <attr name="information" />
+        <attr name="validity" />
+        <attr name="priceText" format="string" />
+        <attr name="originalPriceText" format="string" />
+        <attr name="hasNextButton" />
+        <attr name="isShimmerOn" />
+        <attr name="hasSeeDetail" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="RedeemableCardAttr">
+        <attr name="name" />
+        <attr name="iconImage" />
+        <attr name="imageSourceType" />
+        <attr name="information" />
+        <attr name="validity" />
+        <attr name="point" />
+        <attr name="originalPoint" format="integer" />
+        <attr name="hasNextButton" />
+        <attr name="userPoint" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="FaqItemAttr">
+        <attr name="question" format="string" />
+        <attr name="hasBottomLine" format="boolean" />
+        <attr name="isShimmerOn" />
+        <attr name="hasRightArrow" />
+    </declare-styleable>
+
+    <declare-styleable name="NetworkCardAttr">
+        <attr name="iconCode" />
+        <attr name="name" />
+        <attr name="hasLookHere" format="boolean" />
+        <attr name="isActive" />
+    </declare-styleable>
+
+    <declare-styleable name="MissionCard">
+        <attr name="title" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="isDisabled" />
+        <attr name="hasRightArrow" />
+        <attr name="customValidity" />
+        <attr name="missionProgressLabel" format="string" />
+        <attr name="hasProgressFlag" format="boolean" />
+        <attr name="hasRedDot" />
+    </declare-styleable>
+
+    <declare-styleable name="MissionListItemCard">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="isDisabled" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="missionStatus" format="enum">
+            <enum name="NONE" value="0" />
+            <enum name="CHECKED" value="1" />
+            <enum name="FAILED" value="2" />
+            <enum name="MISSION" value="3" />
+            <enum name="CUSTOM" value="4" />
+            <enum name="EGG_MISSION" value="5" />
+            <enum name="EGG_CHECKED" value="6" />
+        </attr>
+        <attr name="buttonTitle" />
+        <attr name="imageIcon" format="reference|string" />
+    </declare-styleable>
+
+    <declare-styleable name="MissionSuccessDialog">
+        <attr name="title" />
+        <attr name="description" />
+        <attr name="hasBackground" format="boolean" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="actionButtonLabel" />
+        <attr name="secondButtonLabel" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="MissionListCards">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="InformationView">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="TapeLabelView">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="NominalCalculator">
+        <attr name="nominal" format="integer" />
+        <attr name="minNominal" format="integer" />
+        <attr name="maxNominal" format="integer" />
+        <attr name="leap" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactionHistoryCardAttr">
+        <attr name="name" />
+        <attr name="dateTime" />
+        <attr name="dateTimeString" format="string" />
+        <attr name="originalPrice" />
+        <attr name="originalPriceString" format="string" />
+        <attr name="priceString" format="string" />
+        <attr name="price" />
+        <attr name="hasNextButton" />
+        <attr name="transactionDate" format="enum">
+            <enum name="DATETIME" value="0" />
+            <enum name="DATE" value="1" />
+        </attr>
+        <attr name="isForHistory" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+    </declare-styleable>
+
+
+    <declare-styleable name="TransactionHistoryItemAttr">
+        <attr name="name" />
+        <attr name="dateTime" />
+        <attr name="dateTimeString" />
+        <attr name="originalPrice" />
+        <attr name="originalPriceString" />
+        <attr name="priceString" />
+        <attr name="price" />
+        <attr name="hasNextButton" />
+        <attr name="transactionDate" />
+        <attr name="hasLine" format="boolean" />
+        <attr name="transactionIcon" format="reference|string" />
+        <attr name="imageSourceType" />
+        <attr name="transactionHistoryType" format="enum">
+            <enum name="DATA" value="0" />
+            <enum name="TEXT" value="1" />
+            <enum name="VOICE" value="2" />
+            <enum name="BILL" value="3" />
+            <enum name="BOOSTER" value="4" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="TransactionHistoryDetailFooter">
+        <attr name="text" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+    </declare-styleable>
+
+    <declare-styleable name="PendingPaymentCardAttr">
+        <attr name="topLabel" format="string" />
+        <attr name="bottomLabel" format="string" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="iconCode" />
+        <attr name="hasArrow" />
+    </declare-styleable>
+
+    <declare-styleable name="StoreCardBannerAttr">
+        <attr name="backgroundImage" />
+        <attr name="backgroundImageBase" format="string" />
+        <attr name="backgroundColorMode" />
+        <attr name="sizeModeCard" format="enum">
+            <enum name="LARGE" value="0" />
+            <enum name="LARGE_LONG" value="1" />
+            <enum name="SMALL" value="2" />
+            <enum name="SQUARE" value="3" />
+            <enum name="RECTANGLE" value="4" />
+            <enum name="WITH_RIBBON" value="5" />
+            <enum name="SMALL_LONG" value="6" />
+        </attr>
+        <attr name="category" />
+        <attr name="categoryColor" />
+        <attr name="title" />
+        <attr name="price" />
+        <attr name="originalPrice" />
+        <attr name="hasRedDot" format="boolean" />
+        <attr name="iconImage" />
+        <attr name="validity" />
+        <attr name="ribbonLabel" />
+        <attr name="subtitle" />
+        <attr name="isBackground" />
+        <attr name="colorBackground" />
+        <attr name="colorTextCard" />
+        <attr name="colorTextSubCard" />
+    </declare-styleable>
+
+    <declare-styleable name="StoreCardWidgetAttr">
+        <attr name="label" />
+        <attr name="hasSeeAll" format="boolean" />
+        <attr name="isSnap" format="boolean" />
+        <attr name="hasLines" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="FunCardWidget">
+        <attr name="label" />
+        <attr name="title"/>
+        <attr name="subtitle"/>
+        <attr name="buttonTitle"/>
+        <attr name="isSnap"  />
+        <attr name="hasLines" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringStoreCardWidget">
+        <attr name="sizeModeCard" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringPackageFamilyItem">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringTransactionPaymentMethodOptionCardGroup">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringQuotaBreakdownQuotaDetailGroup">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringVariantPackageCardItem">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="TabMenuItemShimmering">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringNotificationCardItem">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="ShimmeringNotificationDateItem">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="NotificationTabItemShimmering">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="WelcomeHeaderToolbarShimmering">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="OutlineTextFieldTopupShimmering">
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="BonusCardAttr">
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="hasSeeDetail" />
+    </declare-styleable>
+
+    <declare-styleable name="FaqFloatingCardItem">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="FaqPackageItem">
+        <attr name="iconDrawable" />
+        <attr name="title" />
+        <attr name="description" />
+    </declare-styleable>
+
+    <declare-styleable name="FeatureItem">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="textColor" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingSummaryCard">
+        <attr name="periodInformation" format="string" />
+        <attr name="price" />
+        <attr name="priceString" />
+        <attr name="status" format="enum">
+            <enum name="PAID" value="0" />
+            <enum name="UNPAID" value="1" />
+            <enum name="ARREARS" value="2" />
+            <enum name="PAIDINPART" value="3" />
+        </attr>
+        <attr name="date" />
+        <attr name="dateTimeString" />
+        <attr name="subscriptionType" format="string" />
+        <attr name="information" />
+        <attr name="hasBottomInformation" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyPendingCard">
+        <attr name="title" />
+        <attr name="information" />
+    </declare-styleable>
+
+    <declare-styleable name="MissionHistoryCard">
+        <attr name="title" />
+        <attr name="unRedeemCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingPaidItem">
+        <attr name="title" />
+        <attr name="dateTime" />
+        <attr name="dateTimeString" />
+        <attr name="price" />
+        <attr name="priceString" />
+        <attr name="hasLine" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingEstimationItem">
+        <attr name="title" />
+        <attr name="description" />
+        <attr name="dateTime" />
+        <attr name="dateTimeString" />
+        <attr name="price" />
+        <attr name="priceString" />
+        <attr name="hasLine" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingEstimationItemGroup">
+        <attr name="title" />
+        <attr name="buttonLabel" />
+        <attr name="price" />
+        <attr name="priceString" />
+        <attr name="hasLine" />
+    </declare-styleable>
+
+    <declare-styleable name="DompetPaymentGroupAttr">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingItem">
+        <attr name="dueDate" format="integer" />
+        <attr name="dueDateString" format="string" />
+        <attr name="monthOfYear" format="string" />
+        <attr name="billPrice" format="string" />
+        <attr name="billPriceString" format="integer" />
+        <attr name="billStatus" format="enum">
+            <enum name="CLOSED" value="0" />
+            <enum name="OPEN" value="1" />
+            <enum name="ARREARS" value="2" />
+            <enum name="PARTIALLY_PAID" value="3" />
+        </attr>
+        <attr name="debtPrice" format="integer" />
+        <attr name="debtPriceString" format="string" />
+        <attr name="hasLine" />
+        <attr name="minimalView" />
+        <attr name="subtitle" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemDownloadCard">
+        <attr name="title" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="enableCard" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemPaymentCardItem">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="titleTotal" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingInformation">
+        <attr name="title" />
+        <attr name="dueDate" />
+        <attr name="price" />
+        <attr name="priceString" />
+    </declare-styleable>
+
+    <declare-styleable name="RoamingInformationItemRow">
+        <attr name="title" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+    </declare-styleable>
+
+    <declare-styleable name="RoamingInformationListItemCard">
+        <attr name="title" />
+        <attr name="primaryButtonLabel" format="string" />
+        <attr name="secondaryButtonLabel" format="string" />
+        <attr name="isPrimaryButtonEnabled" format="boolean" />
+        <attr name="isSecondaryButtonEnabled" format="boolean" />
+    </declare-styleable>
+
+    <!-- RoamingItem -->
+
+    <declare-styleable name="roamingItemAttr">
+        <attr name="title" />
+        <attr name="priceString" />
+        <attr name="detail" />
+        <attr name="imageSource" />
+    </declare-styleable>
+
+
+    <declare-styleable name="roamingFilterAttr">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="hasBorderTop" format="boolean" />
+        <attr name="hasBorderBottom" format="boolean" />
+        <attr name="isChecked" />
+    </declare-styleable>
+
+    <declare-styleable name="RoamingInformationCountryNetworkCard">
+        <attr name="title" />
+        <attr name="country" format="string" />
+        <attr name="countryValue" format="string" />
+        <attr name="network" format="string" />
+        <attr name="networkValue" format="string" />
+        <attr name="errorNetwork" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="RoamingActivateToggleCardAttr">
+        <attr name="isChecked" format="boolean" />
+        <attr name="isAuto" format="boolean" />
+        <attr name="imageSource" />
+    </declare-styleable>
+
+    <declare-styleable name="TransactionHistoryEmptyCard">
+        <attr name="title" />
+        <attr name="description" />
+    </declare-styleable>
+
+    <declare-styleable name="RoamingServiceStatusCard">
+        <attr name="title" />
+        <attr name="description" />
+        <attr name="isButtonVisible" format="boolean" />
+        <attr name="roamingStatus" format="enum">
+            <enum name="ACTIVE" value="0" />
+            <enum name="INACTIVE" value="1" />
+        </attr>
+
+        <attr name="minimalView" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="PopUpInformationCard">
+        <attr name="isBackgroundWhite" format="boolean" />
+        <attr name="shadowWidth" format="dimension" />
+        <attr name="title" />
+        <attr name="description" />
+        <attr name="buttonTitle" />
+        <attr name="imageSource" />
+        <attr name="isShimmerOn" />
+        <attr name="titleTextColor" />
+    </declare-styleable>
+
+    <declare-styleable name="SuspendInformationCard">
+        <attr name="title" />
+        <attr name="description" />
+    </declare-styleable>
+
+    <declare-styleable name="InactiveAccountDashboardWidget">
+        <attr name="title" />
+        <attr name="buttonTitle" />
+        <attr name="label" />
+    </declare-styleable>
+
+    <declare-styleable name="PromoVoucherCard">
+        <attr name="code" format="string" />
+        <attr name="label" />
+        <attr name="buttonTitle" />
+        <attr name="bottomCode" format="string" />
+        <attr name="bottomLabel" />
+        <attr name="bottomButtonTitle" format="string" />
+        <attr name="hasBottomView" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="BizonCashbackListItem">
+        <attr name="titleOne" format="string"/>
+        <attr name="titleTwo" format="string"/>
+        <attr name="titleThree" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="BizonCashbackListTierItem">
+        <attr name="casbackName" format="string"/>
+        <attr name="bizonCashbackImg" format="string"/>
+        <attr name="casbackInformation" format="string"/>
+        <attr name="casbackPrice" format="integer"/>
+    </declare-styleable>
+
+    <declare-styleable name="ActivePlanListItem">
+        <attr name="iconImage" />
+        <attr name="title" />
+        <attr name="information" />
+    </declare-styleable>
+
+    <declare-styleable name="ActivePlanListItemWidgetCard">
+        <attr name="iconImage" />
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="quotaInformation" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BonusAreaBenefitWidgetCard">
+        <attr name="name" />
+        <attr name="information" />
+        <attr name="iconImage" />
+        <attr name="amount" />
+        <attr name="quotaType" />
+        <attr name="isUnlimited" />
+        <attr name="isShimmerOn" />
+    </declare-styleable>
+
+    <declare-styleable name="BoosterSubscriptionToggleCard">
+        <attr name="isChecked" />
+        <attr name="imageSource" />
+        <attr name="title" />
+        <attr name="description" />
+    </declare-styleable>
+
+    <declare-styleable name="ContactDetailInformation">
+        <attr name="title" />
+        <attr name="name" />
+        <attr name="information" />
+        <attr name="cardBackgroundColor" />
+    </declare-styleable>
+
+    <declare-styleable name="SharingItemOptionCard">
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="ColumnItem">
+        <attr name="title" />
+        <attr name="isHeader" format="boolean" />
+        <attr name="backgroundColor" />
+    </declare-styleable>
+
+    <declare-styleable name="ColumnRow">
+        <attr name="firstColumnLabel" format="string" />
+        <attr name="secondColumnLabel" format="string" />
+        <attr name="thirdColumnLabel" format="string" />
+        <attr name="isHeader" />
+        <attr name="backgroundColor" />
+    </declare-styleable>
+
+    <declare-styleable name="RewardInformationCard">
+        <attr name="label" />
+        <attr name="title" />
+        <attr name="buttonTitle" />
+        <attr name="imageSource" />
+    </declare-styleable>
+
+    <declare-styleable name="BillingDeliveryMethodCard">
+        <attr name="label" />
+        <attr name="buttonTitle" />
+        <attr name="type" format="enum">
+            <enum name="EMAIL" value="0" />
+            <enum name="POST" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="SpendLimitCategoryCard">
+        <attr name="iconImage" />
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="hasRightArrow" />
+        <attr name="isDisabled" />
+        <attr name="iconDisabled" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SetLimitFamilyCard">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="isLimitError" format="boolean" />
+        <attr name="limit" format="string" />
+        <attr name="quotaTitle" format="string" />
+        <attr name="isChecked" />
+        <attr name="termsTitle" format="string" />
+        <attr name="buttonTitle" />
+        <attr name="textHint" />
+    </declare-styleable>
+
+    <declare-styleable name="RewardMissionCard">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="buttonTitle" />
+        <attr name="hasRightArrow" />
+        <attr name="rewardStatus" format="enum">
+            <enum name="ENABLE" value="0" />
+            <enum name="HAS_REDEEM" value="1" />
+            <enum name="DISABLE" value="2" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="BenefitInfoItem">
+        <attr name="imageTitle" format="string" />
+        <attr name="title" />
+        <attr name="subtitleLeft" format="string" />
+        <attr name="subtitleRight" format="string" />
+        <attr name="imageSubtitle" format="string" />
+        <attr name="description" />
+    </declare-styleable>
+
+    <declare-styleable name="CalculationNewPlanCard">
+        <attr name="titleRefunded" format="string" />
+        <attr name="refundedAmount" format="string" />
+        <attr name="titleBalance" format="string" />
+        <attr name="balanceAmount" format="string" />
+        <attr name="titleTotalBalance" format="string" />
+        <attr name="totalBalance" format="string" />
+        <attr name="informationTitle" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="BenefitComparisonCard">
+        <attr name="currentBenefitImage" format="string" />
+        <attr name="currentBenefitName" format="string" />
+        <attr name="currentBenefitInformation" format="string" />
+        <attr name="currentBenefitUnlimitedStatus" format="boolean" />
+        <attr name="currentBenefitQuotaType" format="enum">
+            <enum name="DATA" value="0" />
+            <enum name="TEXT" value="1" />
+            <enum name="VOICE" value="2" />
+            <enum name="FAMILY_SLOT" value="3" />
+            <enum name="CUSTOM" value="4" />
+        </attr>
+        <attr name="currentBenefitRemaining" format="integer" />
+        <attr name="currentBenefitTotal" format="integer" />
+        <attr name="newBenefitImage" format="string" />
+        <attr name="newBenefitName" format="string" />
+        <attr name="newBenefitInformation" format="string" />
+        <attr name="newBenefitUnlimitedStatus" format="boolean" />
+        <attr name="newBenefitQuotaType" format="enum">
+            <enum name="DATA" value="0" />
+            <enum name="TEXT" value="1" />
+            <enum name="VOICE" value="2" />
+            <enum name="FAMILY_SLOT" value="3" />
+            <enum name="CUSTOM" value="4" />
+        </attr>
+        <attr name="newBenefitRemaining" format="integer" />
+        <attr name="newBenefitTotal" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="BenefitComparisonFullCard">
+        <attr name="imageTitle" />
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="benefitPrice" format="string" />
+        <attr name="proRatePrice" format="string" />
+        <attr name="description" />
+        <attr name="isSingleCard" format="boolean" />
+        <attr name="isImportantSubTitle" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LottieAnimation">
+        <attr name="fileName" format="string" />
+        <attr name="fileNameUrl" format="string" />
+        <attr name="hasArrowLeftButton" format="boolean" />
+        <attr name="hasArrowRightButton" format="boolean" />
+        <attr name="hasTitle" format="boolean" />
+        <attr name="title" />
+        <attr name="autoPlay" format="boolean" />
+        <attr name="repeatCount" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="LockBalanceItem">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="hasBottomLine" />
+        <attr name="isChecked" />
+    </declare-styleable>
+
+
+    <declare-styleable name="SecondaryButton">
+        <attr name="title" />
+        <attr name="isDisabled" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyLevelIndicatorCard">
+        <attr name="loyaltyLevelInformationViewStatus" format="enum">
+            <enum name="WARNING" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="NONE" value="2" />
+        </attr>
+        <attr name="loyaltyBigIcon" format="string" />
+        <attr name="loyaltySmallIcon" format="string" />
+        <attr name="loyaltyLevelTitle" format="string" />
+        <attr name="statusLabel" />
+        <attr name="flagStatus" format="enum">
+            <enum name="LOCK" value="0" />
+            <enum name="NORMAL" value="1" />
+            <enum name="NONE" value="2" />
+        </attr>
+        <attr name="startColor" format="string" />
+        <attr name="endColor" format="string" />
+        <attr name="information" />
+        <attr name="price" />
+        <attr name="hasBottomView" />
+        <attr name="actionButtonLabel" />
+        <attr name="warningTitle" format="string" />
+        <attr name="minSpending" format="integer" />
+        <attr name="maxSpending" format="integer" />
+        <attr name="currentSpending" format="integer" />
+        <attr name="isDashboard" format="boolean" />
+        <attr name="loyaltyTitle" format="string" />
+        <attr name="statusPrice" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyEmptyState">
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="text" />
+    </declare-styleable>
+
+
+    <declare-styleable name="LoyaltyTierStatusItem">
+        <attr name="label" />
+        <attr name="iconCode" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+        <attr name="isGradientVerticle" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyTableItem">
+        <attr name="title" />
+        <attr name="information" />
+        <attr name="iconCode" />
+        <attr name="startColor" />
+        <attr name="endColor" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyTableCard">
+        <attr name="title" />
+        <attr name="hasRightArrow" />
+    </declare-styleable>
+
+    <declare-styleable name="LoyaltyTableCardGroup">
+        <attr name="title" />
+    </declare-styleable>
+
+    <declare-styleable name="TroubleshootIDetailItem">
+        <attr name="leftText" format="string" />
+        <attr name="rightText" />
+    </declare-styleable>
+
+    <declare-styleable name="TroubleshootIDetailItemInformationCard">
+        <attr name="topTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="DompetPaymentWidgetAttr">
+        <attr name="imageSource" />
+        <attr name="imageSourceType" />
+        <attr name="imageSourceIcon" format="reference|string" />
+        <attr name="imageSourceTypeIcon" format="enum">
+            <enum name="ASSET" value="0" />
+            <enum name="URL" value="1" />
+            <enum name="DRAWABLE" value="2" />
+            <enum name="BASE64" value="3" />
+            <enum name="BITMAP" value="4" />
+        </attr>
+        <attr name="ribbonLabel" />
+        <attr name="buttonLabelPrimary" format="string"/>
+        <attr name="buttonLabelSecondary" format="string"/>
+        <attr name="ribbonLabelNew" format="string" />
+        <attr name="widgetStyle" format="enum">
+            <enum name="FULL" value="0" />
+            <enum name="COMPACT" value="1" />
+            <enum name="MINIMALIS" value="2" />
+        </attr>
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="isErrorSubTitle" format="boolean" />
+        <attr name="warningTitle"/>
+    </declare-styleable>
+
+    <declare-styleable name="DompetAccountSettingCardAttr">
+        <attr name="title" />
+        <attr name="topSubtitle" format="string" />
+        <attr name="bottomSubtitle" format="string" />
+        <attr name="imageSourceType" />
+        <attr name="imageSource" />
+        <attr name="setPrimaryButtonText" format="string" />
+        <attr name="setSecondaryButtonText" format="string" />
+        <attr name="setSecondaryButtonFullText" format="string" />
+        <attr name="warningTitle"/>
+    </declare-styleable>
+
+    <declare-styleable name="ModemProfilCardAttr">
+        <attr name="label" />
+        <attr name="title" />
+        <attr name="ssidName" format="string" />
+        <attr name="isModemActive" />
+        <attr name="warningTitle" />
+    </declare-styleable>
+
+    <declare-styleable name="ModemConnectedDeviceInfoAttr">
+        <attr name="label" />
+        <attr name="connectedDeviceCount" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="QuotaOptionItem">
+        <attr name="quotaOptionValue" format="string" />
+        <attr name="isReversibleSelection" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="HeaderColorsCard">
+        <attr name="title" />
+        <attr name="backgroundColor" />
+        <attr name="loyaltyIcon" format="string" />
+        <attr name="loyaltyLevelTitle" />
+        <attr name="headerColorCardMode" format="enum">
+            <enum name="DASHBOARD_MESSAGE" value="0" />
+            <enum name="LOYALTI_TIERING" value="1" />
+        </attr>
+        <attr name="backgroundHeaderColorCardMode" format="enum">
+            <enum name="SOLID" value="0" />
+            <enum name="GRADIENT" value="1" />
+        </attr>
+        <attr name="startBackgroundColorHeader" format="string" />
+        <attr name="endBackgroundColorHeader" format="string" />
+        <attr name="information" />
+        <attr name="price" />
+        <attr name="minSpending" />
+        <attr name="maxSpending" />
+        <attr name="currentSpending" />
+    </declare-styleable>
+
+    <declare-styleable name="ConditionalCheckBoxAttr">
+        <attr name="setCondition" format="boolean"/>
+        <attr name="setConditionText" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="ModemDeviceErrorWidget">
+        <attr name="label"/>
+        <attr name="information"/>
+        <attr name="bottomCtaLabel"/>
+        <attr name="rightIcon"/>
+        <attr name="cardMode" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="SMALL" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="InfoMessage">
+        <attr name="label" />
+        <attr name="textColor" />
+        <attr name="backgroundColor" />
+    </declare-styleable>
+
+    <declare-styleable name="HybridSubsDashboardWidget">
+
+    </declare-styleable>
+
+    <!-- Other values-->
+    <attr name="colorAccentDark" format="reference" />
+    <attr name="balanceIcon" format="reference" />
+    <attr name="prioFlexBalanceIcon" format="reference" />
+    <attr name="pointIcon" format="reference" />
+    <attr name="packageIcon" format="reference" />
+    <attr name="colorBackgroundPrimary" format="reference" />
+    <attr name="colorBackgroundLight" format="reference" />
+    <attr name="contextItemTitleColor" format="reference" />
+    <attr name="loadingIcon" format="reference" />
+    <attr name="successIcon" format="reference" />
+    <attr name="errorIcon" format="reference" />
+    <attr name="searchIcon" format="reference" />
+    <attr name="myPointIcon" format="reference" />
+    <attr name="addIcon" format="reference" />
+    <attr name="warningIcon" format="reference" />
+    <attr name="talkIcon" format="reference" />
+    <attr name="timesUp" format="reference" />
+    <attr name="patternImage" format="reference" />
+    <attr name="topUpImage" format="reference" />
+    <attr name="quotaWidgetColor" format="reference" />
+    <attr name="quotaWidgetImage" format="reference" />
+    <attr name="addOnPrepaid" format="reference" />
+    <attr name="pointLoyaltyImage" format="reference" />
+    <attr name="arrowRightIcon" format="reference" />
+    <attr name="arrowRightCustomIcon" format="reference" />
+    <attr name="billInfoIcon" format="reference" />
+    <attr name="billInfoValueColor" format="reference" />
+    <attr name="handWithPhone" format="reference" />
+    <attr name="globeIcon" format="reference" />
+    <attr name="welcomeHeaderBottomTitleColor" format="reference" />
+    <attr name="questionIcon" format="reference" />
+    <attr name="prioFlexFeatureTopUpIcon" format="reference" />
+    <attr name="prioFlexFeatureBoosterIcon" format="reference" />
+    <attr name="prioFlexFeaturePayBillsIcon" format="reference" />
+    <attr name="recurringBoosterIcon" format="reference" />
+    <attr name="roamingActiveIcon" format="reference" />
+    <attr name="roamingNonActiveIcon" format="reference" />
+    <attr name="backgroundQuickLink" format="reference"/>
+
+    <attr name="creditCardCcvIcon" format="reference" />
+    <attr name="creditCardExpIcon" format="reference" />
+
+    <attr name="checkboxBackground" format="reference" />
+    <attr name="checkboxBackgroundChecked" format="reference" />
+    <attr name="checkboxDarkBackground" format="reference" />
+    <attr name="checkboxDarkBackgroundChecked" format="reference" />
+    <attr name="checkboxIcon" format="reference" />
+
+    <attr name="emptyPlusIcon" format="reference" />
+
+    <attr name="nextIcon" format="reference" />
+
+    <attr name="changeToCreditCardIcon" format="reference" />
+    <attr name="successNewIcon" format="reference" />
+    <attr name="unsuccessfulNewIcon" format="reference" />
+
+    <attr name="popUpInfoBackgroundColor" format="reference" />
+
+    <attr name="tickIcon" format="reference" />
+    <attr name="iconHajj" format="reference" />
+    <attr name="tentangXLPassIcon" format="reference" />
+    <attr name="iconAboutBaseRate" format="reference" />
+    <attr name="axisAccountIcon" format="reference" />
+    <attr name="addAccountSuccessIcon" format="reference" />
+    <attr name="inActiveAccountIcon" format="reference" />
+    <attr name="accountIsUsedIcon" format="reference" />
+    <attr name="cancelNewPasswordIcon" format="reference" />
+    <attr name="shareIcon" format="reference" />
+    <attr name="limitForgetPasswordIcon" format="reference" />
+    <attr name="limitChangePasswordIcon" format="reference" />
+    <attr name="limitOtpIcon" format="reference" />
+    <attr name="billingEstimationIcon" format="reference" />
+    <attr name="deactivateBiometricIcon" format="reference" />
+    <attr name="iconFamyliPlanHeader" format="reference" />
+    <attr name="iconFamilyPlanInfo" format="reference" />
+    <attr name="deactivateBiometricSuccessIcon" format="reference" />
+    <attr name="deactivateBiometricConfirmationIcon" format="reference" />
+    <attr name="changeBirthdayConfirmationIcon" format="reference" />
+    <attr name="iconAdjustSpendLimit" format="reference" />
+    <attr name="changeBirthdaySuccessIcon" format="reference" />
+    <attr name="confirmationIcon" format="reference" />
+    <attr name="confirmationIcon2" format="reference" />
+    <attr name="depositNotEnoughIcon" format="reference" />
+    <attr name="depositSuccessIcon" format="reference" />
+    <attr name="emailSuccessfulChangeIcon" format="reference" />
+    <attr name="failedAutoLoginIcon" format="reference" />
+    <attr name="eraseAccountIcon" format="reference" />
+    <attr name="passwordLimitEntryIcon" format="reference" />
+    <attr name="passwordCreatedIcon" format="reference" />
+    <attr name="passwordChangeSuccessIcon" format="reference" />
+    <attr name="pukCodeIcon" format="reference" />
+    <attr name="goPayConfirmationIcon" format="reference" />
+    <attr name="logOutIcon" format="reference" />
+    <attr name="tryAgainIcon" format="reference" />
+    <attr name="unregisteredNumberIcon" format="reference" />
+    <attr name="numberHasAddedIcon" format="reference" />
+    <attr name="nonActivatePasswordIcon" format="reference" />
+    <attr name="notEnoughCreditIcon" format="reference" />
+    <attr name="emptyNotificationIcon" format="reference" />
+    <attr name="paymentFailedIcon" format="reference" />
+    <attr name="paymentHistoryEmptyIcon" format="reference" />
+    <attr name="redemptionEntryIcon" format="reference" />
+    <attr name="roamingEmptyIcon" format="reference" />
+    <attr name="roamingIconNew" format="reference" />
+    <attr name="searchIconNew" format="reference" />
+    <attr name="searchNoResultIcon" format="reference" />
+    <attr name="secureAccountIcon" format="reference" />
+    <attr name="unSubPackIcon" format="reference" />
+    <attr name="unsuccessfulIconNew" format="reference" />
+    <attr name="waitingIconNew" format="reference" />
+    <attr name="welcomeRoamingIconNew" format="reference" />
+    <attr name="xlCenterEmptyIcon" format="reference" />
+
+    <attr name="iconAddPoint" format="reference" />
+    <attr name="iconRoamingActive" format="reference" />
+    <attr name="iconRoamingNonActive" format="reference" />
+    <attr name="iconEmptyTrasaction" format="reference" />
+    <attr name="iconAboutTarif" format="reference" />
+
+    <attr name="foreverLoginIcon" format="reference" />
+    <attr name="surveyIcon" format="reference" />
+    <attr name="emptyPackageIcon" format="reference" />
+
+    <attr name="emptyPackagePngIcon" format="reference" />
+
+    <attr name="emptyInboxIconNew" format="reference" />
+    <attr name="emptyStoreIconNew" format="reference" />
+
+    <attr name="cashMethodIconNew" format="reference" />
+    <attr name="customBackgroundTabColor" format="reference" />
+    <attr name="roamingDeactivateIcon" format="reference" />
+    <attr name="helloHandIcon" format="reference" />
+
+    <attr name="pointAndPlayNew" format="reference" />
+    <attr name="inActiveFeatureIcon" format="reference" />
+    <attr name="topUpPulsaNewIcon" format="reference" />
+
+    <attr name="changePlanNewIcon" format="reference" />
+
+    <attr name="promoTapeBackground" format="reference" />
+    <attr name="inactiveNumberIcon" format="reference" />
+
+    <attr name="contextualImageDefault" format="reference" />
+    <attr name="contextualImageXLCare" format="reference" />
+
+    <attr name="mainDashboardBackground" format="reference" />
+    <attr name="icChecked" format="reference" />
+    <attr name="icCheckedSquare" format="reference" />
+
+    <attr name="redeemableProductEmptyLoyaltyIcon" format="reference" />
+
+    <attr name="bizOnLevelOne" format="reference" />
+    <attr name="bizOnLevelTwo" format="reference" />
+    <attr name="bizOnLevelThree" format="reference" />
+    <attr name="bizOnLevelFour" format="reference" />
+
+    <attr name="pinLockShareIcon" format="reference" />
+    <attr name="icConfirmationCancelPin" format="reference" />
+    <attr name="icMaximumForgetPin" format="reference" />
+    <attr name="icMaximumVerificationPin" format="reference" />
+    <attr name="icMaximumInputPin" format="reference" />
+    <attr name="icSuccessCreatePin" format="reference" />
+    <attr name="icSuccessUpdatePin" format="reference" />
+
+    <attr name="icErrorCantAccessPage" format="reference" />
+    <attr name="icDefaultTransaction" format="reference" />
+    <attr name="icDefaultData" format="reference" />
+    <attr name="icDefaultPhone" format="reference" />
+    <attr name="icDefaultSms" format="reference" />
+
+    <attr name="icLiveChat" format="reference" />
+    <attr name="icLastTransaction" format="reference" />
+    <attr name="icFaq" format="reference" />
+
+    <attr name="icAccountDeactivate" format="reference" />
+    <attr name="icEmailNotListed" format="reference" />
+
+    <attr name="icLoadingErrorIcon" format="reference" />
+
+    <attr name="icNotAkrabOrganizer" format="reference"/>
+    <attr name="icSharePackageLimit" format="reference"/>
+
+    <attr name="icClock24Hours" format="reference"/>
+    <attr name="icAddCCOtc" format="reference"/>
+    <attr name="icBillingReady" format="reference"/>
+
+    <attr name="icTroubleshootAcsModem" format="reference"/>
+    <attr name="extensionCardBG" format="reference"/>
+    <attr name="darkModeTextColor" format="reference"/>
+
+    <attr name="icConsentYes" format="reference"/>
+    <attr name="icConsentNo" format="reference"/>
+
+    <attr name="icMaintenance" format="reference"/>
+    <attr name="icNoInternet" format="reference"/>
+    <attr name="icDeviceIcon"   format="reference"/>
+    <attr name="icDeviceExclm" format="reference"/>
+    <attr name="icDeviceConnected" format="reference"/>
+
+    <attr name="icBackgroundInterceptor" format="reference"/>
+
+    <declare-styleable name="VoLTEReadyCard">
+        <attr name="title" />
+        <attr name="icon"/>
+        <attr name="iconBackgroundColor" format="color" />
+        <attr name="rightIcon" />
+    </declare-styleable>
+
+    <declare-styleable name="OptionItem">
+        <attr name="title" />
+        <attr name="subtitle" />
+        <attr name="icon"/>
+        <attr name="isActive"/>
+        <attr name="isShowButtonLine"/>
+    </declare-styleable>
+
+    <declare-styleable name="OptionItemListCard">
+        <attr name="topTitle"/>
+        <attr name="bottomTitle"/>
+        <attr name="imageSourceType"/>
+        <attr name="imageSource"/>
+        <attr name="activeIndex"/>
+    </declare-styleable>
+
+    <declare-styleable name="SquareDetailItemsCard">
+        <attr name="topLeftTitle"/>
+        <attr name="topRightTitle" format="string"/>
+        <attr name="title"/>
+        <attr name="ribbonLabel"/>
+        <attr name="bottomLeftPrice" format="string"/>
+        <attr name="bottomRightPrice" format="string"/>
+        <attr name="buttonTextTitle" />
+        <attr name="bottomBeardText" format="string"/>
+        <attr name="bottomBeardIcon" format="string"/>
+    </declare-styleable>
+
+    <declare-styleable name="BizonLevelIndicatorCard">
+        <attr name="bizonBigIcon" format="string" />
+        <attr name="bizOnSmallIcon" format="string" />
+        <attr name="bizOnLevelTitle" format="string" />
+        <attr name="statusLabel" />
+        <attr name="flagStatusLevel" format="enum">
+            <enum name="NONE" value="0" />
+            <enum name="LEVEL1" value="1" />
+            <enum name="LEVEL2" value="2" />
+            <enum name="LEVEL3" value="3" />
+            <enum name="LEVEL4" value="4" />
+        </attr>
+        <attr name="bizonMinSpending" format="integer" />
+        <attr name="bizonMaxSpending" format="integer" />
+        <attr name="bizonCurrentSpending" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="WhiteSubSegmentComponent">
+        <attr name="title" />
+        <attr name="subtitle"/>
+        <attr name="useDarkBackground" format="boolean"/>
+        <attr name="withoutPadding" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="MoreInfoCard">
+        <attr name="title"/>
+        <attr name="subtitle"/>
+        <attr name="iconImage"/>
+    </declare-styleable>
+
+    <declare-styleable name="ThumbnailPortraitCard">
+        <attr name="title"/>
+        <attr name="backgroundImageCardUrl"/>
+        <attr name="icon"/>
+        <attr name="hasPlayButton" format="boolean"/>
+    </declare-styleable>
+
+    <declare-styleable name="SelectImageCard">
+        <attr name="hintTop" format="string" />
+        <attr name="textHintCenter" format="string" />
+        <attr name="textCenter" format="string" />
+        <attr name="drawableStart" format="reference" />
+        <attr name="drawableStartDone" format="reference" />
+        <attr name="isDone" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="FamilyPlanGroupCard">
+        <attr name="groupName" format="string" />
+        <attr name="availableSlot" format="string" />
+        <attr name="sharedQuota" format="string" />
+        <attr name="additionalText" format="string" />
+        <attr name="statusMembership" format="string" />
+        <attr name="groupStatus" format="string" />
+        <attr name="isOrganizer" format="boolean" />
+        <attr name="isPrimary" format="boolean" />
+        <attr name="isShowAdditionalText" format="boolean" />
+        <attr name="groupState" format="enum">
+            <enum name="NORMAL" value="0" />
+            <enum name="DRAGGABLE" value="1" />
+        </attr>
+    </declare-styleable>
+
+    <declare-styleable name="AkrabEditMemberCard">
+        <attr name="limitInfoText" format="string" />
+        <attr name="isDisabled" />
+        <attr name="isPaidSlot" format="boolean" />
+    </declare-styleable>
+</resources>

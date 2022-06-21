@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        android:paddingHorizontal="24dp">
+
+        <LinearLayout
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:layout_gravity="center">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/iconView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:foregroundGravity="center"
+                android:visibility="gone"/>
+
+            <TextView
+                android:id="@+id/iconCodeView"
+                style="@style/IconAppearance.MudComponents.H2"
+                android:text="@string/xl_cash"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:gravity="center"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="24dp"
+            android:layout_weight="1"
+            android:foregroundGravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/topLabelView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="982-82928292839"
+                android:textColor="@color/mud_palette_basic_black" />
+
+            <TextView
+                android:id="@+id/bottomLabelView"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="BCA Virtual Account"
+                android:textColor="@color/mud_palette_basic_black" />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rightArrowView"
+            android:layout_width="@dimen/mud_dimens_24dp"
+            android:layout_height="@dimen/mud_dimens_24dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="?attr/colorAccentDark"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:visibility="visible">
+
+            <TextView
+                style="@style/IconAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/xl_chevron_right"
+                android:textColor="?android:attr/colorPrimary" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/copyView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            android:text="@string/organism_pending_payment_card_copy"
+            android:textColor="?attr/colorBackgroundPrimary" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

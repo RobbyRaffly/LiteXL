@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/basicWhite"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_24dp"
+            android:background="@color/mud_palette_basic_white"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="16dp">
+
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/iconView"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:imageSource=""
+                    app:imageSourceType="BASE64" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Name" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconRightArrow"
+                    android:layout_width="@dimen/mud_dimens_24dp"
+                    android:layout_height="@dimen/mud_dimens_24dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    app:srcCompat="?attr/arrowRightIcon" />
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/trashIconView"
+                    android:layout_width="@dimen/mud_dimens_24dp"
+                    android:layout_height="@dimen/mud_dimens_24dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:imageSource="@drawable/ic_trash"
+                    app:imageSourceType="DRAWABLE" />
+
+            </LinearLayout>
+
+            <View
+                android:id="@+id/headerHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mud_dimens_1dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="@dimen/mud_dimens_24dp"
+                android:background="@color/mud_palette_basic_light_grey" />
+
+            <LinearLayout
+                android:id="@+id/normalModeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/itemContainerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/molecule_quota_detail_item" />
+
+                <LinearLayout
+                    android:id="@+id/quotaActionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/validityLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mud_dimens_16dp"
+                        android:orientation="horizontal">
+
+                        <com.myxlultimate.component.token.imageView.ImageView
+                            android:id="@+id/iconViewBottom"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp"
+                            app:imageSource="iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAASKADAAQAAAABAAAASAAAAACQMUbvAAADMklEQVR4Ae1byWoVQRSNM4LDTkEMKEEUHFDcuRDBH3DhQhRREMGN/oA/o3/gB7gQ9+pGQUE3iQO6E2dN1HPI63C5VHJ7qEq6yLlwqeFWnTr3vHrd9ZLuqSmZFJACUkAKSAEpIAWkgBQoqMAVYM/BP8Bv9lznxmT+O5TXe2LcwryPcHK53BMj+7R9QPwN/zfxBZSH4F3sIAbPwxuMP6gfgHexwxjMtRsMciK3QbZx0OzFycdQbDE4xDxp2m2qxzFokxm4GXX2dbETGGzzISdyG2QWsC+QTazB6IqbGp/CbfBTZWp8qi81d9m+FLFlB6/HgAQKPvUNQXyl8DkEL8DPwk/Brb1F47PtCOq7EJ92Y2bR/uL6VmruRnC/G/AM7cfwB/BH8FWx01jlCby5W9RSkjO5F7WLQP8Fr0UUz/MnuDOHInYGqDyf+EVrazMH5tLK2l6DeC55CZ9JoPJA9grOcky2FWR4eGTp7Q06jsB5OM1iV4Hid8p39N2GpwhkWTQDCLndgZOr58+cshnvAn6Ba9nQywORq+fPnLLZHJDsAtyitRk52xyYU2htD4p7HRLPF7WZ5+xzSubTViD7Y5RAX5No4+785uj5nFx4sdlWoOTk9dApgYJPWQJJoECBINz2JM3bozUe13/Yjgrq28HRX5jD/MMBk8S9QBXo0YpimL+uQYGOEigQiL/S+9gsJj3tM3EN5/CPZdOl1re/YVi/V2qhgrj3ge3zCJfTVyyQSAJJoECBIKwdJIECBYKwdpAEChQIwtpBEihQIAhrB0mgQIEgrB0kgQIFgrB2kAQKFAjC2kESKFAgCGsHSaBAgSDcdgctOJwxP1XmqC41PWef09JAW2kr0Cc7CfWu71G46WvS9O9t+JwGkXqI2fY/An/RPj8IcXUnkys52xyYUzbjw5oWnPX38BpEIke+x+b5M6fQwv9NTxB2onwN3+MQuegL+HM4HzAfk20DGX6tjsJ9nvx6zcCzPil3CYD+U6i1zVyK2F2g1ipKw5s5FDWqz/dCmwVrKcm52M7xiu9ABy9yvBPwYj0PH5tQ5ERu5Eiu5CyTAlJACkgBKSAFpIAUkAJ5FPgPKaPCTaU3tl8AAAAASUVORK5CYII="
+                            app:imageSourceType="BASE64" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/bottomLabelText"
+                                    style="@style/TextAppearance.MudComponents.H5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="24dp"
+                                    tools:text="@string/organism_quota_detail_dashboard_widget_active_until_detail_label" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/bottomValueText"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+                            tools:text="16 Des 2020" />
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>

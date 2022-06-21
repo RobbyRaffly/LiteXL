@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/basicWhite"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mud_dimens_1dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleFirst"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/mud_dimens_16dp"
+                    android:layout_marginTop="17dp"
+                    android:layout_weight="1"
+                    android:gravity="start"
+                    android:lineHeight="5sp"
+                    android:text="Bonus"
+                    android:textColor="@color/basicBlack" />
+
+                <TextView
+                    android:id="@+id/titleSecond"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="17dp"
+                    android:layout_marginEnd="16.57dp"
+                    android:gravity="end"
+                    android:text="Bonus"
+                    android:textColor="@color/basicBlack" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/textItemFirst"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mud_dimens_16dp"
+                android:layout_marginTop="@dimen/mud_dimens_4dp"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_marginBottom="@dimen/mud_dimens_16dp"
+                android:layout_weight="1"
+                android:textSize="12sp"
+                android:lineSpacingExtra="6sp"
+                android:text="Periode"
+                android:textColor="@color/basicMediumGrey"
+                />
+
+
+            <LinearLayout
+                android:id="@+id/variantPackageContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/loyaltyBottomLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/mud_dimens_4dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/loyalty_item_gradient_package_variant"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mud_dimens_16dp"
+        android:paddingBottom="@dimen/mud_dimens_8dp"
+        android:visibility="visible">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:paddingTop="30dp">
+
+            <RelativeLayout
+                android:id="@+id/informationFlaggedIconContainerView"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_marginEnd="7.33dp"
+                android:layout_marginTop="@dimen/mud_dimens_8dp"
+                android:background="@drawable/circle_background"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                android:backgroundTint="@color/mud_palette_basic_light_grey"
+                android:gravity="center">
+
+                <TextView
+                    android:id="@+id/exclamationMarkView"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="!"
+                    android:textColor="@color/mud_palette_basic_dark_grey" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/loyaltyBottomTitleView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:text="Bonus Kuota myRewards"
+                android:textColor="@color/basicMediumGrey"
+                android:textSize="12sp"
+                android:layout_marginLeft="7.33dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/informationFlaggedIconContainerView"
+                app:layout_constraintTop_toTopOf="@+id/informationFlaggedIconContainerView" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
+</LinearLayout>

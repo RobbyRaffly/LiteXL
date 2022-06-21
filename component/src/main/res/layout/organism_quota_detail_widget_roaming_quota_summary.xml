@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardBackgroundColor="@color/basicWhite"
+    app:cardCornerRadius="16dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="3dp"
+    android:layout_margin="4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingBottom="4dp">
+
+            <TextView
+                style="@style/TextAppearance.MudComponents.H6"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/organism_roaming_quota_summary_dashboard_widget_label" />
+
+            <LinearLayout
+                android:id="@+id/statusFlagView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_background"
+                android:backgroundTint="@color/mud_palette_basic_red"
+                android:orientation="horizontal"
+                android:paddingVertical="4dp"
+                android:paddingHorizontal="8dp"
+                android:gravity="center_vertical"
+                android:visibility="visible">
+
+                <TextView
+                    style="@style/IconAppearance.MudComponents.H6"
+                    android:textColor="@color/mud_palette_basic_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="4dp"
+                    android:text="@string/xl_plane"/>
+
+                <TextView
+                    android:id="@+id/statusLabelView"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:textColor="@color/mud_palette_basic_white"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/organism_roaming_quota_summary_dashboard_widget_status_flag_inactive"/>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.myxlultimate.component.molecule.quotaSummary.QuotaSummaryGroup
+            android:id="@+id/itemContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/actionButtonView"
+            style="@style/ButtonAppearance.MudComponents.Primary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

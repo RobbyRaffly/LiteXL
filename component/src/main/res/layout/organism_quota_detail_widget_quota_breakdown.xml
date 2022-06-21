@@ -1,0 +1,603 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        android:elevation="8dp"
+        app:cardBackgroundColor="@color/basicWhite"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:id="@+id/layoutContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_24dp"
+            android:background="@color/mud_palette_basic_white"
+            android:orientation="vertical"
+            android:paddingHorizontal="16dp"
+            android:paddingBottom="16dp">
+
+            <RelativeLayout
+                android:id="@+id/topLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="13dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/topLeftTitleView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:textColor="@color/mud_palette_basic_dark_grey"
+                    android:visibility="gone"
+                    tools:text="@string/organism_quota_detail_dashboard_widget_contract_plan" />
+
+                <LinearLayout
+                    android:id="@+id/statusFlagView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:background="@drawable/button_background"
+                    android:backgroundTint="@color/mud_palette_basic_medium_grey"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:paddingHorizontal="8dp"
+                    android:paddingVertical="4dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        style="@style/IconAppearance.MudComponents.H6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="4dp"
+                        android:text="@string/xl_plane"
+                        android:textColor="@color/mud_palette_basic_white" />
+
+                    <TextView
+                        android:id="@+id/statusLabelView"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/organism_roaming_quota_summary_dashboard_widget_status_flag_inactive"
+                        android:textColor="@color/mud_palette_basic_white" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <LinearLayout
+                android:id="@+id/headerLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:visibility="gone">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/iconView"
+                    android:layout_width="42dp"
+                    android:layout_height="42dp"
+                    android:layout_marginEnd="8dp"
+                    app:imageSource=""
+                    app:imageSourceType="BASE64" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/nameView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        tools:text="Name" />
+
+                    <TextView
+                        android:id="@+id/subtitleView"
+                        style="@style/TextAppearance.MudComponents.Body3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="6dp"
+                        android:textColor="@color/mud_palette_basic_dark_grey"
+                        android:visibility="gone"
+                        tools:text="2 Booster Aktif" />
+
+                </LinearLayout>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/iconRightArrow"
+                    android:layout_width="@dimen/mud_dimens_24dp"
+                    android:layout_height="@dimen/mud_dimens_24dp"
+                    android:layout_gravity="center_vertical"
+                    android:visibility="gone"
+                    app:srcCompat="?attr/arrowRightIcon" />
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/trashIconView"
+                    android:layout_width="@dimen/mud_dimens_24dp"
+                    android:layout_height="@dimen/mud_dimens_24dp"
+                    android:layout_gravity="center"
+                    android:visibility="gone"
+                    app:imageSource="@drawable/ic_trash"
+                    app:imageSourceType="DRAWABLE" />
+
+            </LinearLayout>
+
+            <com.myxlultimate.component.organism.profileSelector.ProfileSelector
+                android:id="@+id/profileSelectorView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="gone"
+                app:imageSourceType="URL"
+                app:profileMode="INITIAL"
+                app:textColor="@color/mud_palette_basic_black" />
+
+            <LinearLayout
+                android:id="@+id/informationHeaderLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal">
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/iconViewSmall"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_marginEnd="8dp"
+                        app:imageSource=""
+                        app:imageSourceType="BASE64" />
+
+                    <TextView
+                        android:id="@+id/nameViewOther"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:minHeight="24dp"
+                        tools:text="@string/organism_quota_detail_dashboard_widget_active_until_detail_label" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/informationLabel1"
+                    style="@style/TextAppearance.MudComponents.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mud_dimens_40dp"
+                    android:layout_marginTop="@dimen/mud_dimens_6dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="20GB"
+                    android:textColor="@color/mud_palette_basic_black" />
+
+                <TextView
+                    android:id="@+id/informationLabel2"
+                    style="@style/TextAppearance.MudComponents.Body2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mud_dimens_40dp"
+                    android:layout_marginTop="@dimen/mud_dimens_6dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="20GB"
+                    android:textColor="@color/mud_palette_basic_black" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:layout_marginVertical="@dimen/mud_dimens_16dp"
+                    android:background="@color/mud_palette_basic_light_grey" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/headerHorizontalLine"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mud_dimens_1dp"
+                android:layout_marginTop="13dp"
+                android:layout_marginBottom="@dimen/mud_dimens_24dp"
+                android:background="@color/mud_palette_basic_light_grey"
+                android:visibility="gone" />
+
+            <LinearLayout
+                android:id="@+id/normalModeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/itemContainerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                    tools:itemCount="2"
+                    tools:listitem="@layout/molecule_quota_detail_item" />
+
+                <com.myxlultimate.component.organism.quotaDetailWidget.BonusCard
+                    android:id="@+id/bonusCardView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:visibility="gone"
+                    app:imageSource="?attr/quotaWidgetImage"
+                    app:information="@string/organism_bonus_card_subtitle"
+                    app:title="@string/organism_bonus_card_title" />
+
+                <LinearLayout
+                    android:id="@+id/quotaActionLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/remainingContractMonthLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mud_dimens_16dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.myxlultimate.component.token.imageView.ImageView
+                            android:id="@+id/iconViewRemainingContractMonth"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp"
+                            android:text="@string/xl_internet"
+                            app:imageSource="iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAASKADAAQAAAABAAAASAAAAACQMUbvAAADMklEQVR4Ae1byWoVQRSNM4LDTkEMKEEUHFDcuRDBH3DhQhRREMGN/oA/o3/gB7gQ9+pGQUE3iQO6E2dN1HPI63C5VHJ7qEq6yLlwqeFWnTr3vHrd9ZLuqSmZFJACUkAKSAEpIAWkgBQoqMAVYM/BP8Bv9lznxmT+O5TXe2LcwryPcHK53BMj+7R9QPwN/zfxBZSH4F3sIAbPwxuMP6gfgHexwxjMtRsMciK3QbZx0OzFycdQbDE4xDxp2m2qxzFokxm4GXX2dbETGGzzISdyG2QWsC+QTazB6IqbGp/CbfBTZWp8qi81d9m+FLFlB6/HgAQKPvUNQXyl8DkEL8DPwk/Brb1F47PtCOq7EJ92Y2bR/uL6VmruRnC/G/AM7cfwB/BH8FWx01jlCby5W9RSkjO5F7WLQP8Fr0UUz/MnuDOHInYGqDyf+EVrazMH5tLK2l6DeC55CZ9JoPJA9grOcky2FWR4eGTp7Q06jsB5OM1iV4Hid8p39N2GpwhkWTQDCLndgZOr58+cshnvAn6Ba9nQywORq+fPnLLZHJDsAtyitRk52xyYU2htD4p7HRLPF7WZ5+xzSubTViD7Y5RAX5No4+785uj5nFx4sdlWoOTk9dApgYJPWQJJoECBINz2JM3bozUe13/Yjgrq28HRX5jD/MMBk8S9QBXo0YpimL+uQYGOEigQiL/S+9gsJj3tM3EN5/CPZdOl1re/YVi/V2qhgrj3ge3zCJfTVyyQSAJJoECBIKwdJIECBYKwdpAEChQIwtpBEihQIAhrB0mgQIEgrB0kgQIFgrB2kAQKFAjC2kESKFAgCGsHSaBAgSDcdgctOJwxP1XmqC41PWef09JAW2kr0Cc7CfWu71G46WvS9O9t+JwGkXqI2fY/An/RPj8IcXUnkys52xyYUzbjw5oWnPX38BpEIke+x+b5M6fQwv9NTxB2onwN3+MQuegL+HM4HzAfk20DGX6tjsJ9nvx6zcCzPil3CYD+U6i1zVyK2F2g1ipKw5s5FDWqz/dCmwVrKcm52M7xiu9ABy9yvBPwYj0PH5tQ5ERu5Eiu5CyTAlJACkgBKSAFpIAUkAJ5FPgPKaPCTaU3tl8AAAAASUVORK5CYII="
+                            app:imageSourceType="BASE64" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/remainingContractMonthLabel"
+                                    style="@style/TextAppearance.MudComponents.H5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="24dp"
+                                    android:text="@string/organism_quota_detail_dashboard_widget_contract_ended_detail_label" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/remainingContractMonthDuration"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+                            tools:text="365 Hari" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/validityLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mud_dimens_16dp"
+                        android:orientation="horizontal">
+
+                        <com.myxlultimate.component.token.imageView.ImageView
+                            android:id="@+id/iconViewValidity"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp"
+                            app:imageSource="iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAASKADAAQAAAABAAAASAAAAACQMUbvAAADMklEQVR4Ae1byWoVQRSNM4LDTkEMKEEUHFDcuRDBH3DhQhRREMGN/oA/o3/gB7gQ9+pGQUE3iQO6E2dN1HPI63C5VHJ7qEq6yLlwqeFWnTr3vHrd9ZLuqSmZFJACUkAKSAEpIAWkgBQoqMAVYM/BP8Bv9lznxmT+O5TXe2LcwryPcHK53BMj+7R9QPwN/zfxBZSH4F3sIAbPwxuMP6gfgHexwxjMtRsMciK3QbZx0OzFycdQbDE4xDxp2m2qxzFokxm4GXX2dbETGGzzISdyG2QWsC+QTazB6IqbGp/CbfBTZWp8qi81d9m+FLFlB6/HgAQKPvUNQXyl8DkEL8DPwk/Brb1F47PtCOq7EJ92Y2bR/uL6VmruRnC/G/AM7cfwB/BH8FWx01jlCby5W9RSkjO5F7WLQP8Fr0UUz/MnuDOHInYGqDyf+EVrazMH5tLK2l6DeC55CZ9JoPJA9grOcky2FWR4eGTp7Q06jsB5OM1iV4Hid8p39N2GpwhkWTQDCLndgZOr58+cshnvAn6Ba9nQywORq+fPnLLZHJDsAtyitRk52xyYU2htD4p7HRLPF7WZ5+xzSubTViD7Y5RAX5No4+785uj5nFx4sdlWoOTk9dApgYJPWQJJoECBINz2JM3bozUe13/Yjgrq28HRX5jD/MMBk8S9QBXo0YpimL+uQYGOEigQiL/S+9gsJj3tM3EN5/CPZdOl1re/YVi/V2qhgrj3ge3zCJfTVyyQSAJJoECBIKwdJIECBYKwdpAEChQIwtpBEihQIAhrB0mgQIEgrB0kgQIFgrB2kAQKFAjC2kESKFAgCGsHSaBAgSDcdgctOJwxP1XmqC41PWef09JAW2kr0Cc7CfWu71G46WvS9O9t+JwGkXqI2fY/An/RPj8IcXUnkys52xyYUzbjw5oWnPX38BpEIke+x+b5M6fQwv9NTxB2onwN3+MQuegL+HM4HzAfk20DGX6tjsJ9nvx6zcCzPil3CYD+U6i1zVyK2F2g1ipKw5s5FDWqz/dCmwVrKcm52M7xiu9ABy9yvBPwYj0PH5tQ5ERu5Eiu5CyTAlJACkgBKSAFpIAUkAJ5FPgPKaPCTaU3tl8AAAAASUVORK5CYII="
+                            app:imageSourceType="BASE64" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/validityLabel"
+                                    style="@style/TextAppearance.MudComponents.H5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="24dp"
+                                    tools:text="@string/organism_quota_detail_dashboard_widget_active_until_detail_label" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/validityDate"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+                            tools:text="16 Des 2020" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/slotFeeLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mud_dimens_16dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.myxlultimate.component.token.imageView.ImageView
+                            android:id="@+id/iconViewSlot"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="8dp"
+                            app:imageSource="iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAERlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAA6ABAAMAAAABAAEAAKACAAQAAAABAAAASKADAAQAAAABAAAASAAAAACQMUbvAAAD/0lEQVR4Ae2avWpVURCF4yWmEEtRBJEklQ+QQrEIBi18hChaioW+Q55CsY82dmorGAu10s7SRIUoChZqYfxfHzhhszPn5M79M7mZBcPeZ/bstWdW9vnLuRMTiVQgFUgFUoFUIBVIBVKBVCAVSAVSgVQgFUgF9qQCHVW9KLsnW5f9lP3ZZUbO5E4N1EJNA8GsWJ7Ldpsg2+VLTdTWFyD4INtusd06Tm09i9TR5BdjLI79UdlJ1BrGBc0wkrr9pbEfhdXjHHPOlzHD7DddE8s1ydnLEx+1hnFfM2rCV/LNyyYLtjknbkO+A0XMsLusxZp1vuRmIGdyX5XVcdQaBlf8muiMw7LsxD1y4obtYs06X3KrsSBHHUetYXhbcn/FwmLe9r5axY3ikDXrwsmNHEtM6aCOo9YwahKOS8zowLvDfZJ/lKeX5cSarF3nTY7kWqKOqWsrYxv7bSTnNOujzIu53sg4/AHW9nIiV3I2eDE21nXrkZzW7Lsy7/Qj/omsp1um5g0CrE0OXu7kTO7U4I3LvRX7tro2PZBE8EbBJ2XvIpMUS1GnZGdlx2Tgreyh7KnstyyCowp+JjsemaTYNi1cKk/lJt+aGE64LO3O8xp+KWviZYyYKMhlTdbE6/mja3RNviLmI2H2iYklzfES9XzERkFOj2Uen+eL8m9L/F6MV2Thrak5TRdTL3Hz9XLxJzdyJFfjaWoVEoNH9FkUD2SXZFMxus3oafW+yTz+Nh9zmNsLyPWyjNypwVtH7hg8kskYhRt9U16Pm1P12j+j78XckL9fUIPHHeYdCEm1Klueu1zNfUs+xgz08dVxzC3jLD7a1rwchzEQkmrVwzqueb/Ld7CK4xAfb+N1PBz9oubk2AXPIKPEIWcxnp++On58rx2/x+GEDd/VtcqBVLwdxC7ZsTuorbZhCMT1Y6yvQXkXK7aUt4PG4Tnoi2r0aitK767rkZS+fJJuULoUif6KbJjvYrzNL8mi+O/vYqVQa8qeN+godvzbfNtTKQJEwPPMnv9/0J77j2LbDilPIetbfP5PWkqYKGVrAtHOyHbLV41pEi5Q1mT9Yri7rveP+fwuVmi3rr6pa+1CMW7dZSeOW/+owZqWp7XkVoMabNxaag3D+za/KpZ5WfnKMadjW8jaDflG+fGQtVjT1reW3AzkPC9bldm4tY3f5ttu8/zi4bbMAw9vmKEUzHx2itpxty1JR0EdXg58ejZ01ME8XJTzjjfQ5oOM386YyuPa9vz7IMSblXl3qnERi9qosS9AMI47iZr6FseU7aizKOMXolzxvZ+87PRdRc7kTg3UQk2JVCAVSAVSgVQgFUgFUoFUIBVIBVKBVCAVSAVSgVQgFUgFBqjAX850jnR/S0kEAAAAAElFTkSuQmCC"
+                            app:imageSourceType="BASE64" />
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:id="@+id/slotLabel"
+                                    style="@style/TextAppearance.MudComponents.H5"
+                                    android:layout_width="0dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_weight="1"
+                                    android:gravity="center_vertical"
+                                    android:minHeight="24dp"
+                                    android:text="@string/organism_quota_detail_dashboard_widget_slot_fee" />
+
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/slotPrice"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:foregroundGravity="center_vertical"
+                            android:gravity="center_vertical"
+                            tools:text="Rp 20.000" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/bottomNoteLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mud_dimens_16dp"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <com.myxlultimate.component.token.imageView.ImageView
+                            android:id="@+id/ivWarningNoteStatus"
+                            android:layout_width="@dimen/mud_dimens_20dp"
+                            android:layout_height="@dimen/mud_dimens_20dp"
+                            app:imageSource="@drawable/ic_warning"
+                            app:imageSourceType="DRAWABLE" />
+
+                        <TextView
+                            android:id="@+id/bottomNoteStatus"
+                            style="@style/TextAppearance.MudComponents.Body3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="5dp"
+                            android:textColor="@color/mud_palette_basic_dark_grey"
+                            tools:text="Diperpanjang ke Plan Reguler pada 31 Agustus 2020 Diperpanjang ke Plan " />
+
+                    </LinearLayout>
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/quotaActionButtonLayout"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:id="@+id/primaryButtonLayout"
+                            android:layout_width="@dimen/mud_dimens_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mud_dimens_16dp"
+                            android:orientation="horizontal"
+                            android:visibility="visible"
+                            app:layout_constraintEnd_toStartOf="@id/lineView"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <Button
+                                android:id="@+id/cancelButtonView"
+                                style="@style/ButtonAppearance.MudComponents.Secondary.Red"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:visibility="visible"
+                                tools:text="@string/organism_quota_detail_dashboard_widget_cancel_button_label" />
+
+                            <Button
+                                android:id="@+id/switchPlanButtonView"
+                                style="@style/ButtonAppearance.MudComponents.Secondary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/organism_quota_detail_dashboard_widget_switch_plan_button_label"
+                                android:visibility="gone"
+                                tools:text="@string/organism_quota_detail_dashboard_widget_switch_plan_button_label" />
+
+                            <Button
+                                android:id="@+id/solidButtonView"
+                                style="@style/ButtonAppearance.MudComponents.Primary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text=""
+                                android:visibility="gone"
+                                tools:text="@string/organism_quota_detail_dashboard_widget_switch_plan_button_label" />
+
+                        </LinearLayout>
+
+                        <View
+                            android:id="@+id/lineView"
+                            android:layout_width="0.01dp"
+                            android:layout_height="0dp"
+                            android:layout_marginStart="@dimen/mud_dimens_8dp"
+                            android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                            android:visibility="gone"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/secondaryButtonLayout"
+                            app:layout_constraintStart_toEndOf="@id/primaryButtonLayout"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <LinearLayout
+                            android:id="@+id/secondaryButtonLayout"
+                            android:layout_width="@dimen/mud_dimens_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mud_dimens_16dp"
+                            android:orientation="horizontal"
+                            android:visibility="gone"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/lineView"
+                            app:layout_constraintTop_toTopOf="parent">
+
+                            <Button
+                                android:id="@+id/secondaryButtonView"
+                                style="@style/ButtonAppearance.MudComponents.Secondary"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@string/organism_quota_detail_dashboard_widget_switch_plan_button_label" />
+                        </LinearLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomLayout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    android:orientation="horizontal">
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:layout_width="@dimen/mud_dimens_20dp"
+                        android:layout_height="@dimen/mud_dimens_20dp"
+                        app:imageSource="@drawable/ic_warning"
+                        app:imageSourceType="DRAWABLE" />
+
+                    <TextView
+                        android:id="@+id/bottomStatus"
+                        style="@style/TextAppearance.MudComponents.Body3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingStart="5dp"
+                        android:textColor="@color/mud_palette_basic_dark_grey"
+                        tools:text="Diperpanjang ke Plan Reguler pada 31 Agustus 2020 Diperpanjang ke Plan " />
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/failLayout"
+                android:layout_width="match_parent"
+                android:layout_height="216dp"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/failTitleView"
+                    style="@style/TextAppearance.MudComponents.Body1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Gagal Memuat Data, Mohon Coba Lagi"
+                    android:textAlignment="center" />
+
+                <Button
+                    android:id="@+id/failButtonView"
+                    style="@style/ButtonAppearance.MudComponents.Secondary"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="@dimen/mud_dimens_24dp"
+                    android:text="Try Again" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/transferQuotaLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginHorizontal="@dimen/mud_dimens_4dp"
+        android:layout_marginTop="-35dp"
+        android:visibility="gone"
+        android:layout_marginBottom="@dimen/mud_dimens_4dp"
+        android:backgroundTint="@color/mud_palette_prepaid_dark_blue"
+        app:cardCornerRadius="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/mud_dimens_16dp"
+            android:paddingTop="43dp"
+            android:paddingBottom="@dimen/mud_dimens_16dp">
+
+            <com.myxlultimate.component.atom.informationView.InformationView
+                android:id="@+id/informationItemView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="@string/transfer_quota_information_title"/>
+
+            <Button
+                android:id="@+id/shareQuotaButton"
+                android:layout_width="match_parent"
+                android:layout_marginTop="@dimen/mud_dimens_16dp"
+                android:layout_height="wrap_content"
+                android:text="@string/transfer_quota_button_title"
+                style="@style/ButtonAppearance.MudComponents.Secondary.White"/>
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+</LinearLayout>

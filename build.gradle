@@ -1,0 +1,179 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext {
+        version = [
+                major: 1,
+                minor: 0,
+                patch: 97
+        ]
+
+        appVersionName = "${version.major}.${version.minor}.${version.patch}"
+        appVersionCode = version.major * 10000 + version.minor * 100 + version.patch
+
+        androidMinSdkVersion = 21
+        androidCompileSdkVersion = 30
+        androidTargetSdkVersion = 30
+        androidBuildToolsVersion = "30.0.0"
+
+        group = 'com.myxlultmate'
+
+        gradle_version = "4.0.1"
+        kotlin_version = '1.3.72'
+        nav_version = '2.3.0-alpha05'
+        android_plugin_version = '4.0.0'
+        google_services_version = '4.3.3'
+        crashlytics_version = '2.2.0'
+        jacoco_version = "0.8.1"
+        sonarqube_version = "3.0"
+        jacoco_android_version = "0.2"
+        dokka_version = '0.10.1'
+        dependencyVersion = [
+                kotlin                : kotlin_version,
+                appCompat             : '1.1.0',
+                core                  : '1.2.0',
+                coroutine             : '1.3.0',
+                lifecycle             : '1.1.1',
+                rxAndroid             : '2.0.2',
+                rxJava                : '2.1.17',
+                retrofit              : '2.9.0',
+                okHttp                : '3.14.7',
+                gson                  : '2.8.6',
+                retrofitGson          : '2.8.0',
+                retrofitScalar        : '2.1.0',
+                nav                   : '2.2.2',
+                materialUi            : '1.4.0-alpha01',
+                viewPager             : '1.1.0-alpha01',
+                cardView              : '1.0.0',
+                constraintLayout      : '1.1.3',
+                glide                 : '4.11.0',
+                permission            : '3.0.0',
+                khronos               : '0.9.0',
+                loggingInterceptor    : "3.10.0",
+                dagger                : "2.28",
+                daggerCompiler        : "2.27",
+                daggerAndroid         : "2.27",
+                daggerAndroidProcessor: "2.27",
+                daggerAndroidSupport  : "2.27",
+                fragmentKtx           : "1.2.4",
+                swipeToRefresh        : "1.0.0",
+                firebaseCrashlytics   : "17.1.0",
+                firebaseAnalyticsKtx  : "17.4.3",
+                firebaseMessaging     : "20.2.1",
+                shimmer               : "0.5.0",
+                lottie                : "3.7.0"
+        ]
+        testVersion = [
+                jUnit          : '4.12',
+                mockitoCore    : "2.23.0",
+                coroutineTest  : "1.3.1",
+                mockitoKotlin  : "2.2.0",
+                coreTesting    : "2.1.0",
+                androidJUnit   : '1.1.1',
+                androidEspresso: '3.2.0'
+        ]
+        coreDependencies = [
+                // main
+                kotlin              : "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$dependencyVersion.kotlin",
+                appCompat           : "androidx.appcompat:appcompat:$dependencyVersion.appCompat",
+                core                : "androidx.core:core-ktx:$dependencyVersion.core",
+                loggingInterceptor  : "com.squareup.okhttp3:logging-interceptor:$dependencyVersion.loggingInterceptor",
+                dagger              : "com.google.dagger:dagger:$dependencyVersion.dagger",
+                daggerAndroid       : "com.google.dagger:dagger-android:$dependencyVersion.daggerAndroid",
+                daggerAndroidSupport: "com.google.dagger:dagger-android-support:$dependencyVersion.daggerAndroidSupport"
+        ]
+        coreKaptDependencies = [
+                daggerCompiler        : "com.google.dagger:dagger-compiler:$dependencyVersion.daggerCompiler",
+                daggerAndroidProcessor: "com.google.dagger:dagger-android-processor:$dependencyVersion.daggerAndroidProcessor"
+        ]
+        mainDependencies = [
+                // navigation
+                navFragment         : "androidx.navigation:navigation-fragment-ktx:$dependencyVersion.nav",
+                navUi               : "androidx.navigation:navigation-ui-ktx:$dependencyVersion.nav",
+
+                // converter
+                gson                : "com.google.code.gson:gson:$dependencyVersion.gson",
+
+                // permission
+                permission          : "pub.devrel:easypermissions:$dependencyVersion.permission",
+
+                // Firebase SDK for Google Analytics
+                firebaseAnalyticsKtx: "com.google.firebase:firebase-analytics-ktx:$dependencyVersion.firebaseAnalyticsKtx",
+
+                // Firebase Crashlytics SDK
+                firebaseCrashlytics : "com.google.firebase:firebase-crashlytics:$dependencyVersion.firebaseCrashlytics"
+        ]
+        notificationDependencies = [
+                // Firebase Messaging
+                firebaseMessaging: "com.google.firebase:firebase-messaging:$dependencyVersion.firebaseMessaging"
+        ]
+        uiDependencies = [
+                // UI
+                materialUi      : "com.google.android.material:material:$dependencyVersion.materialUi",
+                viewPager       : "androidx.viewpager2:viewpager2:$dependencyVersion.viewPager",
+                cardView        : "androidx.cardview:cardview:$dependencyVersion.cardView",
+                constraintLayout: "com.android.support.constraint:constraint-layout:$dependencyVersion.constraintLayout",
+                glide           : "com.github.bumptech.glide:glide:$dependencyVersion.glide",
+                fragmentKtx     : "androidx.fragment:fragment-ktx:$dependencyVersion.fragmentKtx",
+                swipeToRefresh  : "androidx.swiperefreshlayout:swiperefreshlayout:$dependencyVersion.swipeToRefresh",
+                khronos         : "com.github.hotchemi:khronos:$dependencyVersion.khronos",
+                shimmer         : "com.facebook.shimmer:shimmer:$dependencyVersion.shimmer",
+                // navigation
+                navFragment     : "androidx.navigation:navigation-fragment-ktx:$dependencyVersion.nav",
+                navUi           : "androidx.navigation:navigation-ui-ktx:$dependencyVersion.nav",
+                jcropImageView  : "com.github.jimcoven:jcropimageview:0.22",
+                lottie: "com.airbnb.android:lottie:$dependencyVersion.lottie"
+        ]
+        moduleDependencies = [
+                // coroutine
+                coroutine     : "org.jetbrains.kotlinx:kotlinx-coroutines-android:$dependencyVersion.coroutine",
+
+                // lifecycle
+                lifecycle     : "android.arch.lifecycle:extensions:$dependencyVersion.lifecycle",
+                rxAndroid     : "io.reactivex.rxjava2:rxandroid:$dependencyVersion.rxAndroid",
+                rxJava        : "io.reactivex.rxjava2:rxjava:$dependencyVersion.rxJava",
+
+                // network
+                retrofit      : "com.squareup.retrofit2:retrofit:$dependencyVersion.retrofit",
+                okHttp        : "com.squareup.okhttp3:okhttp:$dependencyVersion.okHttp",
+
+                // utility
+                retrofitGson  : "com.squareup.retrofit2:converter-gson:$dependencyVersion.retrofitGson",
+                retrofitScalar: "com.squareup.retrofit2:converter-scalars:$dependencyVersion.retrofitScalar",
+        ]
+        testImplementations = [
+                jUnit          : "junit:junit:$testVersion.jUnit",
+                mockitoCore    : "org.mockito:mockito-core:$testVersion.mockitoCore",
+                coroutineTest  : "org.jetbrains.kotlinx:kotlinx-coroutines-test:$testVersion.coroutineTest",
+                mockitoKotlin  : "com.nhaarman.mockitokotlin2:mockito-kotlin:$testVersion.mockitoKotlin",
+                coreTesting    : "androidx.arch.core:core-testing:$testVersion.coreTesting",
+                androidJUnit   : "androidx.test.ext:junit:$testVersion.androidJUnit",
+                androidEspresso: "androidx.test.espresso:espresso-core:$testVersion.androidEspresso"
+        ]
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:$gradle_version"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "com.android.tools.build:gradle:$android_plugin_version"
+        classpath "androidx.navigation:navigation-safe-args-gradle-plugin:$nav_version"
+        classpath "com.google.gms:google-services:$google_services_version"
+        classpath "com.google.firebase:firebase-crashlytics-gradle:$crashlytics_version"
+        classpath "com.hiya:jacoco-android:$jacoco_android_version"
+        classpath "org.sonarsource.scanner.gradle:sonarqube-gradle-plugin:$sonarqube_version"
+        classpath "org.jetbrains.dokka:dokka-gradle-plugin:$dokka_version"
+
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+plugins {
+    id 'com.android.application' version '7.1.2' apply false
+    id 'com.android.library' version '7.1.2' apply false
+    id 'org.jetbrains.kotlin.android' version '1.5.30' apply false
+
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fa5_check" translatable="false">&#xf00c;</string>
+    <string name="fa5_file" translatable="false">&#xf15b;</string>
+    <string name="fa5_email" translatable="false">&#xf0e0;</string>
+    <string name="fa5_left_arrow" translatable="false">&#xf060;</string>
+    <string name="fa5_exclamation_circle" translatable="false">&#xf06a;</string>
+    <string name="fa5_chevron_right" translatable="false">&#xf054;</string>
+    <string name="fa5_internet" translatable="false">&#xf0ac;</string>
+    <string name="fa5_phone" translatable="false">&#xf095;</string>
+    <string name="fa5_message" translatable="false">&#xf0e0;</string>
+    <string name="fa5_user_profile" translatable="false">&#xf2bd;</string>
+</resources>

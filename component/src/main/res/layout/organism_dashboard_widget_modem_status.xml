@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerView"
+    android:layout_height="wrap_content"
+    app:cardBackgroundColor="@color/mud_palette_basic_white"
+    app:cardCornerRadius="16dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="3dp"
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="@dimen/mud_dimens_32dp"
+                    android:layout_height="@dimen/mud_dimens_32dp"
+                    android:src="?attr/icDeviceIcon"
+                    android:layout_gravity="end"
+                    android:id="@+id/topRightIconView"
+                    android:layout_marginTop="@dimen/mud_dimens_24dp"
+                    android:layout_marginEnd="@dimen/mud_dimens_24dp"
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:paddingHorizontal="@dimen/mud_dimens_16dp"
+                    android:paddingTop="@dimen/mud_dimens_16dp"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                        android:id="@+id/textLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAppearance="@style/TextAppearance.MudComponents.H6"
+                        android:text="@string/modem_label"
+                        android:textColor="@color/basicDarkGrey"/>
+                    <LinearLayout
+                        android:orientation="vertical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <LinearLayout
+                            android:gravity="center_vertical"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+                            <androidx.cardview.widget.CardView
+                                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                                android:layout_width="@dimen/mud_dimens_8dp"
+                                app:cardCornerRadius="@dimen/mud_dimens_4dp"
+                                android:layout_height="@dimen/mud_dimens_8dp">
+                                <LinearLayout
+                                    android:id="@+id/statusIndicator"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="match_parent"
+                                    android:background="@color/mud_palette_basic_red"
+                                    android:orientation="horizontal" />
+                            </androidx.cardview.widget.CardView>
+                            <TextView
+                                android:layout_marginBottom="@dimen/mud_dimens_4dp"
+                                android:id="@+id/status"
+                                android:textAppearance="@style/TextAppearance.MudComponents.H2"
+                                android:textColor="@color/mud_palette_basic_black"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/modem_status_off"/>
+                        </LinearLayout>
+
+                        <TextView
+                            android:layout_marginStart="@dimen/mud_dimens_16dp"
+                            android:id="@+id/statusIndicatorTextView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                            android:text="@string/modem_off_information"
+                            android:textAppearance="@style/TextAppearance.MudComponents.H6"
+                            android:textColor="@color/mud_palette_basic_red"/>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/lastOnlineNoticeContainer"
+                            android:layout_width="match_parent"
+                            app:cardCornerRadius="16dp"
+                            app:cardElevation="@dimen/mud_dimens_0dp"
+                            android:paddingVertical="@dimen/mud_dimens_6dp"
+                            android:paddingHorizontal="@dimen/mud_dimens_8dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                            >
+                            <TextView
+                                android:id="@+id/lastOnlineNoticeView"
+                                android:gravity="center_vertical"
+                                android:background="@color/mud_palette_home_chevron_background"
+                                android:textAppearance="@style/TextAppearance.MudComponents.H6"
+                                android:text="Terakhir online 10 menit lalu"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:drawableStart="?attr/icDeviceExclm"
+                                android:drawablePadding="@dimen/mud_dimens_8dp"
+                                android:paddingHorizontal="@dimen/mud_dimens_8dp"
+                                android:paddingVertical="@dimen/mud_dimens_6dp"
+                                />
+                        </androidx.cardview.widget.CardView>
+
+                        <Button
+                            android:id="@+id/refreshButton"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                            style="@style/ButtonAppearance.MudComponents.Secondary"
+                            android:text="Refresh Status Modem"
+                            />
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/bottomContainerView"
+                android:paddingHorizontal="@dimen/mud_dimens_16dp"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:background="@color/mud_palette_basic_light_grey"
+                    android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                    />
+                <TextView
+                    android:id="@+id/bottomViewLabel"
+                    android:textAppearance="@style/TextAppearance.MudComponents.H6"
+                    android:textColor="@color/mud_palette_basic_dark_grey"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                    android:text="@string/modem_connected_device_label"/>
+                <TextView
+                    android:id="@+id/connectedDevices"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textAppearance="@style/TextAppearance.MudComponents.H2"
+                    android:text="@string/modem_connected_device_counted"
+                    android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/bottomLineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:background="@color/mud_palette_basic_light_grey"
+                    android:orientation="horizontal" />
+
+                <TextView
+                    android:id="@+id/seeModemInformation"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="@string/modem_see_information_cta"
+                    android:textAppearance="@style/TextAppearance.MudComponents.H5"
+                    android:textColor="?attr/colorBackgroundPrimary"
+                    android:paddingVertical="@dimen/mud_dimens_12dp"
+                    android:drawableEnd="?attr/arrowRightIcon"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+        
+    </com.google.android.material.card.MaterialCardView>

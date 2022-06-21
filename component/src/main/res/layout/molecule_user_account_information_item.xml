@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/titleView"
+        style="@style/TextAppearance.MudComponents.H6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="6dp"
+        android:textColor="@color/mud_palette_basic_dark_grey"
+        tools:text="Nama Panggilan" />
+
+    <TextView
+        android:id="@+id/nameView"
+        style="@style/TextAppearance.MudComponents.Body2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_black"
+        tools:text="Aryo Sanjaya" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/baseLayoutWarning"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp">
+
+        <ImageView
+            android:id="@+id/ivIconWarning"
+            style="@style/IconAppearance.MudComponents.Body3"
+            android:layout_width="@dimen/mud_dimens_20dp"
+            android:layout_height="@dimen/mud_dimens_20dp"
+            android:src="@drawable/ic_icon_system_warning"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tvWarning"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:gravity="center_vertical"
+            android:text="@string/molecule_user_account_information_warning_info"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivIconWarning"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

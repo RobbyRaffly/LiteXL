@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cobaView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/containerView"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_margin="@dimen/mud_dimens_4dp"
+            android:background="@color/mud_palette_basic_white"
+            android:minHeight="300dp"
+            app:cardCornerRadius="@dimen/mud_dimens_16dp"
+            app:cardElevation="@dimen/mud_dimens_3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/backgroundView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/transparent"
+                    android:scaleType="center"
+                    app:imageSource="?attr/contextualImageDefault"
+                    app:imageSourceType="BASE64" />
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/smallIconView"
+                    android:layout_width="@dimen/mud_dimens_32dp"
+                    android:layout_height="@dimen/mud_dimens_32dp"
+                    android:layout_margin="@dimen/mud_dimens_16dp"
+                    android:visibility="gone"
+                    app:imageSource=""
+                    app:imageSourceType="BASE64"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/redDotCountLayout"
+                    android:layout_width="@dimen/mud_dimens_8dp"
+                    android:layout_height="@dimen/mud_dimens_8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/redDot"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:visibility="gone"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/textWrapper"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/mud_dimens_16dp"
+                    app:layout_constraintHorizontal_weight="1"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/rightGapView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:id="@+id/categoryView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                        android:textColor="@color/mud_palette_blue_grey"
+                        android:visibility="gone"
+                        tools:text="Category" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/nameView"
+                            style="@style/TextAppearance.MudComponents.H2"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mud_dimens_8dp"
+                            android:ellipsize="end"
+                            android:maxLines="4"
+                            tools:text="Title" />
+
+                        <TextView
+                            android:id="@+id/nameSmallView"
+                            style="@style/TextAppearance.MudComponents.H4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="3"
+                            android:visibility="gone"
+                            tools:text="Title Small" />
+
+                        <TextView
+                            android:id="@+id/nameSquareView"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:ellipsize="end"
+                            android:maxLines="4"
+                            android:visibility="gone"
+                            tools:text="Title Small" />
+
+                        <TextView
+                            android:id="@+id/nameFunSquareView"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mud_dimens_6dp"
+                            android:ellipsize="end"
+                            android:maxLines="4"
+                            android:paddingTop="@dimen/mud_dimens_32dp"
+                            android:visibility="gone"
+                            tools:text="Title Small" />
+
+                        <TextView
+                            android:id="@+id/categoryNameView"
+                            style="@style/TextAppearance.MudComponents.Body3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/nameSquareView"
+                            android:layout_marginTop="@dimen/mud_dimens_4dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            android:textColor="@color/mud_palette_basic_dark_grey"
+                            android:visibility="gone"
+                            tools:text="Title Small" />
+                    </RelativeLayout>
+
+                    <LinearLayout
+                        android:id="@+id/priceContainerView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/originalPriceView"
+                            style="@style/TextAppearance.MudComponents.H6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingHorizontal="@dimen/mud_dimens_3dp"
+                            android:textColor="@color/mud_palette_blue_grey"
+                            tools:text="Original Price" />
+
+                        <TextView
+                            android:id="@+id/priceView"
+                            style="@style/TextAppearance.MudComponents.H2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            tools:text="Price" />
+
+                        <TextView
+                            android:id="@+id/squarePriceView"
+                            style="@style/TextAppearance.MudComponents.H4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="?attr/colorBackgroundPrimary"
+                            android:visibility="gone"
+                            tools:text="Price" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/priceContextualView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:visibility="gone">
+
+                        <TextView
+                            android:id="@+id/priceContextual"
+                            style="@style/TextAppearance.MudComponents.H4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="5dp"
+                            android:textColor="@color/mud_palette_basic_white"
+                            tools:text="Original Price" />
+
+                        <TextView
+                            android:id="@+id/originalPriceContextual"
+                            style="@style/TextAppearance.MudComponents.H6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:maxLines="1"
+                            android:paddingHorizontal="@dimen/mud_dimens_3dp"
+                            android:textColor="?attr/colorBackgroundPrimary"
+                            tools:text="Price" />
+
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/informationView"
+                        style="@style/TextAppearance.MudComponents.Body2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/mud_dimens_8dp"
+                        android:ellipsize="end"
+                        android:maxLines="2"
+                        android:visibility="gone"
+                        tools:text="Description" />
+                </LinearLayout>
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/rightIconView"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    android:layout_margin="@dimen/mud_dimens_8dp"
+                    app:imageSource=""
+                    android:adjustViewBounds="true"
+                    android:visibility="gone"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:imageSourceType="BASE64"
+                    app:layout_constraintEnd_toEndOf="parent" />
+
+                <View
+                    android:id="@+id/rightGapView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toRightOf="@id/textWrapper"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.myxlultimate.component.organism.packageCard.OptionPackageCard
+        android:id="@+id/optionPackageCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/chipView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/chipContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_margin="@dimen/mud_dimens_4dp"
+            android:background="@color/mud_palette_basic_white"
+            app:cardCornerRadius="@dimen/mud_dimens_24dp"
+            app:cardElevation="@dimen/mud_dimens_3dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/chipSmallIconView"
+                    android:layout_width="@dimen/mud_dimens_32dp"
+                    android:layout_height="@dimen/mud_dimens_32dp"
+                    android:layout_margin="@dimen/mud_dimens_8dp"
+                    app:imageSource="@string/xl_voucher_prepaid_base64"
+                    app:imageSourceType="BASE64"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <LinearLayout
+                    android:id="@+id/chipRedDotCountLayout"
+                    android:layout_width="@dimen/mud_dimens_8dp"
+                    android:layout_height="@dimen/mud_dimens_8dp"
+                    android:background="@drawable/circle_background"
+                    android:backgroundTint="@color/redDot"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="@+id/chipSmallIconView"
+                    app:layout_constraintTop_toTopOf="@+id/chipSmallIconView" />
+
+                <TextView
+                    android:id="@+id/chipNameSmallView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:ellipsize="end"
+                    android:maxLines="3"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/chipSmallIconView"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Title Small" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/squareThumbnailCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mud_dimens_4dp"
+        android:background="@color/mud_palette_basic_white"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/mud_dimens_8dp"
+        app:cardElevation="@dimen/mud_dimens_2dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/squareThumbnailImageView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:imageSourceType="URL"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHeight_min="128dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <LinearLayout
+                android:id="@+id/textViewLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="horizontal"
+                android:paddingVertical="@dimen/mud_dimens_16dp"
+                android:paddingStart="14dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/squareThumbnailImageView">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/squareThumbnailIconView"
+                    android:layout_width="@dimen/mud_dimens_24dp"
+                    android:layout_height="@dimen/mud_dimens_24dp"
+                    app:imageSourceType="BASE64"
+                    app:layout_constraintEnd_toStartOf="@id/squareThumbnailTitleView"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/squareThumbnailImageView" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp">
+
+                    <TextView
+                        android:id="@+id/squareThumbnailTitleView"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/squareThumbnailArrowView"
+                        app:layout_constraintHorizontal_weight="1"
+                        app:layout_constraintStart_toEndOf="@id/squareThumbnailIconView"
+                        app:layout_constraintTop_toBottomOf="@id/squareThumbnailImageView" />
+
+                    <TextView
+                        android:id="@+id/squareThumbnailInformationView"
+                        style="@style/TextAppearance.MudComponents.Body3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/mud_dimens_6dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@id/textViewLayout" />
+                </LinearLayout>
+
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/squareThumbnailArrowView"
+                    android:layout_width="@dimen/mud_dimens_20dp"
+                    android:layout_height="@dimen/mud_dimens_20dp"
+                    android:layout_marginEnd="18dp"
+                    app:imageSource="?attr/arrowRightIcon"
+                    app:imageSourceType="DRAWABLE"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@id/squareThumbnailTitleView"
+                    app:layout_constraintTop_toBottomOf="@id/squareThumbnailImageView" />
+            </LinearLayout>
+
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/squareThumbnailPlayButtonImageView"
+                android:layout_width="32dp"
+                android:layout_height="@dimen/mud_dimens_32dp"
+                android:elevation="@dimen/mud_dimens_4dp"
+                app:imageSource="@drawable/ic_play_button_image"
+                app:imageSourceType="DRAWABLE"
+                app:layout_constraintBottom_toBottomOf="@id/squareThumbnailImageView"
+                app:layout_constraintEnd_toEndOf="@id/squareThumbnailImageView"
+                app:layout_constraintStart_toStartOf="@id/squareThumbnailImageView"
+                app:layout_constraintTop_toTopOf="@id/squareThumbnailImageView" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:id="@+id/funAlbumLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardAlbumView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/mud_dimens_8dp"
+            app:cardElevation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/squareImageView"
+                    android:layout_width="164dp"
+                    android:layout_height="156dp"
+                    app:imageSourceType="URL" />
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/rectangleImageView"
+                    android:layout_width="116dp"
+                    android:layout_height="156dp"
+                    android:visibility="gone"
+                    app:imageSourceType="URL" />
+
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/albumTitleView"
+            style="@style/TextAppearance.MudComponents.H6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="start"
+            android:paddingTop="@dimen/mud_dimens_8dp" />
+
+    </LinearLayout>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/smallVerticalView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="4dp"
+        android:visibility="gone"
+        app:cardCornerRadius="@dimen/mud_dimens_8dp"
+        app:cardElevation="3dp">
+
+        <LinearLayout
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="16dp"
+                app:cardCornerRadius="35dp"
+                app:cardElevation="0dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="56dp"
+                        android:layout_height="56dp"
+                        app:imageSourceType="URL" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <View
+                android:id="@+id/smallVerticalLineView"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/mud_palette_basic_light_grey" />
+
+            <TextView
+                android:id="@+id/smallVerticalTextView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/mud_dimens_16dp"
+                android:paddingVertical="@dimen/mud_dimens_8dp" />
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

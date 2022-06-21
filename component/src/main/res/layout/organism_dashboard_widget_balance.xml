@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myxlultimate.component.molecule.balanceWidget.BalanceWidget xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:actionButtonLabel="@string/organism_balance_dashboard_widget_action_button_label"
+    app:icon="?attr/balanceIcon"
+    app:label="@string/organism_balance_dashboard_widget_label" />

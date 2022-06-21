@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardBackgroundColor="@color/mud_palette_basic_white"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmeringLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/circleOne"
+                android:layout_width="@dimen/mud_dimens_32dp"
+                android:layout_height="@dimen/mud_dimens_32dp"
+                android:layout_marginStart="24dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="22dp"
+                app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                app:cardCornerRadius="@dimen/mud_dimens_16dp"
+                app:cardElevation="@dimen/mud_dimens_0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/barOne"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                app:cardCornerRadius="@dimen/mud_dimens_6dp"
+                app:cardElevation="@dimen/mud_dimens_0dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintEnd_toStartOf="@+id/circleTwo"
+                app:layout_constraintStart_toEndOf="@+id/circleOne"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/barTwo"
+                android:layout_width="0dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                app:cardCornerRadius="@dimen/mud_dimens_6dp"
+                app:cardElevation="@dimen/mud_dimens_0dp"
+                app:cardPreventCornerOverlap="false"
+                app:layout_constraintEnd_toStartOf="@+id/circleTwo"
+                app:layout_constraintStart_toEndOf="@+id/circleOne"
+                app:layout_constraintTop_toBottomOf="@+id/barOne" />
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/circleTwo"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="16dp"
+                app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                app:cardCornerRadius="@dimen/mud_dimens_12dp"
+                app:cardElevation="@dimen/mud_dimens_0dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</androidx.cardview.widget.CardView>

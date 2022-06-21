@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/parentSkeletonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mud_dimens_4dp"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="@dimen/mud_dimens_16dp"
+        app:cardElevation="@dimen/mud_dimens_3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/childSkeletonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_shape="linear">
+
+            <include layout="@layout/shimmering_summary_quota_dashboard" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+    <com.myxlultimate.component.template.cardWidget.CardWidget
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:actionButtonLabel="@string/organism_quota_summary_dashboard_widget_action_button_label"
+        app:cwaIconMode="NO_ICON"
+        app:label="@string/organism_quota_summary_dashboard_widget_label">
+
+        <com.myxlultimate.component.molecule.quotaSummary.QuotaSummaryGroup
+            android:id="@+id/itemContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.myxlultimate.component.template.cardWidget.CardWidget>
+</LinearLayout>

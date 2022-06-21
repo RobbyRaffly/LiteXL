@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/haveAccountView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:minHeight="74dp"
+            android:paddingVertical="@dimen/mud_dimens_16dp"
+            android:paddingLeft="@dimen/mud_dimens_12dp"
+            android:paddingRight="@dimen/mud_dimens_16dp">
+
+            <com.myxlultimate.component.organism.profileSelector.ProfileSelector
+                android:id="@+id/profileSelectorView"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/transparent"
+                app:hasOnPress="false"
+                app:strokeColor="@color/transparent"
+                app:textColor="@color/mud_palette_basic_black" />
+
+
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/btnDelete"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                android:visibility="visible"
+                android:layout_gravity="center"
+                app:imageSourceType="DRAWABLE"
+                app:imageSource="@drawable/ic_trash"
+                android:layout_marginRight="16dp"/>
+
+            <TextView
+                android:id="@+id/tvAction"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingHorizontal="@dimen/mud_dimens_8dp"
+                android:textColor="?attr/colorBackgroundPrimary"
+                tools:text="Edit" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/removeMemberView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/mud_dimens_16dp">
+
+
+            <View
+                android:id="@+id/line"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/mud_dimens_2dp"
+                android:layout_marginTop="@dimen/mud_dimens_8dp"
+                android:background="@color/mud_palette_basic_light_grey" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mud_dimens_8dp"
+                android:layout_marginBottom="17dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:layout_weight="1"
+                    android:textColor="@color/mud_palette_basic_black"
+                    android:gravity="center_vertical"
+                    tools:text="Kuota Utama" />
+
+                <TextView
+                    android:id="@+id/tvMainQuota"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/mud_palette_basic_black"
+                    android:gravity="center_vertical"
+                    tools:text="40GB" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

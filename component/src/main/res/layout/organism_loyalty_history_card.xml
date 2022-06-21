@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/cardView"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    android:elevation="@dimen/mud_dimens_4dp"
+    android:layout_margin="@dimen/mud_dimens_4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="@dimen/mud_dimens_16dp">
+
+        <LinearLayout
+            android:id="@+id/topView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/dateTimeView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="6 Maret 2020, 7.16PM"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                style="@style/TextAppearance.MudComponents.Body3"/>
+
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="@dimen/mud_dimens_4dp"
+                android:layout_marginBottom="@dimen/mud_dimens_4dp"
+                android:textColor="@color/mud_palette_basic_black"
+                tools:text="Pembelian XTRA COMBO VIP 70 GB" />
+
+            <TextView
+                android:id="@+id/expirationView"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/TextAppearance.MudComponents.Body3"
+                tools:text="Poin Kedaluwarsa 5 Hari lagi"
+                android:textColor="@color/mud_palette_primary_blue" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_below="@id/topView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/iconView"
+                android:layout_width="@dimen/mud_dimens_16dp"
+                android:layout_height="@dimen/mud_dimens_16dp"
+                android:layout_marginStart="@dimen/mud_dimens_12dp"
+                android:layout_marginEnd="@dimen/mud_dimens_4dp"
+                app:imageSourceType="DRAWABLE"
+                app:imageSource="@drawable/ic_point_prepaid"/>
+
+            <TextView
+                android:id="@+id/pointView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:gravity="end"
+                tools:text="+200 Poin"
+                android:textColor="@color/mud_package_status_green"/>
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

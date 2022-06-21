@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:animateLayoutChanges="true"
+        android:id="@+id/containerView"
+        android:paddingHorizontal="@dimen/mud_dimens_16dp"
+        >
+
+        <TextView
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:id="@+id/topLabelView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Paket Berlangganan Anda"
+            android:textAppearance="@style/TextAppearance.MudComponents.H6"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <LinearLayout
+            android:id="@+id/paddingView"
+            android:layout_width="5dp"
+            android:layout_height="@dimen/mud_dimens_0dp"
+            app:layout_constraintBottom_toBottomOf="@+id/upfrontLabel"
+            app:layout_constraintStart_toEndOf="@+id/upfrontLabel"
+            app:layout_constraintTop_toTopOf="@+id/upfrontLabel"
+            android:orientation="horizontal" />
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/upfrontLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mud_dimens_8dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="@+id/topLabelView"
+            app:layout_constraintStart_toEndOf="@+id/topLabelView"
+            app:layout_constraintTop_toTopOf="@+id/topLabelView">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mud_palette_prio_gold"
+                android:paddingHorizontal="@dimen/mud_dimens_6dp"
+                android:paddingVertical="@dimen/mud_dimens_3dp"
+                android:text="Upfront"
+                android:textAppearance="@style/TextAppearance.MudComponents.H9"
+                android:textColor="@color/mud_palette_basic_white" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintBottom_toTopOf="@id/upfrontLabel"
+            app:layout_constraintEnd_toEndOf="@+id/paddingView"
+            app:layout_constraintStart_toStartOf="@+id/upfrontLabel"
+            app:layout_constraintTop_toTopOf="@id/upfrontLabel">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/mud_palette_basic_black"
+                android:paddingHorizontal="@dimen/mud_dimens_4dp"
+                android:paddingVertical="@dimen/mud_dimens_1dp"
+                android:text="Beta"
+                android:textAppearance="@style/TextAppearance.MudComponents.H8"
+                android:textColor="@color/mud_palette_basic_white"
+                android:textSize="5.5dp" />
+        </com.google.android.material.card.MaterialCardView>
+
+        <ImageView
+            android:id="@+id/topRightIconView"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:layout_marginEnd="@dimen/mud_dimens_8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_registrasi"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            />
+
+        <TextView
+            android:layout_marginEnd="@dimen/mud_dimens_16dp"
+            android:id="@+id/topTitleView"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="AllNet+ Silver 2 Bulan"
+            android:textAppearance="@style/TextAppearance.MudComponents.H3"
+            app:layout_constraintEnd_toStartOf="@+id/topButtonView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topLabelView" />
+
+        <Button
+            android:id="@+id/topButtonView"
+            style="@style/ButtonPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:includeFontPadding="true"
+            android:paddingHorizontal="@dimen/mud_dimens_0dp"
+            android:paddingVertical="@dimen/mud_dimens_0dp"
+            android:text="@string/hybrid_beli_sekarang_button_text"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/topTitleView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/topTitleView" />
+
+        <TextView
+            android:id="@+id/topSubtitleView"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:text="Periode berlangganan 3 Jul 2021 - 31 Agu 2021"
+            android:textAppearance="@style/TextAppearance.MudComponents.Body3"
+            app:layout_constraintTop_toBottomOf="@id/topTitleView"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <LinearLayout
+            android:id="@+id/topDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            app:layout_constraintTop_toBottomOf="@id/topSubtitleView"
+            android:layout_marginTop="@dimen/mud_dimens_12dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/midLabelView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Berakhir Pada"
+            android:textAppearance="@style/TextAppearance.MudComponents.H6"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/topDivider"
+            android:layout_marginTop="@dimen/mud_dimens_12dp"
+            />
+
+        <TextView
+            android:id="@+id/midTitleView"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:text="1 September 2021"
+            android:textAppearance="@style/TextAppearance.MudComponents.H3"
+            app:layout_constraintTop_toBottomOf="@id/midLabelView"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="14dp"/>
+
+        <TextView
+            android:id="@+id/midSubtitleView"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:text="Periode berlangganan 3 Jul 2021 - 31 Agu 2021"
+            android:textAppearance="@style/TextAppearance.MudComponents.Body3"
+            app:layout_constraintTop_toBottomOf="@id/midTitleView"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:id="@+id/warningTextViewContainer"
+            app:layout_constraintTop_toTopOf="@+id/midSubtitleView"
+            app:layout_constraintBottom_toBottomOf="@id/midSubtitleView"
+            app:layout_constraintStart_toStartOf="@id/midSubtitleView"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/warningIconView"
+                android:layout_width="@dimen/mud_dimens_16dp"
+                android:layout_height="@dimen/mud_dimens_16dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:src="@drawable/ic_icon_system_warning_red"
+                />
+
+            <TextView
+                android:id="@+id/warningTextView"
+                android:paddingVertical="1.5dp"
+                app:layout_constraintTop_toTopOf="@id/warningIconView"
+                app:layout_constraintBottom_toBottomOf="@id/warningIconView"
+                android:layout_marginStart="@dimen/mud_dimens_8dp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:textColor="@color/mud_palette_basic_red"
+                app:layout_constraintStart_toEndOf="@id/warningIconView"
+                android:text="Periode Berlangganan Tersisa 7 Hari"
+                android:textAppearance="@style/TextAppearance.MudComponents.Body3"
+                />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:id="@+id/midDivider"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            app:layout_constraintTop_toBottomOf="@id/midSubtitleView"
+            android:layout_marginTop="@dimen/mud_dimens_12dp"
+            android:orientation="horizontal" />
+
+        <TextView
+            android:id="@+id/bottomCtaView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:drawableEnd="@drawable/ic_arrow_right_prio"
+            android:gravity="center_vertical"
+            android:text="Detail Paket Berlangganan Saya"
+            android:textAppearance="@style/TextAppearance.MudComponents.H5"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/midDivider"
+            tools:layout_editor_absoluteX="16dp"
+            android:layout_marginBottom="@dimen/mud_dimens_16dp"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

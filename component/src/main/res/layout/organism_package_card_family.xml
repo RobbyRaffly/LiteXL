@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cobaView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:minHeight="300dp"
+        app:cardCornerRadius="@dimen/mud_dimens_16dp"
+        app:cardElevation="@dimen/mud_dimens_3dp"
+        android:layout_margin="@dimen/mud_dimens_4dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/layoutRibbon"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="@dimen/mud_dimens_4dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentStart="true">
+
+                <TextView
+                    android:id="@+id/ribbonLabel"
+                    style="@style/TextAppearance.MudComponents.H7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingVertical="@dimen/mud_dimens_8dp"
+                    android:paddingStart="@dimen/mud_dimens_16dp"
+                    android:paddingEnd="@dimen/mud_dimens_16dp"
+                    android:text="Promo"
+                    android:textColor="@color/mud_palette_basic_white" />
+            </LinearLayout>
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/backgroundImageCard"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="-24dp"
+                android:scaleType="center"
+                android:visibility="visible"
+                app:imageSource=""
+                app:imageSourceType="URL" />
+
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/rightImageView"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:visibility="gone"
+                android:layout_alignParentEnd="true"
+                app:imageSource=""
+                app:imageSourceType="URL" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1" />
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/backgroundView"
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:scaleType="fitCenter"
+                    app:imageSource=""
+                    app:imageSourceType="BASE64" />
+            </LinearLayout>
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.myxlultimate.component.organism.promoLabel.PromoLabelView
+                    android:id="@+id/promoLabelView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+                <LinearLayout
+                    android:id="@+id/textWrapper"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/rightGapView"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:id="@+id/dynamicView"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical"
+                        android:paddingBottom="@dimen/mud_dimens_16dp"
+                        android:paddingTop="@dimen/mud_dimens_16dp"
+                        android:paddingStart="@dimen/mud_dimens_24dp">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                            <TextView
+                                android:id="@+id/nameView"
+                                style="@style/TextAppearance.MudComponents.H4"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                tools:text="Name" />
+
+                            <TextView
+                                android:id="@+id/nameSmallView"
+                                style="@style/TextAppearance.MudComponents.H5"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="2"
+                                android:visibility="gone"
+                                tools:text="Name Small" />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/informationView"
+                            style="@style/TextAppearance.MudComponents.Body2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mud_dimens_4dp"
+                            android:ellipsize="end"
+                            android:maxLines="2"
+                            tools:text="Description" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/rightGapView"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    app:layout_constraintLeft_toRightOf="@id/textWrapper"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

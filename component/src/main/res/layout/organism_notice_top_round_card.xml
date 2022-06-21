@@ -1,0 +1,40 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/noticeTopRoundCard"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="@drawable/button_background_round_top"
+    android:backgroundTint="@color/prioGoldSoft"
+    android:orientation="horizontal"
+    android:paddingHorizontal="@dimen/mud_dimens_24dp"
+    android:paddingVertical="@dimen/mud_dimens_6dp">
+
+    <TextView
+        android:id="@+id/iconNotice"
+        style="@style/IconAppearance.MudComponents.H6"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:layout_gravity="top"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="?attr/colorBackgroundPrimary"
+        android:textColor="@color/mud_palette_basic_white"
+        android:textAlignment="center"
+        android:gravity="center"
+        android:text="!"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <TextView
+        style="@style/TextAppearance.MudComponents.H6"
+        android:id="@+id/titleText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_gravity="center"
+        android:textColor="@color/mud_palette_basic_black"
+        app:layout_constraintStart_toEndOf="@id/iconNotice"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

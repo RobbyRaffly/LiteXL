@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <com.myxlultimate.component.organism.transactionSummary.TransactionSummaryRow
+        android:id="@+id/totalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mud_dimens_8dp"
+        app:textColor="?attr/colorBackgroundPrimary"
+        app:rowValueType="TOTAL"/>
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mud_dimens_2dp"
+        android:background="@color/mud_palette_basic_light_grey"
+        android:layout_marginTop="@dimen/mud_dimens_16dp"
+        android:layout_marginBottom="@dimen/mud_dimens_16dp"/>
+
+    <com.myxlultimate.component.organism.transactionSummary.TransactionSummaryRow
+        android:id="@+id/referenceView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        app:rowValueType="ID"
+        app:value="#04149"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/itemContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/organism_transaction_summary_row" />
+</LinearLayout>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/NoticeCardView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@drawable/notice_card_background"
+    android:orientation="horizontal"
+    android:padding="@dimen/mud_dimens_16dp">
+
+    <com.myxlultimate.component.token.icon.IconXl
+        android:id="@+id/NoticeCardLeftIconView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingEnd="@dimen/mud_dimens_16dp"
+        app:iconCode="@string/xl_sos_square"
+        app:size="64" />
+
+    <com.myxlultimate.component.token.text.TextBody2
+        android:id="@+id/NoticeCardTitleView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.myxlultimate.component.token.icon.IconXl
+        android:id="@+id/NoticeCardRightIconView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        android:paddingStart="@dimen/mud_dimens_8dp"
+        app:iconCode="@string/xl_chevron_right"
+        app:size="64" />
+
+</LinearLayout>

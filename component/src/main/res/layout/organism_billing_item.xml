@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardItemPendingLoyalty"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDueDate"
+        style="@style/TextAppearance.MudComponents.Body3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/mud_dimens_8dp"
+        android:visibility="gone"
+        android:textColor="@color/mud_palette_basic_dark_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Jatuh Tempo 11 Agustus 2020" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvMonthOfYear"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvDueDate"
+        tools:text="Agustus 2020" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivArrowRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toBottomOf="@+id/tvMonthOfYear"
+        app:layout_constraintEnd_toStartOf="@+id/tvBillingPrice"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@+id/tvMonthOfYear"
+        app:layout_constraintTop_toTopOf="@+id/tvMonthOfYear"
+        app:srcCompat="?attr/arrowRightCustomIcon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBillingPrice"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:textColor="@color/mud_palette_basic_black"
+        app:layout_constraintEnd_toStartOf="@+id/ivDownload"
+        app:layout_constraintTop_toBottomOf="@+id/tvDueDate"
+        tools:text="Rp 300.000" />
+
+    <ImageView
+        android:id="@+id/ivDownload"
+        android:layout_width="@dimen/mud_dimens_28dp"
+        android:layout_height="@dimen/mud_dimens_24dp"
+        android:background="@drawable/ic_download"
+        app:layout_constraintBottom_toBottomOf="@+id/tvBillingPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tvBillingPrice"
+        app:layout_constraintVertical_bias="0.6" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvBillStatus"
+        style="@style/TextAppearance.MudComponents.H6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvMonthOfYear"
+        tools:text="Lunas" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDebtPrice"
+        style="@style/TextAppearance.MudComponents.H6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/mud_palette_basic_red"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="@+id/tvBillingPrice"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/tvBillingPrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvBillingPrice"
+        tools:text="Terbayar Rp 250.000" />
+
+    <View
+        android:id="@+id/vLine"
+        android:layout_width="wrap_content"
+        android:layout_height="1dp"
+        android:layout_marginTop="8dp"
+        android:background="@color/mud_palette_basic_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBillStatus" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

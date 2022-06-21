@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbarView"
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="@color/mud_palette_basic_white"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:elevation="0dp"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingTop="20dp">
+
+        <TextView
+            android:id="@+id/iconView"
+            style="@style/IconAppearance.MudComponents.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/mud_dimens_24dp"
+            android:paddingEnd="@dimen/mud_dimens_4dp"
+            android:text="@string/xl_left_arrow"
+            app:layout_constraintBottom_toBottomOf="@id/titleView"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="56dp"
+            android:background="@color/mud_palette_basic_white"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="@color/mud_palette_basic_black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="This Is Toolbar" />
+
+        <TextView
+            android:id="@+id/endBubbleView"
+            style="@style/IconAppearance.MudComponents.H6"
+            android:layout_width="16dp"
+            android:layout_height="16dp"
+            android:layout_gravity="center"
+            android:layout_marginRight="@dimen/mud_dimens_4dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/mud_palette_basic_black"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:visibility="gone"
+            android:textColor="@color/mud_palette_basic_white"
+            app:layout_constraintBottom_toBottomOf="@id/endTitleView"
+            app:layout_constraintRight_toLeftOf="@id/endTitleView"/>
+
+        <TextView
+            android:id="@+id/endTitleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingStart="@dimen/mud_dimens_0dp"
+            android:paddingEnd="@dimen/mud_dimens_24dp"
+            android:visibility="gone"
+            android:textColor="@color/mud_palette_basic_black"
+            app:layout_constraintBottom_toBottomOf="@id/titleView"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/endIconImageView"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_marginEnd="@dimen/mud_dimens_24dp"
+            app:imageSource="@drawable/ic_facebook"
+            app:imageSourceType="DRAWABLE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toBottomOf="@id/titleView"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</com.google.android.material.appbar.AppBarLayout>

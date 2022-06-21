@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="4dp"
+        app:cardBackgroundColor="@color/basicWhite"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <com.myxlultimate.component.molecule.tabSwitch.TabSwitch
+                android:id="@+id/tabSwitchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:visibility="gone"
+                app:backgroundColorMode="CUSTOM"
+                app:firstLabel="VIP"
+                app:normalColor="?attr/customBackgroundTabColor"
+                app:normalTextColor="@color/basicBlack"
+                app:secondLabel="Regular"
+                app:selectedColor="?android:attr/colorPrimary"
+                app:selectedTextColor="@color/basicWhite" />
+
+            <LinearLayout
+                android:id="@+id/variantPackageContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!--        <com.myxlultimate.component.molecule.packageVarianBenefit.PackageVariantItem-->
+            <!--            android:id="@+id/firstBenefitView"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"/>-->
+
+            <!--        <com.myxlultimate.component.molecule.packageVarianBenefit.PackageVariantItem-->
+            <!--            android:id="@+id/secondBenefitView"-->
+            <!--            android:layout_width="match_parent"-->
+            <!--            android:layout_height="wrap_content"-->
+            <!--            android:visibility="gone"/>-->
+
+        </LinearLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <LinearLayout
+        android:id="@+id/loyaltyBottomLayoutView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginHorizontal="@dimen/mud_dimens_4dp"
+        android:layout_marginTop="-30dp"
+        android:background="@drawable/loyalty_item_gradient_package_variant"
+        android:orientation="horizontal"
+        android:paddingHorizontal="@dimen/mud_dimens_16dp"
+        android:paddingBottom="@dimen/mud_dimens_8dp"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="30dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <com.google.android.material.card.MaterialCardView
+                android:id="@+id/iconWrapperView"
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:foregroundGravity="center"
+                android:orientation="horizontal"
+                app:cardCornerRadius="14dp"
+                android:layout_gravity="center"
+                android:layout_marginHorizontal="@dimen/mud_dimens_2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/loyaltyBottomIconView"
+                android:layout_width="@dimen/mud_dimens_20dp"
+                android:layout_height="@dimen/mud_dimens_20dp"
+                android:layout_gravity="center"
+                app:imageSource="@string/dummy32_base64"
+                android:background="@color/transparent"
+                app:imageSourceType="BASE64" />
+
+            </com.google.android.material.card.MaterialCardView>
+
+            <TextView
+                android:id="@+id/loyaltyBottomTitleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingHorizontal="9dp"
+                android:text="Bonus Kuota myRewards"
+                android:textColor="@color/mud_palette_basic_white" />
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/loyaltyRightArrowView"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                app:imageSource="?attr/arrowRightIcon"
+                app:imageSourceType="DRAWABLE" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>

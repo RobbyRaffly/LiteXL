@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/borderContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/mud_pallete_prio_super_soft">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/planContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/mud_dimens_16dp">
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/iconPlanView"
+                    android:layout_width="@dimen/mud_dimens_32dp"
+                    android:layout_height="@dimen/mud_dimens_32dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/titlePlanView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mud_dimens_8dp"
+                    android:layout_marginEnd="@dimen/mud_dimens_16dp"
+                    android:ellipsize="end"
+                    android:maxLines="1"
+                    android:text="@string/organism_status_payment_card_label_total"
+                    android:textColor="@color/mud_palette_basic_black"
+                    app:layout_constraintEnd_toStartOf="@id/pricePlanView"
+                    app:layout_constraintStart_toEndOf="@id/iconPlanView"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/subtitlePlanView"
+                    style="@style/TextAppearance.MudComponents.Body3"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_4dp"
+                    android:textColor="@color/mud_palette_basic_dark_grey"
+                    app:layout_constraintBottom_toTopOf="@id/line"
+                    app:layout_constraintEnd_toStartOf="@id/pricePlanView"
+                    app:layout_constraintStart_toStartOf="@id/titlePlanView"
+                    app:layout_constraintTop_toBottomOf="@id/titlePlanView"
+                    tools:text="Periode berlangganan 60 hari" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/pricePlanView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorPrimary"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Rp160.000" />
+
+                <View
+                    android:id="@+id/line"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    android:background="@color/mud_palette_basic_light_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/subtitlePlanView" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/ctaBottomView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_12dp"
+                    android:paddingLeft="4dp"
+                    android:textColor="@color/colorPrimary"
+                    android:visibility="visible"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/line"
+                    tools:text="Berlangganan Kembali" />
+
+                <androidx.constraintlayout.widget.Group
+                    android:id="@+id/warningView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    app:constraint_referenced_ids="warningIconView, warningInformationView" />
+
+                <com.myxlultimate.component.token.imageView.ImageView
+                    android:id="@+id/warningIconView"
+                    android:layout_width="@dimen/mud_dimens_20dp"
+                    android:layout_height="@dimen/mud_dimens_20dp"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    android:src="@drawable/ic_icon_system_warning_red"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/line" />
+
+                <TextView
+                    android:id="@+id/warningInformationView"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/mud_dimens_8dp"
+                    android:lineSpacingExtra="@dimen/mud_dimens_4dp"
+                    android:text="Paket berlangganan berakhir pada 1 Sep 2021, lakukan pembelian paket berlangganan setelah paket berakhir."
+                    android:textAppearance="@style/TextAppearance.MudComponents.Body3"
+                    android:textColor="@color/mud_palette_basic_red"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toEndOf="@+id/warningIconView"
+                    app:layout_constraintTop_toTopOf="@+id/warningIconView" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.constraintlayout.widget.Group
+            android:id="@+id/extensionView"
+            android:layout_width="wrap_content"
+            android:visibility="gone"
+            android:layout_height="wrap_content"
+            app:constraint_referenced_ids="extensionButtonView, extensionInformationView" />
+
+        <TextView
+            android:id="@+id/extensionInformationView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mud_dimens_16dp"
+            android:layout_marginStart="@dimen/mud_dimens_16dp"
+            android:layout_marginEnd="@dimen/mud_dimens_8dp"
+            android:lineSpacingExtra="@dimen/mud_dimens_8dp"
+            android:text="Lihat apa saja yang bisa Anda lakukan dengan Paket Berlangganan."
+            android:textAppearance="@style/TextAppearance.MudComponents.Body3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/extensionButtonView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/planContainer" />
+
+        <Button
+            android:id="@+id/extensionButtonView"
+            style="@style/ButtonAppearance.MudComponents.Primary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mud_dimens_16dp"
+            android:text="Selengkapnya"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/extensionInformationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/extensionInformationView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

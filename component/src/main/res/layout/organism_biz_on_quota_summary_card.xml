@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_4dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/mud_palette_pale_blue">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/topCardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="@dimen/mud_dimens_16dp"
+            app:cardElevation="@dimen/mud_dimens_3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvTitle"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:textColor="@color/mud_palette_basic_dark_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    tools:text="Sisa Pemakaian biz.ON Anda" />
+
+                <com.myxlultimate.component.molecule.quotaSummary.QuotaSummaryGroup
+                    android:id="@+id/quotaSummaryGroup"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="48dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/tvTitle"
+                    app:lineQuantity="1">
+
+                    <com.myxlultimate.component.molecule.quotaSummary.QuotaSummaryItem
+                        android:id="@+id/quotaSummaryItemData"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:isIgnoreLowQuota="true" />
+
+                    <com.myxlultimate.component.molecule.quotaSummary.QuotaSummaryItem
+                        android:id="@+id/quotaSummaryItemVoice"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        app:isIgnoreLowQuota="true" />
+
+                </com.myxlultimate.component.molecule.quotaSummary.QuotaSummaryGroup>
+
+                <View
+                    android:id="@+id/vLine"
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@color/mud_palette_basic_light_grey"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/quotaSummaryGroup" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvAction"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="16dp"
+                    android:drawableEnd="@drawable/ic_arrow_right_prepaid"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/primaryBlue"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/vLine"
+                    tools:text="Lihat Detail Paket Biz.ON Saya" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <LinearLayout
+            android:id="@+id/bottomView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/mud_dimens_16dp"
+            android:layout_marginStart="@dimen/mud_dimens_16dp"
+            android:layout_marginEnd="@dimen/mud_dimens_16dp"
+            android:orientation="horizontal"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/txtTitleBottom"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/mud_dimens_12dp"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/mud_palette_basic_black"
+                    android:text="@string/xl_bizon_landing_title_bottom" />
+
+                <TextView
+                    android:id="@+id/extensionInformationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lineSpacingExtra="@dimen/mud_dimens_8dp"
+                    android:text="@string/xl_bizon_landing_desc_bottom"
+                    android:textAppearance="@style/TextAppearance.MudComponents.Body3" />
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/extensionButtonView"
+                android:layout_width="@dimen/mud_dimens_20dp"
+                android:layout_height="@dimen/mud_dimens_20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_arrow_prepaid_bizon"  />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

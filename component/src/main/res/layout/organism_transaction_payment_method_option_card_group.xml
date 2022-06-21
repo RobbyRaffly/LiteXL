@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/labelView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:textColor="@color/mud_palette_basic_dark_grey"
+        tools:text="E-Wallet"
+        android:paddingBottom="@dimen/mud_dimens_16dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/paymentRvContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/organism_transaction_payment_method_option_card" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="@dimen/sliderIndicatorSize"
+    android:layout_width="@dimen/sliderIndicatorInactiveWidth"
+    android:id="@+id/sliderIndicatorDotEl"
+    android:background="@drawable/slider_indicator"
+    android:backgroundTint="@color/basicMediumGrey"/>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:background="@drawable/loyalty_item_gradiant"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="12dp"
+    android:paddingVertical="3dp"
+    android:gravity="center_vertical"
+    android:orientation="horizontal">
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/iconView"
+        android:layout_width="@dimen/mud_dimens_16dp"
+        android:background="@color/transparent"
+        android:backgroundTint="@color/transparent"
+        android:layout_height="@dimen/mud_dimens_16dp"
+        android:layout_marginEnd="3dp"
+        app:imageSourceType="BASE64"
+        app:imageSource=""/>
+
+    <TextView
+        android:id="@+id/labelView"
+        style="@style/TextAppearance.MudComponents.H7"
+        android:textColor="@color/mud_palette_basic_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:text="Label"/>
+
+</LinearLayout>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/mud_palette_basic_light_grey"
+    android:orientation="horizontal"
+    android:minHeight="@dimen/mud_dimens_40dp">
+
+    <com.myxlultimate.component.organism.tableView.ColumnItem
+        android:id="@+id/columnViewFirst"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mud_dimens_1dp"
+        android:layout_marginEnd="@dimen/mud_dimens_1dp"
+        android:layout_weight="2"
+        android:gravity="center"
+        app:backgroundColor="@color/mud_palette_primary_blue"
+        app:isHeader="true"
+        app:title="Nominal" />
+
+    <com.myxlultimate.component.organism.tableView.ColumnItem
+        android:id="@+id/columnViewSecond"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mud_dimens_1dp"
+        android:layout_marginEnd="@dimen/mud_dimens_1dp"
+        android:layout_weight="1.5"
+        android:gravity="center"
+        app:backgroundColor="@color/mud_palette_primary_blue"
+        app:isHeader="true"
+        app:title="Biaya Bagi Pulsa XL ke XL" />
+
+    <com.myxlultimate.component.organism.tableView.ColumnItem
+        android:id="@+id/columnViewThird"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginTop="@dimen/mud_dimens_1dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        app:backgroundColor="@color/mud_palette_primary_blue"
+        app:isHeader="true"
+        app:title="Masa Aktif" />
+</LinearLayout>

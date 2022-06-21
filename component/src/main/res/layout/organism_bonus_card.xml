@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bonusView"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/iconView"
+        android:layout_width="42dp"
+        android:layout_height="42dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="@dimen/mud_dimens_8dp"
+        app:imageSource="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"
+        app:imageSourceType="BASE64" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/mud_dimens_4dp"
+            android:text="@string/organism_bonus_card_title"
+            android:textColor="@color/mud_palette_basic_black" />
+
+        <TextView
+            android:id="@+id/informationView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Aktifkan XTRA Unlimited Movie Gratis" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/nextButtonView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="?attr/colorAccentDark"
+        android:gravity="center"
+        android:paddingStart="@dimen/mud_dimens_2dp">
+
+        <TextView
+            style="@style/IconAppearance.MudComponents.Body1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/xl_chevron_right"
+            android:textColor="?android:attr/colorPrimary" />
+
+    </LinearLayout>
+
+</LinearLayout>

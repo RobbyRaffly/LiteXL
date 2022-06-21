@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:minHeight="136dp"
+    android:id="@+id/containerView">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mud_dimens_24dp"
+        style="@style/TextAppearance.MudComponents.H2"
+        android:textColor="@color/mud_palette_basic_white"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:elevation="@dimen/mud_dimens_8dp"/>
+
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/swooshBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imageSourceType="DRAWABLE"
+        app:imageSource="@drawable/ic_swoosh_loyalty_ribbon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/whiteLine"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:imageSourceType="DRAWABLE"
+        app:imageSource="@drawable/ic_putih_loyalty_tiering"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:elevation="@dimen/mud_dimens_3dp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

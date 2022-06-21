@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/materialCardViewLayout"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        app:cardBackgroundColor="@color/mud_palette_aquamarine"
+        app:cardCornerRadius="20dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <TextView
+            android:id="@+id/initialView"
+            style="@style/TextAppearance.MudComponents.H4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textAlignment="center"
+            tools:text="AS"
+            android:textColor="@color/mud_palette_basic_white" />
+
+        <TextView
+            android:id="@+id/defaultView"
+            style="@style/IconAppearance.MudComponents.H2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:visibility="gone"
+            android:textColor="@color/mud_palette_basic_white"
+            android:text="@string/xl_profile" />
+    </com.google.android.material.card.MaterialCardView>
+
+    <TextView
+        android:id="@+id/titleView"
+        style="@style/TextAppearance.MudComponents.H4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="7dp"
+        android:gravity="center"
+        tools:text="Kirim Pulsa ke"
+        android:paddingBottom="5dp" />
+
+    <TextView
+        android:id="@+id/informationView"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        tools:text="Adji Setiawan - 0817 8080 2727"
+        android:layout_height="wrap_content"
+        android:textColor="@color/mud_palette_basic_dark_grey" />
+
+</LinearLayout>

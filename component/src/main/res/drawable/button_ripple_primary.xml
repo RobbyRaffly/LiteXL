@@ -1,0 +1,9 @@
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/mud_palette_blue_soft">
+    <item>
+        <selector>
+            <item android:drawable="@drawable/button_background_round" />
+            <item android:state_enabled="false" android:drawable="@drawable/button_background_disabled" />
+        </selector>
+    </item>
+</ripple>

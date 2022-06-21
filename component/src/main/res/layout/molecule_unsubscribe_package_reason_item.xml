@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/containerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/iconContainerView"
+        android:layout_width="88dp"
+        android:layout_height="88dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle_background"
+        android:orientation="vertical"
+        android:elevation="3dp"
+        android:layout_margin="4dp"
+        android:gravity="center">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/iconView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/LabelView"
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:minLines="2"
+        android:maxLines="2"
+        android:textAlignment="center"
+        android:gravity="center"
+        tools:text="Label" />
+</LinearLayout>

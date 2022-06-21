@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:id="@+id/outlineTextFieldFour"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.myxlultimate.component.atom.inputField.OutlineTextField
+        android:id="@+id/formFieldValueView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        app:color="?android:attr/colorPrimary"
+        app:hint="@string/organism_top_up_contact_field_hint"
+        android:inputType="phone"
+        android:focusable="true"
+        app:endIconTint="@color/basicLightGrey"/>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/contactButton"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginVertical="@dimen/mud_dimens_4dp"
+        android:layout_marginEnd="@dimen/mud_dimens_4dp"
+        app:cardCornerRadius="@dimen/mud_dimens_8dp">
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_gravity="center"
+            android:foregroundGravity="center"
+            app:imageSourceType="DRAWABLE"
+            app:imageSource="@drawable/ic_contact"/>
+    </androidx.cardview.widget.CardView>
+</LinearLayout>

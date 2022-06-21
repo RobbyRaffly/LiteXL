@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/parentSkeletonlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mud_dimens_4dp"
+        android:visibility="gone"
+        app:cardBackgroundColor="@color/mud_palette_basic_white"
+        app:cardCornerRadius="@dimen/mud_dimens_16dp"
+        app:cardElevation="@dimen/mud_dimens_3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="false">
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/childSkeletonLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:shimmer_shape="linear"
+            app:shimmer_direction="left_to_right"
+            android:padding="@dimen/mud_dimens_16dp">
+            <include layout="@layout/shimmering_contract_item" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.myxlultimate.component.template.cardWidget.CardWidget
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:actionButtonLabel="@string/organism_contract_dashboard_widget_action_button_label"
+        app:cwaIconMode="SMALL"
+        app:icon="?attr/packageIcon"
+        app:label="@string/organism_contract_dashboard_widget_label">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/contentView"
+                style="@style/TextAppearance.MudComponents.H2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Value" />
+
+            <TextView
+                android:id="@+id/informationView"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/mud_palette_blue_grey"
+                tools:text="Expiration" />
+        </LinearLayout>
+    </com.myxlultimate.component.template.cardWidget.CardWidget>
+</LinearLayout>

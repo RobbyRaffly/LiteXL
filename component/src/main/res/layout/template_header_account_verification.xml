@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="16dp"
+    android:orientation="horizontal"
+    android:gravity="center"
+    android:stateListAnimator="@animator/appbar_elevation"
+    android:layout_marginBottom="4dp"
+    android:background="@color/mud_palette_basic_white"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:fitsSystemWindows="true">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/HeaderVerificationAppBarEl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@color/mud_palette_basic_white"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:layout_gravity="center_vertical"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:id="@+id/toolbarView"
+                android:layout_width="wrap_content"
+                style="@style/IconAppearance.MudComponents.H4"
+                android:text="@string/xl_left_arrow"
+                android:textColor="@color/mud_palette_basic_black"
+                android:layout_height="wrap_content"
+                android:gravity="start"/>
+
+            <TextView
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mud_palette_basic_black"
+                style="@style/TextAppearance.MudComponents.H4"
+                android:gravity="center"
+                android:textAlignment="center"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:background="@color/mud_palette_basic_white"
+            android:paddingTop="18dp"
+            android:paddingBottom="18dp">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/iconView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                app:imageSourceType="ASSET"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:orientation="vertical"
+                android:background="@color/mud_palette_basic_white">
+
+                <TextView
+                    android:id="@+id/nameView"
+                    style="@style/TextAppearance.MudComponents.Body2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="top"
+                    android:background="@color/mud_palette_basic_white"
+                    android:gravity="top"
+                    android:text="This Is Toolbar"
+                    android:textColor="@color/mud_palette_basic_black" />
+
+                <TextView
+                    android:id="@+id/idView"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:paddingTop="4dp"
+                    android:textColor="@color/mud_palette_basic_black"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+        </LinearLayout>
+    </com.google.android.material.appbar.AppBarLayout>
+</androidx.cardview.widget.CardView>

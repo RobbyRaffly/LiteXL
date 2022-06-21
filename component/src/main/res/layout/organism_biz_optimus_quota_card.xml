@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_shape="linear">
+
+        <include layout="@layout/shimmering_template_card_detail" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/borderContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/layoutCard"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/mud_dimens_16dp">
+
+                <LinearLayout
+                    android:id="@+id/topView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <com.myxlultimate.component.token.imageView.ImageView
+                            android:id="@+id/iconView"
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            app:imageSourceType="DRAWABLE"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            tools:srcCompat="@drawable/ic_data_prio" />
+
+                        <TextView
+                            android:id="@+id/nameView"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="@dimen/mud_dimens_16dp"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/mud_palette_basic_black"
+                            tools:text="Kuota Aplikasi 1 GB" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="@dimen/mud_dimens_40dp"
+                        android:layout_marginTop="2dp"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingVertical="@dimen/mud_dimens_1dp">
+
+                            <TextView
+                                android:id="@+id/informationTitle1"
+                                style="@style/TextAppearance.MudComponents.Body3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Alokasi kuota: "
+                                android:textColor="@color/mud_palette_basic_black" />
+
+                            <TextView
+                                style="@style/TextAppearance.MudComponents.Body3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text=": "
+                                android:textColor="@color/mud_palette_basic_black" />
+
+                            <TextView
+                                android:id="@+id/informationValue1"
+                                style="@style/TextAppearance.MudComponents.Body3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="20GB"
+                                android:textColor="@color/mud_palette_basic_black" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:paddingVertical="@dimen/mud_dimens_1dp">
+
+                            <TextView
+                                android:id="@+id/informationTitle2"
+                                style="@style/TextAppearance.MudComponents.Body3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="Pemakaian Anda: "
+                                android:textColor="@color/mud_palette_basic_black" />
+
+                            <TextView
+                                style="@style/TextAppearance.MudComponents.Body3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text=": "
+                                android:textColor="@color/mud_palette_basic_black" />
+
+                            <TextView
+                                android:id="@+id/informationValue2"
+                                style="@style/TextAppearance.MudComponents.Body3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:ellipsize="end"
+                                android:maxLines="1"
+                                android:text="20GB"
+                                android:textColor="@color/mud_palette_basic_black" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/bottomView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                        android:background="@color/mud_palette_basic_light_grey" />
+
+                    <LinearLayout
+                        android:id="@+id/actionButtonView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/actionButtonLabelView"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:textColor="?android:attr/colorPrimary"
+                            tools:text="Ubah Alokasi Kuota" />
+
+                        <LinearLayout
+                            android:id="@+id/arrowRightView"
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:background="@drawable/circle_background"
+                            android:backgroundTint="?attr/colorAccentDark"
+                            android:gravity="center"
+                            android:paddingStart="2dp">
+
+                            <TextView
+                                style="@style/IconAppearance.MudComponents.Body1"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/xl_chevron_right"
+                                android:textColor="?android:attr/colorPrimary" />
+                        </LinearLayout>
+
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

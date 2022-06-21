@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingHorizontal="@dimen/mud_dimens_24dp"
+    android:paddingTop="@dimen/mud_dimens_8dp"
+    android:paddingBottom="@dimen/mud_dimens_8dp">
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/iconView"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        app:imageSourceType="DRAWABLE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_data_prio" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvQuotaOption"
+        style="@style/IconAppearance.MudComponents.H5"
+        android:layout_width="@dimen/mud_dimens_0dp"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginStart="@dimen/mud_dimens_8dp"
+        app:layout_constraintBottom_toBottomOf="@id/iconView"
+        app:layout_constraintStart_toEndOf="@id/iconView"
+        app:layout_constraintTop_toBottomOf="@id/iconView"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="1GB" />
+
+    <View
+        android:id="@+id/borderSelectionView"
+        android:layout_width="16dp"
+        android:layout_height="16dp"
+        android:background="@drawable/circle_background_stroke"
+        app:layout_constraintBottom_toBottomOf="@id/iconView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/iconView" />
+
+    <View
+        android:id="@+id/selectedView"
+        android:layout_width="9dp"
+        android:layout_height="9dp"
+        android:background="@drawable/circle_background"
+        android:backgroundTint="?attr/colorBackgroundPrimary"
+        android:gravity="center"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="@id/borderSelectionView"
+        app:layout_constraintEnd_toEndOf="@id/borderSelectionView"
+        app:layout_constraintStart_toStartOf="@id/borderSelectionView"
+        app:layout_constraintTop_toTopOf="@id/borderSelectionView" />
+
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="@dimen/mud_dimens_16dp"
+        android:background="@color/mud_palette_basic_light_grey"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/iconView" />
+</androidx.constraintlayout.widget.ConstraintLayout>

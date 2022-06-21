@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardBackgroundColor="@color/mud_palette_basic_white"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp"
+    app:cardPreventCornerOverlap="false"
+    app:cardUseCompatPadding="false">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/mud_dimens_16dp">
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/informationView"
+            android:paddingEnd="@dimen/mud_dimens_6dp"
+            android:paddingBottom="@dimen/mud_dimens_4dp"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintEnd_toStartOf="@id/iconInformationView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Beralih ke PRIORITAS Upfront" />
+
+        <TextView
+            android:id="@+id/iconInformationView"
+            style="@style/IconAppearance.MudComponents.H5"
+            android:layout_width="@dimen/mud_dimens_20dp"
+            android:layout_height="@dimen/mud_dimens_20dp"
+            android:text="@string/xl_information"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="@id/titleView"
+            app:layout_constraintStart_toEndOf="@id/titleView"
+            app:layout_constraintTop_toTopOf="@id/titleView" />
+
+        <TextView
+            android:id="@+id/informationView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintBottom_toTopOf="@id/statusInformationView"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleView"
+            tools:text="Peralihan akan diproses maksimal 1 jam. Apabila dalam jangka waktu tersebut status tidak berubah, silakan hubungi call center di 817." />
+
+        <TextView
+            android:id="@+id/statusInformationView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mud_dimens_8dp"
+            android:paddingEnd="@dimen/mud_dimens_4dp"
+            android:textColor="?attr/colorPrimary"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/buttonView"
+            app:layout_constraintHorizontal_weight="1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/informationView"
+            tools:text="Status : Sedang Diproses" />
+
+        <Button
+            android:id="@+id/buttonView"
+            style="@style/ButtonAppearance.MudComponents.Primary"
+            android:layout_width="98dp"
+            android:layout_height="wrap_content"
+            android:minHeight="@dimen/mud_dimens_32dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/statusInformationView"
+            app:layout_constraintTop_toBottomOf="@id/informationView"
+            tools:text="Refresh" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

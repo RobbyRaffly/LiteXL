@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <com.myxlultimate.component.molecule.packageBenefit.PackageBenefitItem
+        android:id="@+id/packageBenefitItem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/mud_dimens_12dp"
+        android:layout_marginBottom="@dimen/mud_dimens_4dp"/>
+
+    <com.myxlultimate.component.atom.inputField.OutlineTextField
+        android:id="@+id/outlinedTextfieldView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isReadOnly="true"/>
+
+</LinearLayout>

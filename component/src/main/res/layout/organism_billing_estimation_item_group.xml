@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingTop="@dimen/mud_dimens_4dp">
+
+            <TextView
+                android:id="@+id/titleView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                tools:text="Sisa Tagihan"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/mud_dimens_8dp"/>
+
+            <TextView
+                android:id="@+id/priceView"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp300.000"/>
+
+            <TextView
+                android:id="@+id/priceTotalView"
+                android:visibility="gone"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:textColor="?attr/colorBackgroundPrimary"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Rp300.000"/>
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/billingItemEstimationContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:nestedScrollingEnabled="true"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            tools:listitem="@layout/organism_billing_paid_item" />
+
+        <Button
+            android:id="@+id/buttonView"
+            android:text="Button"
+            android:layout_marginBottom="@dimen/mud_dimens_16dp"
+            android:layout_marginTop="@dimen/mud_dimens_8dp"
+            android:layout_gravity="center_vertical"
+            style="@style/ButtonAppearance.MudComponents.FlatPrimaryWithoutInset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <View
+            android:id="@+id/lineView"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            android:layout_marginBottom="@dimen/mud_dimens_16dp"/>
+
+
+</LinearLayout>

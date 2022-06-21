@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.appbar.AppBarLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/appbarView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/mud_palette_basic_white"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    android:paddingStart="@dimen/mud_dimens_24dp"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="@dimen/mud_dimens_24dp"
+            android:minHeight="148dp"
+            app:imageSource="?attr/patternImage"
+            app:imageSourceType="DRAWABLE" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/imageViewTopUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="end"
+            android:layout_marginTop="56dp"
+            android:minHeight="148dp"
+            android:layout_marginBottom="-28dp"
+            app:imageSource="?attr/topUpImage"
+            android:visibility="gone"
+            app:imageSourceType="DRAWABLE" />
+
+        <TextView
+            android:id="@+id/iconView"
+            style="@style/IconAppearance.MudComponents.H3"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_alignParentTop="true"
+            android:gravity="start"
+            android:paddingTop="20dp"
+            android:paddingEnd="@dimen/mud_dimens_24dp"
+            android:text="@string/xl_left_arrow" />
+
+        <TextView
+            android:id="@+id/topTitleView"
+            style="@style/TextAppearance.MudComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iconView"
+            android:layout_marginTop="@dimen/mud_dimens_24dp"
+            android:paddingVertical="5dp"
+            android:paddingEnd="@dimen/mud_dimens_24dp"
+            android:textColor="@color/mud_palette_basic_black"
+            android:visibility="gone" />
+
+
+        <LinearLayout
+            android:id="@+id/titleViewLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:paddingEnd="18dp"
+            android:layout_below="@id/topTitleView">
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.Hero"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:background="@color/mud_palette_basic_white"
+            android:gravity="top"
+            android:paddingEnd="@dimen/mud_dimens_6dp"
+            android:textColor="@color/mud_palette_basic_black"
+            tools:text="This Is Toolbar" />
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:layout_gravity="center"
+                android:id="@+id/arrowRightView"
+                app:imageSourceType="DRAWABLE"
+                app:imageSource="?attr/arrowRightIcon"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"/>
+        </LinearLayout>
+
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/topTitleView"
+            android:layout_gravity="top"
+            android:gravity="top"
+            android:visibility="visible"
+            app:shimmer_direction="left_to_right"
+            app:shimmer_shape="linear">
+
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="192dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                app:cardBackgroundColor="@color/mud_palette_basic_light_grey"
+                app:cardCornerRadius="12dp"
+                app:cardPreventCornerOverlap="false"
+                app:cardUseCompatPadding="false" />
+
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
+        <TextView
+            android:id="@+id/bottomTitleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleViewLayout"
+            android:drawableEnd="?attr/nextIcon"
+            android:drawablePadding="5dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"
+            android:paddingEnd="@dimen/mud_dimens_24dp"
+            android:textColor="@color/mud_palette_basic_black"
+            android:visibility="gone" />
+
+        <TextView
+            android:id="@+id/bottomTitleInfoView"
+            style="@style/TextAppearance.MudComponents.Body2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleViewLayout"
+            android:paddingTop="8dp"
+            android:paddingBottom="12dp"
+            android:paddingEnd="@dimen/mud_dimens_24dp"
+            android:textColor="@color/mud_palette_basic_black"
+            android:visibility="gone" />
+    </RelativeLayout>
+</com.google.android.material.appbar.AppBarLayout>

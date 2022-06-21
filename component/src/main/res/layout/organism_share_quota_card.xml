@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="8dp"
+    android:background="@color/mud_palette_basic_white"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_4dp"
+    app:cardPreventCornerOverlap="false"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:padding="@dimen/mud_dimens_16dp">
+
+        <com.myxlultimate.component.molecule.packageBenefit.PackageBenefitItem
+            android:id="@+id/internetQuotaItemView"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            app:imageSource="@string/xl_globe_black_base64" />
+
+        <View
+            android:id="@+id/bottomLineView"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginVertical="@dimen/mud_dimens_16dp"
+            android:background="@color/basicLightGrey" />
+
+        <com.myxlultimate.component.molecule.packageBenefit.PackageBenefitItem
+            android:id="@+id/accumulatedQuotaItemView"
+            android:layout_gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:imageSource="@string/xl_globe_black_base64" />
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

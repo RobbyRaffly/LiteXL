@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/dateTimeView"
+        style="@style/TextAppearance.MudComponents.Body3"
+        android:textColor="@color/mud_palette_basic_dark_grey"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:text="7 Juli 2020, 7.16PM"/>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:paddingTop="@dimen/mud_dimens_4dp"
+        android:paddingBottom="@dimen/mud_dimens_8dp">
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            tools:text="PRIO Flex"
+            android:paddingStart="0dp"
+            android:paddingEnd="@dimen/mud_dimens_8dp"/>
+
+        <TextView
+            android:id="@+id/priceView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Rp300.000"/>
+    </LinearLayout>
+
+    <View
+        android:id="@+id/lineView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mud_dimens_1dp"
+        android:background="@color/mud_palette_basic_light_grey"
+        android:layout_marginBottom="@dimen/mud_dimens_16dp"/>
+</LinearLayout>

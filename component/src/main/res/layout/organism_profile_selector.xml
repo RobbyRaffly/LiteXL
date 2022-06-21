@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="start">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/avatarBorderContainer"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/mud_dimens_4dp"
+            android:gravity="center"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="@dimen/mud_dimens_3dp"
+            app:cardPreventCornerOverlap="true"
+            app:cardUseCompatPadding="false"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <FrameLayout
+                android:id="@+id/avatarBorder"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="start">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/avatarContainerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:background="@color/mud_palette_basic_white"
+                    android:gravity="center"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="0dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    tools:background="#ccc">
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/avatarView"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        app:imageSource=""
+                        app:imageSourceType="BASE64" />
+
+                    <TextView
+                        android:id="@+id/initialView"
+                        style="@style/TextAppearance.MudComponents.H4"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:textAlignment="center"
+                        android:textColor="@color/mud_palette_basic_white"
+                        android:visibility="gone" />
+
+                </com.google.android.material.card.MaterialCardView>
+            </FrameLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+        <TextView
+            android:id="@+id/nameView"
+            style="@style/TextAppearance.MudComponents.Body2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mud_dimens_4dp"
+            android:layout_marginEnd="@dimen/mud_dimens_4dp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:textColor="@color/mud_palette_basic_white"
+            app:layout_constraintBottom_toTopOf="@id/idView"
+            app:layout_constraintEnd_toStartOf="@id/clSubsriptionType"
+            app:layout_constraintStart_toEndOf="@id/avatarBorderContainer"
+            app:layout_constraintTop_toTopOf="@id/avatarBorderContainer"
+            app:layout_constraintVertical_chainStyle="spread"
+            tools:text="Aryo Wijaya"
+            tools:textColor="@color/blueGrey"/>
+
+        <TextView
+            android:id="@+id/idView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:layout_marginStart="@dimen/mud_dimens_4dp"
+            android:layout_marginEnd="@dimen/mud_dimens_4dp"
+            android:paddingTop="@dimen/mud_dimens_3dp"
+            android:textColor="@color/mud_palette_basic_white"
+            app:layout_constraintBottom_toTopOf="@id/customValidityView"
+            app:layout_constraintStart_toEndOf="@+id/avatarBorderContainer"
+            app:layout_constraintTop_toBottomOf="@id/nameView"
+            tools:text="08122412434534"
+            tools:textColor="@color/blueGrey" />
+
+        <TextView
+            android:id="@+id/tvChevron"
+            style="@style/IconAppearance.MudComponents.H2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mud_dimens_8dp"
+            android:text="@string/xl_plus"
+            android:textColor="@color/mud_palette_basic_white"
+            tools:visibility="gone"
+            app:layout_constraintStart_toEndOf="@id/idView"
+            app:layout_constraintTop_toTopOf="@id/idView" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clSubsriptionType"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/mud_dimens_4dp"
+            android:layout_marginTop="@dimen/mud_dimens_4dp"
+            android:layout_marginBottom="@dimen/mud_dimens_4dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+            <TextView
+                android:id="@+id/subscriptionType"
+                style="@style/TextAppearance.MudComponents.Body1.Bold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/chip"
+                android:gravity="center"
+                android:paddingStart="@dimen/mud_dimens_8dp"
+                android:paddingTop="@dimen/mud_dimens_4dp"
+                android:paddingEnd="@dimen/mud_dimens_8dp"
+                android:paddingBottom="@dimen/mud_dimens_4dp"
+                android:textColor="@color/basicWhite"
+                android:textSize="12sp"
+                android:visibility="gone"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0"
+                tools:text="XL HOME"
+                tools:visibility="visible" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <TextView
+            android:id="@+id/customValidityView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_3dp"
+            android:layout_marginStart="@dimen/mud_dimens_4dp"
+            android:layout_marginEnd="@dimen/mud_dimens_4dp"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintBottom_toBottomOf="@id/avatarBorderContainer"
+            app:layout_constraintEnd_toStartOf="@id/clSubsriptionType"
+            app:layout_constraintStart_toEndOf="@+id/avatarBorderContainer"
+            app:layout_constraintTop_toBottomOf="@id/idView"
+            tools:text="Validity" />
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/upfrontLabel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="@+id/avatarBorderContainer"
+            app:layout_constraintStart_toStartOf="@+id/avatarBorderContainer"
+            app:layout_constraintTop_toBottomOf="@+id/avatarBorderContainer"
+            app:layout_constraintBottom_toBottomOf="@+id/avatarBorderContainer"
+            android:translationZ="@dimen/mud_dimens_16dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/mud_palette_prio_gold"
+                android:paddingHorizontal="@dimen/mud_dimens_6dp"
+                android:paddingVertical="@dimen/mud_dimens_2dp"
+                android:text="Upfront"
+                android:textAppearance="@style/TextAppearance.MudComponents.H9"
+                android:textSize="7dp"
+                android:textColor="@color/mud_palette_basic_white" />
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:translationZ="@dimen/mud_dimens_16dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toTopOf="@id/upfrontLabel"
+            app:layout_constraintEnd_toEndOf="@+id/upfrontLabel"
+            app:layout_constraintHorizontal_bias="1"
+            android:translationX="5dp"
+            android:translationY="-1dp"
+            app:layout_constraintStart_toStartOf="@+id/upfrontLabel"
+            app:layout_constraintTop_toTopOf="@id/upfrontLabel"
+            android:id="@+id/betaLabel"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/mud_palette_basic_black"
+                android:paddingHorizontal="@dimen/mud_dimens_4dp"
+                android:paddingVertical="@dimen/mud_dimens_1dp"
+                android:text="Beta"
+                android:textAppearance="@style/TextAppearance.MudComponents.H8"
+                android:textColor="@color/mud_palette_basic_white"
+                android:textSize="4.5dp" />
+        </androidx.cardview.widget.CardView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/parentSkeletonView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_shape="linear"
+        tools:visibility="gone">
+
+        <include layout="@layout/shimmering_profile_selector" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+</FrameLayout>

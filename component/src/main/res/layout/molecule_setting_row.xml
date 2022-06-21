@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingVertical="16dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textIconView"
+                style="@style/IconAppearance.MudComponents.H3"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="@string/xl_internet" />
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/drawableIconView"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:visibility="gone"
+                app:imageSourceType="DRAWABLE" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            tools:text="Informasi Akun" />
+
+        <LinearLayout
+            android:id="@+id/redDotCountLayout"
+            android:layout_width="@dimen/mud_dimens_16dp"
+            android:layout_height="@dimen/mud_dimens_16dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="@color/redDot"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tvCount"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/basicWhite"
+                tools:text="3" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ribbonLayoutView"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:layout_marginEnd="8dp"
+            android:paddingVertical="@dimen/mud_dimens_2dp"
+            android:paddingHorizontal="@dimen/mud_dimens_6dp"
+            android:background="@drawable/rounder_ribbon_setting"
+            android:gravity="center"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/ribbonLabelView"
+                style="@style/IconAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="New"
+                android:textColor="@color/white_button_color" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/nextButtonView"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/circle_background"
+            android:backgroundTint="?attr/colorAccentDark"
+            android:gravity="center"
+            android:paddingStart="2dp">
+
+            <TextView
+                style="@style/IconAppearance.MudComponents.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/xl_chevron_right"
+                android:textColor="?android:attr/colorPrimary" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/bottomLine"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/mud_palette_basic_light_grey" />
+
+</LinearLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.myxlultimate.component.template.segmentWidget.FunSegment xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <com.myxlultimate.component.organism.storeWidget.shimmering.ShimmeringStoreCardWidgetGroup
+            android:id="@+id/shimmeringGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemContainerView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingHorizontal="20dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            tools:listitem="@layout/organism_store_card" />
+    </LinearLayout>
+</com.myxlultimate.component.template.segmentWidget.FunSegment>

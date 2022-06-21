@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/containerView"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:gravity="center"
+    android:foregroundGravity="center"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="62dp"
+            android:layout_height="70dp"
+            android:layout_margin="4dp"
+            android:layout_gravity="center"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="62dp">
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/iconContainerView"
+                    android:layout_width="56dp"
+                    android:layout_height="56dp"
+                    android:layout_gravity="center"
+                    android:background="@color/mud_palette_basic_white"
+                    android:gravity="center"
+                    app:cardCornerRadius="28dp"
+                    app:cardPreventCornerOverlap="false"
+                    app:cardUseCompatPadding="false"
+                    android:layout_margin="@dimen/mud_dimens_4dp"
+                    app:cardElevation="2dp">
+
+                    <com.myxlultimate.component.token.imageView.ImageView
+                        android:id="@+id/iconView"
+                        android:layout_width="32dp"
+                        android:layout_height="32dp"
+                        android:layout_gravity="center"
+                        app:imageSourceType="BASE64"
+                        app:imageSource=""/>
+
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/circleRedDot"
+                android:layout_width="@dimen/mud_dimens_12dp"
+                android:layout_height="@dimen/mud_dimens_12dp"
+                android:layout_gravity="top"
+                android:layout_marginRight="@dimen/mud_dimens_2dp"
+                android:layout_marginTop="@dimen/mud_dimens_2dp"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:background="@drawable/circle_background"
+                android:gravity="top"
+                android:orientation="horizontal"
+                android:visibility="gone"/>
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/bubbleLabelView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:visibility="gone">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mud_dimens_16dp"
+                android:background="@drawable/quick_menu_bubble_background"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:padding="4dp">
+
+                <TextView
+                    android:id="@+id/textBubbleLabel"
+                    style="@style/TextAppearance.MudComponents.H7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:maxLines="1"
+                    android:textAlignment="center"
+                    android:textColor="@color/mud_palette_basic_white" />
+
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/labelView"
+        style="@style/TextAppearance.MudComponents.H6"
+        android:textColor="@color/mud_palette_basic_white"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="80dp"
+        android:gravity="center"
+        android:textAlignment="center"
+        android:layout_marginTop="@dimen/mud_dimens_4dp"
+        tools:text="Kartu &amp; Gadget"/>
+
+</LinearLayout>

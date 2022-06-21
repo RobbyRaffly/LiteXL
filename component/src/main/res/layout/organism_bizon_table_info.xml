@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/mud_dimens_8dp"
+        android:layout_marginStart="@dimen/mud_dimens_8dp"
+        android:layout_marginEnd="@dimen/mud_dimens_8dp"
+        android:background="@drawable/bizon_table_background_header">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+            <TextView
+                android:id="@+id/txt_title_column_one"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.1"
+                android:layout_gravity="bottom"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:gravity="bottom"
+                android:padding="@dimen/mud_dimens_8dp"
+                tools:text="Testing"
+                android:textColor="@color/mud_palette_solid_black"
+                android:layout_marginStart="@dimen/mud_dimens_8dp"
+                android:layout_marginEnd="@dimen/mud_dimens_8dp"/>
+
+            <View
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:background="@color/mud_palette_basic_light_grey" />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.9"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txt_container_two_column"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:gravity="bottom"
+                    android:padding="@dimen/mud_dimens_12dp"
+                    android:textAlignment="center"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:textColor="@color/mud_palette_solid_black"
+                    android:layout_marginStart="@dimen/mud_dimens_8dp"
+                    android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                    android:text="@string/xl_bizon_title_container_column_two"/>
+                <View
+                    android:id="@+id/divider_two_column"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/mud_palette_basic_light_grey" />
+                <LinearLayout
+                    android:id="@+id/container_two_column"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/txt_title_column_two"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/mud_dimens_12dp"
+                        tools:text="Testing"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:textColor="@color/mud_palette_solid_black"
+                        android:layout_marginStart="@dimen/mud_dimens_8dp"
+                        android:layout_marginEnd="@dimen/mud_dimens_8dp"/>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/mud_palette_basic_light_grey" />
+                    <TextView
+                        android:id="@+id/txt_title_column_three"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:padding="@dimen/mud_dimens_12dp"
+                        tools:text="Testing"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:textColor="@color/mud_palette_solid_black"
+                        android:layout_marginStart="@dimen/mud_dimens_8dp"
+                        android:layout_marginEnd="@dimen/mud_dimens_8dp"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_table_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/mud_dimens_8dp"
+        android:layout_marginEnd="@dimen/mud_dimens_8dp"
+        android:background="@drawable/bizon_table_background_item"
+        tools:listitem="@layout/organism_table_three_column"
+        android:nestedScrollingEnabled="false"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+
+</LinearLayout>

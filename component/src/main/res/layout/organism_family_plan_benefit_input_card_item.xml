@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="8dp"
+    android:minHeight="58dp"
+    android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="8dp"
+                android:orientation="vertical"
+                android:paddingTop="8dp"
+                app:layout_constraintEnd_toStartOf="@id/otfValue"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/otfValue">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvLabel"
+                    style="@style/TextAppearance.MudComponents.H5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/mud_palette_solid_black"
+                    tools:text="Kuota Internet" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/tvInfo"
+                    style="@style/TextAppearance.MudComponents.Body3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_4dp"
+                    android:textColor="@color/basicDarkGrey"
+                    tools:text="24 Jam di semua jaringan" />
+
+
+            </LinearLayout>
+
+            <com.myxlultimate.component.atom.inputField.OutlineTextField
+                android:id="@+id/otfValue"
+                android:layout_width="72dp"
+                android:layout_height="58dp"
+                android:layout_marginEnd="8dp"
+                android:inputType="number"
+                app:color="?attr/colorPrimary"
+                app:layout_constraintEnd_toStartOf="@+id/tvUnit"
+                app:layout_constraintTop_toTopOf="parent"
+                app:textHint="0" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvError"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mud_dimens_4dp"
+                android:textColor="@color/mud_palette_basic_red"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/otfValue"
+                android:visibility="gone"
+                tools:text="24 Jam di semua jaringan" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvUnit"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minWidth="32dp"
+                android:textColor="@color/mud_palette_basic_dark_grey"
+                android:textAlignment="textEnd"
+                app:layout_constraintBottom_toBottomOf="@id/otfValue"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@id/otfValue"
+                android:text="GB" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tvValue"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/mud_palette_solid_black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:layout_marginTop="8dp"
+                android:visibility="gone"
+                tools:text="20GB" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>

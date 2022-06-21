@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_gravity="center"
+    android:foregroundGravity="center">
+
+    <com.myxlultimate.component.organism.badgedIcon.BadgedIcon
+        android:id="@+id/FooterItemIconEl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:gravity="center"
+        app:iconCode="@string/xl_profile"
+        app:mode="LIGHT"
+        app:size="72"/>
+
+    <com.myxlultimate.component.token.text.TextBody3
+        android:id="@+id/FooterItemTitleEl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        app:align="CENTER"/>
+
+</LinearLayout>

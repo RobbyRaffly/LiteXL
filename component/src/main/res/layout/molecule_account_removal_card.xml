@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    app:cardCornerRadius="16dp"
+    app:cardElevation="3dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingStart="@dimen/mud_dimens_16dp"
+        android:paddingTop="15dp"
+        android:paddingEnd="@dimen/mud_dimens_16dp"
+        android:paddingBottom="17dp">
+
+        <com.myxlultimate.component.organism.profileSelector.ProfileSelector
+            android:id="@+id/profileSelectorView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/mud_palette_basic_white"
+            app:strokeColor="?android:attr/colorPrimary"
+            app:textColor="@color/mud_palette_basic_black"
+            app:hasOnPress="false"/>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="9dp"
+            android:background="@color/mud_palette_basic_light_grey" />
+
+        <LinearLayout
+            android:id="@+id/eraseView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <TextView
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="8dp"
+                android:textColor="@color/mud_palette_basic_red"
+                android:text="@string/molecule_account_removal_card_remove"/>
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                app:imageSource="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"
+                app:imageSourceType="BASE64" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

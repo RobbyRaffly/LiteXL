@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/backgroundView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="4dp"
+    android:background="?attr/popUpInfoBackgroundColor"
+    android:gravity="center"
+    android:minHeight="100dp"
+    app:cardElevation="0dp">
+
+    <com.facebook.shimmer.ShimmerFrameLayout
+        android:id="@+id/shimmerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        app:shimmer_direction="left_to_right"
+        app:shimmer_shape="linear"
+        tools:visibility="visible">
+
+        <include layout="@layout/shimmering_pop_up_information_card" />
+    </com.facebook.shimmer.ShimmerFrameLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/originalView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/mud_dimens_16dp"
+        android:paddingStart="@dimen/mud_dimens_16dp"
+        android:paddingEnd="@dimen/mud_dimens_8dp">
+
+        <TextView
+            android:id="@+id/titleView"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/mud_dimens_8dp"
+            android:paddingBottom="@dimen/mud_dimens_12dp"
+            android:textColor="@color/mud_palette_basic_black"
+            android:visibility="gone"
+            app:layout_constraintEnd_toStartOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Pastikan perangkat Anda dapat menerima kode verifikasi" />
+
+        <TextView
+            android:id="@+id/descriptionView"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/mud_palette_solid_black"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintEnd_toStartOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/titleView"
+            tools:text="Pastikan perangkat Anda dapat menerima kode verifikasi" />
+
+        <TextView
+            android:id="@+id/buttonView"
+            style="@style/TextAppearance.MudComponents.H6"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textColor="?attr/colorBackgroundPrimary"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/titleView"
+            app:layout_constraintEnd_toStartOf="@id/imageView"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/descriptionView"
+            tools:text="Cara Melihat Kode Verifikasi" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/imageView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            app:imageSource="?attr/warningIcon"
+            app:imageSourceType="DRAWABLE"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+
+

@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBaseCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:paddingHorizontal="@dimen/mud_dimens_24dp"
+            android:paddingVertical="@dimen/mud_dimens_16dp">
+
+            <LinearLayout
+                android:id="@+id/clBaseNameView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cvBaseInitial"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        app:cardBackgroundColor="?attr/colorPrimary"
+                        app:cardCornerRadius="20dp"
+                        app:cardPreventCornerOverlap="false"
+                        app:cardUseCompatPadding="false"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/ivAvatar"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_gravity="center"
+                            android:visibility="gone"
+                            app:srcCompat="@drawable/ic_avatar" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvInitialName"
+                            style="@style/TextAppearance.MudComponents.H4"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:gravity="center"
+                            android:textAlignment="center"
+                            android:textColor="@color/mud_palette_basic_white" />
+
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:id="@+id/llBaseName"
+                        android:layout_width="0dp"
+                        android:layout_height="0dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tvSave"
+                        app:layout_constraintStart_toEndOf="@+id/cvBaseInitial"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvName"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/mud_palette_solid_black"
+                            tools:text="Annisa Sanjaya" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvUsedQuota"
+                            style="@style/TextAppearance.MudComponents.Body2"
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1"
+                            android:ellipsize="end"
+                            android:maxLines="1"
+                            android:textColor="@color/mud_palette_basic_black"
+                            tools:text="Kuota terpakai: 2GB" />
+                    </LinearLayout>
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvSave"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/button_state_color"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Simpan" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:layout_marginVertical="@dimen/mud_dimens_16dp"
+                    android:background="@color/basicLightGrey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clBaseQuotaAccess"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvQuotaAccess"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="@color/mud_palette_solid_black"
+                        app:layout_constraintBottom_toBottomOf="@+id/swQuotaAccess"
+                        app:layout_constraintEnd_toStartOf="@+id/swQuotaAccess"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/swQuotaAccess"
+                        tools:text="Izin akses kuota" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/swQuotaAccess"
+                        android:layout_width="48dp"
+                        android:layout_height="24dp"
+                        android:thumb="@drawable/switch_thumb"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:thumbTint="#fff"
+                        app:track="@drawable/switch_track"
+                        app:trackTint="@color/switch_track_color" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/lineBaseQuotaAccess"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:layout_marginVertical="@dimen/mud_dimens_16dp"
+                    android:background="@color/basicLightGrey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clBaseQuotaAccessNoLimit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvQuotaAccessNoLimit"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="16dp"
+                        android:textColor="@color/mud_palette_solid_black"
+                        app:layout_constraintBottom_toBottomOf="@+id/swQuotaAccessNoLimit"
+                        app:layout_constraintEnd_toStartOf="@+id/swQuotaAccessNoLimit"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/swQuotaAccessNoLimit"
+                        tools:text="Akses kuota tanpa batas" />
+
+                    <com.google.android.material.switchmaterial.SwitchMaterial
+                        android:id="@+id/swQuotaAccessNoLimit"
+                        android:layout_width="48dp"
+                        android:layout_height="24dp"
+                        android:thumb="@drawable/switch_thumb"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:thumbTint="#fff"
+                        app:track="@drawable/switch_track"
+                        app:trackTint="@color/switch_track_color" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <View
+                    android:id="@+id/lineBaseQuotaAccessNoLimit"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@color/basicLightGrey" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clBaseQuotaAllocate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="@+id/otfQuotaAllocate"
+                        app:layout_constraintEnd_toStartOf="@+id/otfQuotaAllocate"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/otfQuotaAllocate">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvAllocateQuota"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mud_palette_solid_black"
+                            tools:text="Alokasi Data" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvErrorAllocateQuota"
+                            style="@style/TextAppearance.MudComponents.Body3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="@dimen/mud_dimens_4dp"
+                            android:textColor="@color/mud_palette_basic_red"
+                            tools:text="Melebihi batas pembagian" />
+
+
+                    </LinearLayout>
+
+                    <com.myxlultimate.component.atom.inputField.OutlineTextField
+                        android:id="@+id/otfQuotaAllocate"
+                        android:layout_width="72dp"
+                        android:layout_height="58dp"
+                        android:layout_marginEnd="8dp"
+                        android:inputType="number"
+                        app:color="?attr/colorPrimary"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/tvUnit"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:textHint="0" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvUnit"
+                        style="@style/TextAppearance.MudComponents.H6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/mud_palette_basic_dark_grey"
+                        app:layout_constraintBottom_toBottomOf="@+id/otfQuotaAllocate"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="@+id/otfQuotaAllocate"
+                        tools:text="GB" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <!--            <View-->
+                <!--                android:id="@+id/lineBaseQuotaAllocate"-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="@dimen/mud_dimens_1dp"-->
+                <!--                android:visibility="gone"-->
+                <!--                android:layout_marginVertical="@dimen/mud_dimens_16dp"-->
+                <!--                android:background="@color/basicLightGrey" />-->
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/clBaseLimitInternetQuota"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/mud_dimens_8dp"
+                android:orientation="vertical">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/tvLimitInternetQuota"
+                        style="@style/TextAppearance.MudComponents.H5"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="8dp"
+                        android:textColor="@color/mud_palette_solid_black"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/llInternetQuotaLimitValue"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:text="Batas Kuota Internet" />
+
+
+                    <LinearLayout
+                        android:id="@+id/llInternetQuotaLimitValue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/tvInternetQuotaLimitValue"
+                            style="@style/TextAppearance.MudComponents.H5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/mud_palette_solid_black"
+                            tools:text="20GB" />
+
+                        <LinearLayout
+                            android:id="@+id/isTurnOffQuotaView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background_medium_grey"
+                            android:backgroundTint="@color/mud_palette_basic_medium_grey"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/IconAppearance.MudComponents.H7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="@string/xl_close"
+                                android:textColor="@color/mud_palette_basic_white" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/isTurnOffQuotaViewLabel"
+                                style="@style/TextAppearance.MudComponents.H8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/mud_palette_basic_white"
+                                tools:text="Dimatikan" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:id="@+id/unlimitedFlagView"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/button_background"
+                            android:backgroundTint="?attr/colorBackgroundPrimary"
+                            android:gravity="center_vertical"
+                            android:orientation="horizontal"
+                            android:paddingHorizontal="8dp"
+                            android:paddingVertical="4dp"
+                            android:visibility="gone">
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                style="@style/IconAppearance.MudComponents.H7"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="4dp"
+                                android:text="@string/xl_infinite"
+                                android:textColor="@color/mud_palette_basic_white" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/statusLabelView"
+                                style="@style/TextAppearance.MudComponents.H8"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/mud_palette_basic_white"
+                                tools:text="Unlimited" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/baseLayoutDisabled"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="#80FFFFFF"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,76 @@
+apply plugin: 'com.hiya.jacoco-android'
+
+jacoco {
+    toolVersion = "0.8.4"
+}
+
+tasks.withType(Test) {
+    jacoco.includeNoLocationClasses = true
+}
+
+android {
+    buildTypes {
+        debug {
+            testCoverageEnabled = true
+        }
+    }
+}
+
+jacocoAndroidUnitTestReport {
+    csv.enabled false
+    html.enabled true
+    xml.enabled true
+    excludes += [
+            '**/R.class',
+            '**/R$*.class',
+            '**/BuildConfig.*',
+            '**/Manifest*.*',
+            '**/*Test*.*',
+            '**/android/databinding/*',
+            '**/androidx/databinding/*',
+            '**/*Component*.*',
+            '**/*BR*.*',
+            '**/*$Lambda$*.*',
+            '**/*Companion*.*',
+            '**/*Module*',
+            '**/*Component*',
+            '**/*MembersInjector*.*',
+            '**/*_Factory*.*',
+            '**/*_Provide*Factory*.*',
+            '**/*Extensions*.*',
+            '**/*$Result.*', /* filtering `sealed` and `data` classes */
+            '**/*$Result$*.*',/* filtering `sealed` and `data` classes */
+            '**/*Page.*',
+            '**/*Fragment.*',
+            '**/*Activity.*',
+            "**/*Application.*",
+            "**/*Service.*",
+            "**/*Activity.*",
+            "**/*Fragment.*",
+            "**/*View.*",
+            "**/*ViewHolder.*",
+            "**/*Adapter.*",
+            "**/*Layout.*",
+            "**/Dialog.*",
+            "**/*Dialog.*",
+            "**/*Module.*",
+            "**/*Component.*",
+            "**/widget/**/*",
+            "**/internal/di/**/*",
+            "**/*Router.*",
+            "**/*Config.*",
+            "**/*Configs.*",
+            "**/*Const*.*",
+            "**/*Constant*.*",
+            "**/*Page.*",
+            "**/*HalfModal.*",
+            "**/*FullModal.*",
+            "**/*Module.*",
+            "**/*Component.*",
+            "**/*InjectHelper.*",
+            "**/*TestRule.*",
+            "**/*MessageHandler.*",
+            "**/constant/**",
+            "**/com/myxlultimate/component/**"
+    ]
+}

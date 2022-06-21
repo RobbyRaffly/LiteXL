@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvBaseCardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_3dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBaseConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/ivTitle"
+            android:layout_width="@dimen/mud_dimens_32dp"
+            android:layout_height="@dimen/mud_dimens_32dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            app:imageSourceType="BASE64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/mud_palette_solid_black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivTitle"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/ivTitle"
+            app:layout_constraintTop_toTopOf="@+id/ivTitle"
+            tools:text="myPRIO Gold X" />
+
+        <View
+            android:id="@+id/vLineTitle"
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="13dp"
+            android:layout_marginEnd="16dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/ivTitle" />
+
+        <com.myxlultimate.component.token.imageView.ImageView
+            android:id="@+id/ivSubtitle"
+            android:layout_width="@dimen/mud_dimens_24dp"
+            android:layout_height="@dimen/mud_dimens_24dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="16dp"
+            app:imageSourceType="BASE64"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/vLineTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubtitleLeft"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="16dp"
+            android:textColor="@color/mud_palette_solid_black"
+            app:layout_constraintBottom_toBottomOf="@+id/ivSubtitle"
+            app:layout_constraintEnd_toStartOf="@+id/tvSubtitleRight"
+            app:layout_constraintStart_toEndOf="@+id/ivSubtitle"
+            app:layout_constraintTop_toTopOf="@+id/ivSubtitle"
+            tools:text="Unlimited Internet" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvSubtitleRight"
+            style="@style/TextAppearance.MudComponents.H5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="16dp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:textColor="@color/mud_palette_solid_black"
+            app:layout_constraintBottom_toBottomOf="@+id/tvSubtitleLeft"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/tvSubtitleLeft"
+            tools:text="FUP 70GB" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/tvDescription"
+            style="@style/TextAppearance.MudComponents.Body3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="16dp"
+            android:textColor="@color/mud_palette_basic_dark_grey"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="@+id/tvSubtitleLeft"
+            app:layout_constraintTop_toBottomOf="@+id/ivSubtitle"
+            tools:text="FUP 40GB (tanpa kartu kredit sebagai metode pembayaran tagihan)" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

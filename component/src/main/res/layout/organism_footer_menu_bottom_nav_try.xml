@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="56dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        app:contentInsetEnd="0dp"
+        app:contentInsetStart="0dp">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/footerMenuBottomNavigationView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white"
+            app:backgroundTint="@color/mud_palette_basic_white"
+            app:elevation="16dp"
+            app:itemIconSize="24dp"
+            app:itemIconTint="@color/footer_menu_item_foreground"
+            app:itemTextAppearanceActive="@style/TextAppearance.MudComponents.H6"
+            app:itemTextAppearanceInactive="@style/TextAppearance.MudComponents.H6"
+            app:itemTextColor="@color/footer_menu_item_foreground"
+            app:menu="@menu/bottom_navigation_menu" />
+
+    </com.google.android.material.bottomappbar.BottomAppBar>
+
+    <LinearLayout
+        android:id="@+id/fab"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:background="@drawable/bg_floating_menu"
+        android:gravity="center"
+        android:minWidth="64dp"
+        android:minHeight="64dp"
+        android:layout_marginBottom="@dimen/mud_dimens_8dp"
+        android:orientation="vertical"
+        app:layout_anchor="@id/bottomAppBar"
+        app:layout_anchorGravity="center">
+
+        <ImageView
+            android:id="@+id/ivFab"
+            android:layout_width="@dimen/mud_dimens_24dp"
+            android:layout_height="@dimen/mud_dimens_24dp"
+            android:src="@drawable/ic_blank_white"
+            app:tint="@color/primaryBlue" />
+
+        <TextView
+            android:id="@+id/tvFab"
+            style="@style/TextAppearance.MudComponents.H8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="@string/text_fab_xl_store"
+            android:textColor="@color/primaryBlue" />
+    </LinearLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,947 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/primaryBlue</item>
+        <item name="colorBackgroundPrimary">@color/primaryBlue</item>
+        <item name="colorPrimaryDark">@color/mud_palette_primary_dark_blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccentDark">@color/mud_palette_pale_blue</item>
+        <item name="colorControlNormal">@color/mud_palette_light_dark_blue</item>
+        <item name="colorSecondary">@color/mud_palette_light_dark_blue</item>
+        <item name="colorBackgroundLight">@color/mud_palette_pale_blue</item>
+        <item name="iconEmptyTrasaction">@drawable/ic_belumpunyatransaksihome</item>
+        <item name="iconAboutTarif">@drawable/ic_tentangtarifnormalprio</item>
+        <item name="iconAdjustSpendLimit">@drawable/ic_spend_limit_home</item>
+        <item name="iconFamyliPlanHeader">@drawable/ic_familyplanprepaid</item>
+        <item name="iconFamilyPlanInfo">@drawable/ic_family_plan_prepaid_opaque</item>
+        <item name="iconHajj">@drawable/ic_hajiprepaid</item>
+        <item name="tentangXLPassIcon">@drawable/ic_tentangxlpasspostpaid</item>
+        <item name="iconAboutBaseRate">@drawable/ic_tentangtarifnormalprepaid</item>
+        <item name="backgroundQuickLink">@color/prepaidTurquoise</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="balanceIcon">@drawable/ic_balance_prepaid</item>
+        <item name="prioFlexBalanceIcon">@drawable/ic_prio_flex_home</item>
+
+        <item name="pointIcon">@drawable/ic_rewards_prepaid</item>
+        <item name="contextItemTitleColor">@color/mud_palette_prepaid_turquoise</item>
+        <item name="welcomeHeaderBottomTitleColor">@color/mud_palette_basic_white</item>
+        <item name="iconRoamingActive">@drawable/ic_infocardroamingaktifprepaid</item>
+        <item name="iconRoamingNonActive">@drawable/ic_infocardroamingtidakaktifprepaid</item>
+
+        <item name="loadingIcon">@drawable/ic_loading_prepaid</item>
+        <item name="successIcon">@drawable/ic_success_prepaid</item>
+        <item name="errorIcon">@drawable/ic_error_prepaid</item>
+        <item name="searchIcon">@drawable/ic_magnifier_prepaid</item>
+        <item name="addIcon">@drawable/ic_add_prepaid</item>
+        <item name="warningIcon">@drawable/ic_alert_prepaid</item>
+        <item name="talkIcon">@drawable/ic_xtra_bicara_prepaid</item>
+        <item name="timesUp">@drawable/ic_times_up</item>
+
+        <item name="iconAddPoint">@drawable/ic_caratambahpointprepaid</item>
+
+        <item name="patternImage">@drawable/ic_pattern_prepaid</item>
+        <item name="quotaWidgetColor">@color/mud_palette_prepaid_turquoise</item>
+        <item name="quotaWidgetImage">@string/quota_image_prepaid</item>
+        <item name="addOnPrepaid">@string/add_on_prepaid</item>
+
+        <item name="topUpImage">@drawable/ic_topupprepaid</item>
+
+        <item name="pointLoyaltyImage">@drawable/ic_point_prepaid</item>
+
+        <item name="arrowRightIcon">@drawable/ic_arrow_right_prepaid</item>
+        <item name="arrowRightCustomIcon">@drawable/ic_arrow_right_prio</item>
+
+        <item name="billInfoIcon">@drawable/ic_bill_info_postpaid</item>
+        <item name="billInfoValueColor">@color/mud_palette_home_primary</item>
+        <item name="handWithPhone">@drawable/ic_hand_with_phone_prepaid</item>
+        <item name="myPointIcon">@drawable/ic_tentangpointplayprepaid</item>
+
+        <item name="globeIcon">@drawable/ic_roaming_glode_prepaid</item>
+
+        <item name="questionIcon">@drawable/ic_question_prepaid</item>
+
+        <item name="prioFlexFeatureTopUpIcon">@drawable/ic_prio_flex_feature_topup_home</item>
+        <item name="prioFlexFeatureBoosterIcon">@drawable/ic_prio_flex_feature_booster_home</item>
+        <item name="prioFlexFeaturePayBillsIcon">@drawable/ic_prio_flex_feature_pay_bill_home</item>
+        <item name="recurringBoosterIcon">@drawable/ic_booster_recurring_prio</item>
+
+        <item name="creditCardCcvIcon">@drawable/ic_cc_cvv_prepaid</item>
+        <item name="creditCardExpIcon">@drawable/ic_cc_exp_prepaid</item>
+
+        <item name="checkboxBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxBackgroundChecked">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxDarkBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxDarkBackgroundChecked">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxIcon">@drawable/ic_baseline_check_24</item>
+
+        <item name="emptyPlusIcon">@drawable/ic_empty_state_prepaid_plus</item>
+        <item name="nextIcon">@drawable/ic_next_home</item>
+
+        <item name="changeToCreditCardIcon">@drawable/ic_change_cash_tocredit_home_new</item>
+        <item name="successNewIcon">@drawable/ic_success_prepaid_new</item>
+        <item name="unsuccessfulNewIcon">@drawable/ic_unsuccessful_prepaid_new</item>
+
+        <item name="roamingActiveIcon">@drawable/ic_roaming_active_prepaid</item>
+        <item name="roamingNonActiveIcon">@drawable/ic_roaming_non_active_prepaid</item>
+
+        <item name="popUpInfoBackgroundColor">@color/mud_palette_pale_blue</item>
+
+        <item name="axisAccountIcon">@drawable/ic_akun_axis_prepaid_new</item>
+        <item name="addAccountSuccessIcon">@drawable/ic_akun_berhasil_ditambah_prepaid_new</item>
+        <item name="inActiveAccountIcon">@drawable/ic_akun_sudah_tidak_aktif_prepaid_new</item>
+        <item name="accountIsUsedIcon">@drawable/ic_akun_telah_menggunakan_pass_prepaid_new</item>
+
+        <item name="cancelNewPasswordIcon">@drawable/ic_batalkan_pembuatan_katasan_dibaru_prepaid_new</item>
+        <item name="shareIcon">@drawable/ic_bagi_bagi_prepaid_new</item>
+        <item name="limitForgetPasswordIcon">@drawable/ic_batas_mak_verifikasi_lupa_sandi_prepaid_new</item>
+        <item name="limitChangePasswordIcon">@drawable/ic_batas_maks_verifikasi_pembuatan_sandi_prepaid_new</item>
+        <item name="limitOtpIcon">@drawable/ic_batas_otp_prepaid_new</item>
+
+        <item name="billingEstimationIcon">@drawable/ic_billing_estimation_home_new</item>
+        <item name="deactivateBiometricIcon">@drawable/ic_biometrik_diaktifkan_prepaid_new</item>
+        <item name="deactivateBiometricSuccessIcon">@drawable/ic_biometrik_nonaktif_berhasil_prepaid_new</item>
+        <item name="deactivateBiometricConfirmationIcon">@drawable/ic_biometrik_nonaktif_konfirmasi_prepaid_new</item>
+        <item name="changeBirthdayConfirmationIcon">@drawable/ic_change_birthday_confirmation_prepaid_new</item>
+        
+        <item name="changeBirthdaySuccessIcon">@drawable/ic_change_birthday_success_prepaid_new</item>
+        <item name="confirmationIcon">@drawable/ic_confirmation_home_new</item>
+        <item name="confirmationIcon2">@drawable/ic_confirmation_2_prepaid</item>
+        <item name="depositNotEnoughIcon">@drawable/ic_deposit_not_enough_home_new</item>
+        <item name="depositSuccessIcon">@drawable/ic_deposit_success_home_new</item>
+        <item name="emailSuccessfulChangeIcon">@drawable/ic_email_berhasil_diubah_prepaid_new</item>
+
+        <item name="failedAutoLoginIcon">@drawable/ic_gagal_auto_login_prepaid_new</item>
+        <item name="eraseAccountIcon">@drawable/ic_hapus_akun_prepaid_new</item>
+        <item name="passwordLimitEntryIcon">@drawable/ic_input_sandi_melebihi_batas_prepaid_new</item>
+        <item name="passwordCreatedIcon">@drawable/ic_sandi_berhasil_dibuat_prepaid_new</item>
+        <item name="passwordChangeSuccessIcon">@drawable/ic_sandi_berhasil_diperbaharui_prepaid_new</item>
+        
+        <item name="pukCodeIcon">@drawable/ic_kode_puk_prepaid_new</item>
+        <item name="goPayConfirmationIcon">@drawable/ic_konfirmasi_bayar__gopay_prepaid_new</item>
+        <item name="logOutIcon">@drawable/ic_logout_prepaid_new</item>
+        <item name="tryAgainIcon">@drawable/ic_mohon_tunggu_sebelum_cobalagi_prepaid_new</item>
+        <item name="unregisteredNumberIcon">@drawable/ic_nomor_belum_terdaftar_prepaid_new</item>
+
+
+        <item name="numberHasAddedIcon">@drawable/ic_nomor_sudah_diakun_prepaid_new</item>
+        <item name="nonActivatePasswordIcon">@drawable/ic_nonaktifkan_sandi_prepaid_new</item>
+        <item name="notEnoughCreditIcon">@drawable/ic_not_enough_credit_prepaid_new</item>
+        <item name="emptyNotificationIcon">@drawable/ic_notif_empty_prepaid_new</item>
+        <item name="paymentFailedIcon">@drawable/ic_payment_failed_prepaid_new</item>
+
+        <item name="paymentHistoryEmptyIcon">@drawable/ic_payment_history_empty_prepaid_new</item>
+        <item name="redemptionEntryIcon">@drawable/ic_redemption_entry_prepaid_new</item>
+        <item name="roamingEmptyIcon">@drawable/ic_roaming_empty_prepaid_new</item>
+        <item name="roamingIconNew">@drawable/ic_roaming_prepaid_new</item>
+        <item name="searchIconNew">@drawable/ic_search_prepaid_new</item>
+        
+        <item name="searchNoResultIcon">@drawable/ic_search_no_result_prepaid_new</item>
+        <item name="secureAccountIcon">@drawable/ic_segera_amankan_akun_prepaid_new</item>
+        <item name="unSubPackIcon">@drawable/ic_store_empty_prepaid_new</item>
+        <item name="unsuccessfulIconNew">@drawable/ic_tambah_akun_gagal_prepaid_new</item>
+        <item name="waitingIconNew">@drawable/ic_tambah_akun_gagal_prepaid_new</item>
+
+        <item name="welcomeRoamingIconNew">@drawable/ic_welcome_roaming_prepaid_new</item>
+        <item name="xlCenterEmptyIcon">@drawable/ic_xl_center_empty_prepaid_new</item>
+
+        <item name="foreverLoginIcon">@drawable/ic_forever_login_prepaid_new</item>
+        <item name="surveyIcon">@drawable/ic_forever_login_prepaid_new</item>
+        <item name="emptyPackageIcon">@drawable/ic_forever_login_prepaid_new</item>
+
+        <item name="emptyPackagePngIcon">@drawable/ic_belum_punya_paket_prepaid_icon</item>
+
+        <item name="emptyInboxIconNew">@drawable/ic_empty_inbox_prepaid_new</item>
+        <item name="emptyStoreIconNew">@drawable/ic_store_empty_prepaid_new</item>
+        <item name="cashMethodIconNew">@drawable/ic_info_card_metode_pemb_tunai_home_new</item>
+
+        <item name="tickIcon">@drawable/ic_tick_gold</item> <!-- blue prepaid is not exist yet-->
+        <item name="customBackgroundTabColor">@color/mud_palette_pale_blue</item>
+        <item name="roamingDeactivateIcon">@drawable/ic_half_card_roaming_deactivate_blue</item>
+        <item name="helloHandIcon">@drawable/ic_hellohand_new</item>
+
+        <item name="pointAndPlayNew">@drawable/ic_point_play_prepaid_new</item>
+        <item name="topUpPulsaNewIcon">@drawable/ic_top_up_pulsa_postpaid_new</item>
+
+        <item name="changePlanNewIcon">@drawable/ic_change_plan_prepaid_new_icon</item>
+
+        <item name="promoTapeBackground">@drawable/ic_label_promo_prepaid</item>
+
+        <item name="inactiveNumberIcon">@drawable/ic_belum_aktivasi_prepaid</item>
+
+        <item name="contextualImageDefault">@string/banner_default_xl_care_prepaid</item>
+        <item name="mainDashboardBackground">@drawable/header_background</item>
+        <item name="contextualImageXLCare">@string/banner_default_xl_care_prepaid</item>
+        <item name="icChecked">@drawable/ic_checked_prepaid</item>
+        <item name="icCheckedSquare">@drawable/ic_checked_square_prepaid</item>
+
+        <item name="pinLockShareIcon">@drawable/ic_akun_telah_menggunakan_pass_prepaid</item>
+        <item name="icConfirmationCancelPin">@drawable/ic_confirmation_cancel_pin_prepaid</item>
+        <item name="icMaximumForgetPin">@drawable/ic_maximum_forget_pin_prepaid</item>
+        <item name="icMaximumVerificationPin">@drawable/ic_maximum_verification_pin_prepaid</item>
+        <item name="icMaximumInputPin">@drawable/ic_maximum_input_pin_prepaid</item>
+        <item name="icSuccessCreatePin">@drawable/ic_success_create_pin_prepaid</item>
+        <item name="icSuccessUpdatePin">@drawable/ic_success_update_pin_prepaid</item>
+
+        <item name="icErrorCantAccessPage">@drawable/ic_error_anda_tidak_dapat_mengakses_halaman_ini_prepaid</item>
+
+        <item name="icDefaultTransaction">@drawable/ic_wallet_prepaid</item>
+        <item name="icDefaultData">@drawable/ic_data_prepaid</item>
+        <item name="icDefaultPhone">@drawable/ic_phone_prepaid</item>
+        <item name="icDefaultSms">@drawable/ic_sms_prepaid</item>
+
+        <item name="icLiveChat">@drawable/ic_live_chat_prepaid</item>
+        <item name="icLastTransaction">@drawable/ic_last_transaction_prepaid</item>
+        <item name="icFaq">@drawable/ic_faq_prepaid</item>
+
+        <item name="icAccountDeactivate">@drawable/ic_akun_dinonatifkan_prepaid</item>
+        <item name="icEmailNotListed">@drawable/ic_email_tidak_terdaftar_prepaid</item>
+
+        <item name="icLoadingErrorIcon">@drawable/ic_loading_error_prepaid</item>
+        <item name="icClock24Hours">@drawable/ic_info_card_batas_pengaduan_prepaid</item>
+        <item name="icAddCCOtc">@drawable/ic_add_cc_otc_prepaid</item>
+        <item name="icBillingReady">@drawable/ic_billing_ready_prepaid</item>
+
+        <item name="icTroubleshootAcsModem">@drawable/ic_tbs_acs_prepaid</item>
+
+        <item name="icConsentYes">@drawable/ic_yes_consent_prepaid</item>
+        <item name="icConsentNo">@drawable/ic_no_consent_prepaid</item>
+
+        <item name="extensionCardBG">@color/mud_palette_basic_white</item>
+        <item name="darkModeTextColor">@color/mud_palette_basic_white</item>
+        <item name="icMaintenance">@drawable/ic_maintenance_prepaid</item>
+        <item name="icNoInternet">@drawable/ic_no_internet_prepaid</item>
+        <item name="icDeviceIcon">@drawable/ic_satu_coverage</item>
+        <item name="icDeviceExclm">@drawable/ic_exclamation_mark_satu</item>
+        <item name="icDeviceConnected">@drawable/ic_home_connected_device</item>
+    </style>
+
+    <style name="AppThemeHome" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mud_palette_home_primary</item>
+        <item name="colorBackgroundPrimary">@color/mud_palette_home_primary</item>
+        <item name="iconAboutTarif">@drawable/ic_tentangtarifnormalhome</item>
+        <item name="colorPrimaryDark">@color/mud_palette_dark_blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccentDark">@color/mud_palette_home_chevron_background</item>
+        <item name="colorControlNormal">@color/mud_palette_light_blue</item>
+        <item name="colorSecondary">@color/mud_palette_light_blue</item>
+        <item name="colorBackgroundLight">@color/mud_palette_home_super_soft</item>
+        <item name="iconAddPoint">@drawable/ic_caratambahpointprepaid</item>
+        <item name="iconEmptyTrasaction">@drawable/ic_belumpunyatransaksihome</item>
+        <item name="iconAboutBaseRate">@drawable/ic_tentangtarifnormalprepaid</item>
+        <item name="backgroundQuickLink">@color/mud_palette_home_primary</item>
+
+        <item name="iconAdjustSpendLimit">@drawable/ic_spend_limit_home</item>
+        <item name="iconRoamingActive">@drawable/ic_infocardroamingaktifprepaid</item>
+        <item name="iconRoamingNonActive">@drawable/ic_infocardroamingtidakaktifprepaid</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="balanceIcon">@drawable/ic_balance_home</item>
+        <item name="prioFlexBalanceIcon">@drawable/ic_prioflex</item>
+        <item name="pointIcon">@drawable/ic_rewards_home</item>
+        <item name="contextItemTitleColor">@color/mud_palette_prepaid_turquoise</item>
+        <item name="welcomeHeaderBottomTitleColor">@color/mud_palette_basic_white</item>
+
+        <item name="loadingIcon">@drawable/ic_loading_home</item>
+        <item name="successIcon">@drawable/ic_success_home</item>
+        <item name="errorIcon">@drawable/ic_error_home</item>
+        <item name="searchIcon">@drawable/ic_magnifier_home</item>
+        <item name="addIcon">@drawable/ic_add_home</item>
+        <item name="warningIcon">@drawable/ic_alert_home</item>
+        <item name="talkIcon">@drawable/ic_xtra_bicara_home</item>
+        <item name="timesUp">@drawable/ic_times_up</item>
+
+        <item name="patternImage">@drawable/ic_pattern_home</item>
+        <item name="quotaWidgetColor">@color/mud_palette_prepaid_turquoise</item>
+        <item name="quotaWidgetImage">@string/quota_image_prepaid</item>
+        <item name="addOnPrepaid">@string/add_on_prepaid</item>
+
+        <item name="topUpImage">@drawable/ic_topuphome</item>
+        <item name="pointLoyaltyImage">@drawable/ic_point_home</item>
+
+        <item name="arrowRightIcon">@drawable/ic_arrow_right_home</item>
+        <item name="arrowRightCustomIcon">@drawable/ic_arrow_right_home</item>
+        <item name="iconHajj">@drawable/ic_hajiprepaid</item>
+        <item name="billInfoIcon">@drawable/ic_bill_info_postpaid</item>
+        <item name="billInfoValueColor">@color/mud_palette_home_primary</item>
+        <item name="handWithPhone">@drawable/ic_hand_with_phone_home</item>
+        <item name="globeIcon">@drawable/ic_roaming_glode_prepaid</item>
+        <item name="myPointIcon">@drawable/ic_tentangpointplayprepaid</item>
+
+        <item name="questionIcon">@drawable/ic_question_home</item>
+
+        <item name="prioFlexFeatureTopUpIcon">@drawable/ic_prio_flex_feature_topup_home</item>
+        <item name="prioFlexFeatureBoosterIcon">@drawable/ic_prio_flex_feature_booster_home</item>
+        <item name="prioFlexFeaturePayBillsIcon">@drawable/ic_prio_flex_feature_pay_bill_home</item>
+        <item name="recurringBoosterIcon">@drawable/ic_booster_recurring_prio</item>
+
+        <item name="creditCardCcvIcon">@drawable/ic_cc_cvv_home</item>
+        <item name="creditCardExpIcon">@drawable/ic_cc_exp_home</item>
+
+        <item name="checkboxBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxBackgroundChecked">@color/mud_palette_home_primary</item>
+        <item name="checkboxDarkBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxDarkBackgroundChecked">@color/mud_palette_home_primary</item>
+        <item name="checkboxIcon">@drawable/ic_baseline_check_24_white</item>
+
+        <item name="emptyPlusIcon">@drawable/ic_empty_state_home_plus</item>
+        <item name="nextIcon">@drawable/ic_next_home</item>
+
+        <item name="changeToCreditCardIcon">@drawable/ic_change_cash_tocredit_home_new</item>
+        <item name="successNewIcon">@drawable/ic_success_home_new</item>
+        <item name="unsuccessfulNewIcon">@drawable/ic_unsuccessful_home_new</item>
+        <item name="iconFamyliPlanHeader">@drawable/ic_familyplanprepaid</item>
+        <item name="iconFamilyPlanInfo">@drawable/ic_family_plan_prepaid_opaque</item>
+
+        <item name="popUpInfoBackgroundColor">@color/mud_palette_pale_blue</item>
+
+        <item name="axisAccountIcon">@drawable/ic_akun_axis_home_new</item>
+        <item name="addAccountSuccessIcon">@drawable/ic_akun_berhasil_ditambah_home_new</item>
+        <item name="inActiveAccountIcon">@drawable/ic_akun_sudah_tidak_aktif_home_new</item>
+        <item name="accountIsUsedIcon">@drawable/ic_akun_telah_menggunakan_pass_home_new</item>
+
+        <item name="cancelNewPasswordIcon">@drawable/ic_batalkan_pembuatan_katasan_dibaru_home_new</item>
+        <item name="shareIcon">@drawable/ic_bagi_bagi_home_new</item>
+        <item name="limitForgetPasswordIcon">@drawable/ic_batas_mak_verifikasi_lupa_sandi_home_new</item>
+        <item name="limitChangePasswordIcon">@drawable/ic_batas_maks_verifikasi_pembuatan_sandi_home_new</item>
+        <item name="limitOtpIcon">@drawable/ic_batas_otp_home_new</item>
+
+        <item name="billingEstimationIcon">@drawable/ic_billing_estimation_home_new</item>
+        <item name="deactivateBiometricIcon">@drawable/ic_biometrik_diaktifkan_home_new</item>
+        <item name="deactivateBiometricSuccessIcon">@drawable/ic_biometrik_nonaktif_berhasil_home_new</item>
+        <item name="deactivateBiometricConfirmationIcon">@drawable/ic_biometrik_nonaktif_konfirmasi_home_new</item>
+        <item name="changeBirthdayConfirmationIcon">@drawable/ic_change_birthday_confirmation_home_new</item>
+
+        <item name="changeBirthdaySuccessIcon">@drawable/ic_change_birthday_success_home_new</item>
+        <item name="confirmationIcon">@drawable/ic_confirmation_home_new</item>
+        <item name="confirmationIcon2">@drawable/ic_confirmation_2_home</item>
+        <item name="depositNotEnoughIcon">@drawable/ic_deposit_not_enough_home_new</item>
+        <item name="depositSuccessIcon">@drawable/ic_deposit_success_home_new</item>
+        <item name="emailSuccessfulChangeIcon">@drawable/ic_email_berhasil_diubah_home_new</item>
+
+        <item name="failedAutoLoginIcon">@drawable/ic_gagal_auto_login_home_new</item>
+        <item name="eraseAccountIcon">@drawable/ic_hapus_akun_home_new</item>
+        <item name="passwordLimitEntryIcon">@drawable/ic_input_sandi_melebihi_batas_home_new</item>
+        <item name="passwordCreatedIcon">@drawable/ic_sandi_berhasil_dibuat_home_new</item>
+        <item name="passwordChangeSuccessIcon">@drawable/ic_sandi_berhasil_diperbaharui_home_new</item>
+
+        <item name="pukCodeIcon">@drawable/ic_kode_puk_home_new</item>
+        <item name="goPayConfirmationIcon">@drawable/ic_konfirmasi_bayar__gopay_home_new</item>
+        <item name="logOutIcon">@drawable/ic_logout_home_new</item>
+        <item name="tryAgainIcon">@drawable/ic_mohon_tunggu_sebelum_cobalagi_home_new</item>
+        <item name="unregisteredNumberIcon">@drawable/ic_nomor_belum_terdaftar_home_new</item>
+
+        <item name="numberHasAddedIcon">@drawable/ic_nomor_sudah_diakun_home_new</item>
+        <item name="nonActivatePasswordIcon">@drawable/ic_nonaktifkan_sandi_home_new</item>
+        <item name="notEnoughCreditIcon">@drawable/ic_not_enough_credit_home_new</item>
+        <item name="emptyNotificationIcon">@drawable/ic_notif_empty_home_new</item>
+        <item name="paymentFailedIcon">@drawable/ic_payment_failed_home_new</item>
+
+        <item name="paymentHistoryEmptyIcon">@drawable/ic_payment_history_empty_home_new</item>
+        <item name="redemptionEntryIcon">@drawable/ic_redemption_entry_home_new</item>
+        <item name="roamingEmptyIcon">@drawable/ic_roaming_empty_prepaid_new</item>
+        <item name="roamingIconNew">@drawable/ic_roaming_prepaid_new</item>
+        <item name="searchIconNew">@drawable/ic_search_home_new</item>
+
+        <item name="searchNoResultIcon">@drawable/ic_search_no_result_home_new</item>
+        <item name="secureAccountIcon">@drawable/ic_segera_amankan_akun_home_new</item>
+        <item name="unSubPackIcon">@drawable/ic_store_empty_home_new</item>
+        <item name="unsuccessfulIconNew">@drawable/ic_tambah_akun_gagal_home_new</item>
+        <item name="waitingIconNew">@drawable/ic_tambah_akun_gagal_home_new</item>
+
+        <item name="welcomeRoamingIconNew">@drawable/ic_welcome_roaming_prepaid_new</item>
+        <item name="xlCenterEmptyIcon">@drawable/ic_xl_center_empty_home_new</item>
+
+        <item name="foreverLoginIcon">@drawable/ic_forever_login_home_new</item>
+        <item name="surveyIcon">@drawable/ic_forever_login_home_new</item>
+        <item name="emptyPackageIcon">@drawable/ic_forever_login_home_new</item>
+
+        <item name="emptyPackagePngIcon">@drawable/ic_belum_punya_paket_home_icon</item>
+
+        <item name="emptyInboxIconNew">@drawable/ic_empty_inbox_home_new</item>
+        <item name="emptyStoreIconNew">@drawable/ic_store_empty_home_new</item>
+        <item name="cashMethodIconNew">@drawable/ic_info_card_metode_pemb_tunai_home_new</item>
+
+        <item name="tickIcon">@drawable/ic_tick_gold</item> <!-- home is not exist yet-->
+        <item name="customBackgroundTabColor">@color/mud_palette_home_super_soft</item>
+        <item name="helloHandIcon">@drawable/ic_hellohand_new</item>
+        <item name="tentangXLPassIcon">@drawable/ic_tentangxlpasspostpaid</item>
+
+        <item name="pointAndPlayNew">@drawable/ic_point_and_play_home</item>
+        <item name="inActiveFeatureIcon">@drawable/ic_inactive_feature_home</item>
+        <item name="topUpPulsaNewIcon">@drawable/ic_top_up_pulsa_postpaid_new</item>
+
+        <item name="changePlanNewIcon">@drawable/ic_change_plan_home_new_icon</item>
+
+        <item name="promoTapeBackground">@drawable/ic_label_promo_home</item>
+        <item name="inactiveNumberIcon">@drawable/ic_belum_aktivasi_home</item>
+
+        <item name="contextualImageDefault">@string/banner_default_xl_care_home</item>
+
+        <item name="mainDashboardBackground">@drawable/header_background</item>
+        <item name="contextualImageXLCare">@string/banner_default_xl_care_home</item>
+        <item name="icChecked">@drawable/ic_checked_home</item>
+        <item name="icCheckedSquare">@drawable/ic_checked_square_home</item>
+
+        <item name="pinLockShareIcon">@drawable/ic_akun_telah_menggunakan_pass_home</item>
+
+        <item name="icConfirmationCancelPin">@drawable/ic_confirmation_cancel_pin_home</item>
+        <item name="icMaximumForgetPin">@drawable/ic_maximum_forget_pin_home</item>
+        <item name="icMaximumVerificationPin">@drawable/ic_maximum_verification_pin_home</item>
+        <item name="icMaximumInputPin">@drawable/ic_maximum_input_pin_home</item>
+        <item name="icSuccessCreatePin">@drawable/ic_success_create_pin_home</item>
+        <item name="icSuccessUpdatePin">@drawable/ic_success_update_pin_home</item>
+
+        <item name="icErrorCantAccessPage">@drawable/ic_error_anda_tidak_dapat_mengakses_halaman_ini_home</item>
+
+        <item name="icDefaultTransaction">@drawable/ic_wallet_home</item>
+        <item name="icDefaultData">@drawable/ic_data_home</item>
+        <item name="icDefaultPhone">@drawable/ic_phone_home</item>
+        <item name="icDefaultSms">@drawable/ic_sms_home</item>
+
+        <item name="icLiveChat">@drawable/ic_live_chat_home</item>
+        <item name="icLastTransaction">@drawable/ic_last_transaction_home</item>
+        <item name="icFaq">@drawable/ic_faq_home</item>
+
+        <item name="icAccountDeactivate">@drawable/ic_akun_dinonatifkan_home</item>
+        <item name="icEmailNotListed">@drawable/ic_email_tidak_terdaftar_home</item>
+
+        <item name="icLoadingErrorIcon">@drawable/ic_loading_error_home</item>
+
+        <item name="icSharePackageLimit">@drawable/ic_daily_package_limitation</item>
+        <item name="icNotAkrabOrganizer">@drawable/ic_akrab_not_organizer_error</item>
+
+        <item name="icClock24Hours">@drawable/ic_info_card_batas_pengaduan_home</item>
+        <item name="icAddCCOtc">@drawable/ic_add_cc_otc_home</item>
+        <item name="icBillingReady">@drawable/ic_billing_ready_home</item>
+
+        <item name="icTroubleshootAcsModem">@drawable/ic_tbs_acs_home</item>
+
+        <item name="icConsentYes">@drawable/ic_yes_consent_home</item>
+        <item name="icConsentNo">@drawable/ic_no_consent_home</item>
+
+
+        <item name="extensionCardBG">@color/mud_palette_basic_white</item>
+        <item name="darkModeTextColor">@color/mud_palette_basic_white</item>
+        <item name="icMaintenance">@drawable/ic_maintenance_home</item>
+        <item name="icNoInternet">@drawable/ic_no_internet_home</item>
+        <item name="icDeviceIcon">@drawable/ic_home_coverage</item>
+        <item name="icDeviceExclm">@drawable/ic_exclamation_mark_home</item>
+        <item name="icDeviceConnected">@drawable/ic_home_connected_device</item>
+    </style>
+
+    <style name="AppThemePrio" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mud_palette_basic_black</item>
+        <item name="colorBackgroundPrimary">@color/mud_palette_prio_gold</item>
+        <item name="colorPrimaryDark">@color/mud_palette_basic_black</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccentDark">@color/mud_palette_home_chevron_background</item>
+        <item name="colorControlNormal">@color/mud_palette_basic_medium_grey</item>
+        <item name="colorSecondary">@color/mud_palette_basic_medium_grey</item>
+        <item name="colorBackgroundLight">@color/mud_pallete_prio_super_soft</item>
+        <item name="tentangXLPassIcon">@drawable/ic_tentangpriopasspostpaid</item>
+        <item name="backgroundQuickLink">@color/mud_palette_prio_gold</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="balanceIcon">@drawable/ic_balance_prio</item>
+        <item name="prioFlexBalanceIcon">@drawable/ic_prio_flex_balance</item>
+        <item name="pointIcon">@drawable/ic_rewards_postpaid</item>
+        <item name="contextItemTitleColor">@color/mud_palette_prio_gold</item>
+        <item name="welcomeHeaderBottomTitleColor">@color/mud_palette_prio_gold</item>
+        <item name="iconAdjustSpendLimit">@drawable/ic_spend_limit_prio</item>
+        <item name="iconHajj">@drawable/ic_hajipostpaid</item>
+
+        <item name="loadingIcon">@drawable/ic_loading_postpaid</item>
+        <item name="iconFamyliPlanHeader">@drawable/ic_familyplanpostpaid</item>
+        <item name="iconFamilyPlanInfo">@drawable/ic_family_plan_postpaid_opaque</item>
+        <item name="successIcon">@drawable/ic_success_postpaid</item>
+        <item name="errorIcon">@drawable/ic_error_postpaid</item>
+        <item name="searchIcon">@drawable/ic_magnifier_postpaid</item>
+        <item name="addIcon">@drawable/ic_add_postpaid</item>
+        <item name="warningIcon">@drawable/ic_alert_postpaid</item>
+        <item name="talkIcon">@drawable/ic_xtra_bicara_postpaid</item>
+        <item name="timesUp">@drawable/ic_times_up</item>
+
+        <item name="patternImage">@drawable/ic_pattern_postpaid</item>
+        <item name="quotaWidgetColor">@color/mud_palette_prio_gold</item>
+        <item name="quotaWidgetImage">@string/quota_image_postpaid</item>
+        <item name="addOnPrepaid">@string/add_on_prepaid</item>
+
+        <item name="topUpImage">@drawable/ic_topupprio</item>
+
+        <item name="pointLoyaltyImage">@drawable/ic_point_postpaid_prio</item>
+
+        <item name="arrowRightIcon">@drawable/ic_arrow_right_prio</item>
+        <item name="arrowRightCustomIcon">@drawable/ic_arrow_right_prio</item>
+
+        <item name="billInfoIcon">@drawable/ic_bill_info_prio</item>
+        <item name="billInfoValueColor">@color/mud_palette_basic_black</item>
+        <item name="handWithPhone">@drawable/ic_hand_with_phone_prio</item>
+        <item name="myPointIcon">@drawable/ic_tentangpointplayprepaid</item>
+
+        <item name="globeIcon">@drawable/ic_roaming_glode_postpaid</item>
+
+        <item name="questionIcon">@drawable/ic_question_prio</item>
+
+        <item name="iconRoamingActive">@drawable/ic_infocardroamingaktifprio</item>
+        <item name="iconRoamingNonActive">@drawable/ic_infocardroamingtidakaktifprio</item>
+        <item name="iconAboutBaseRate">@drawable/ic_tentangtarifnormalpostpaid</item>
+
+        <item name="prioFlexFeatureTopUpIcon">@drawable/ic_prio_flex_feature_topup</item>
+        <item name="prioFlexFeatureBoosterIcon">@drawable/ic_prio_flex_feature_booster</item>
+        <item name="prioFlexFeaturePayBillsIcon">@drawable/ic_prio_flex_feature_pay_bill</item>
+        <item name="recurringBoosterIcon">@drawable/ic_booster_recurring_prio</item>
+
+        <item name="creditCardCcvIcon">@drawable/ic_cc_cvv</item>
+        <item name="creditCardExpIcon">@drawable/ic_cc_exp</item>
+
+        <item name="checkboxBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxBackgroundChecked">@color/mud_palette_prio_gold</item>
+        <item name="checkboxDarkBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxDarkBackgroundChecked">@color/mud_palette_prio_gold</item>
+        <item name="checkboxIcon">@drawable/ic_baseline_check_24_white</item>
+
+        <item name="emptyPlusIcon">@drawable/ic_empty_state_postpaid_plus</item>
+        <item name="nextIcon">@drawable/ic_next_gold_prio</item>
+
+        <item name="changeToCreditCardIcon">@drawable/ic_change_cash_tocredit_postpaid_new</item>
+        <item name="successNewIcon">@drawable/ic_success_postpaid_new</item>
+        <item name="unsuccessfulNewIcon">@drawable/ic_unsuccessful_postpaid_new</item>
+
+        <item name="roamingActiveIcon">@drawable/ic_roaming_active_postpaid</item>
+        <item name="roamingNonActiveIcon">@drawable/ic_roaming_non_active_postpaid</item>
+
+        <item name="popUpInfoBackgroundColor">@color/mud_palette_yellow_pale</item>
+
+        <item name="axisAccountIcon">@drawable/ic_akun_axis_postpaid_new</item>
+        <item name="addAccountSuccessIcon">@drawable/ic_akun_berhasil_ditambah_postpaid_new</item>
+        <item name="inActiveAccountIcon">@drawable/ic_akun_sudah_tidak_aktif_postpaid_new</item>
+        <item name="accountIsUsedIcon">@drawable/ic_akun_telah_menggunakan_pass_postpaid_new</item>
+
+        <item name="cancelNewPasswordIcon">@drawable/ic_batalkan_pembuatan_katasan_dibaru_postpaid_new</item>
+        <item name="shareIcon">@drawable/ic_bagi_bagi_postpaid_new</item>
+        <item name="limitForgetPasswordIcon">@drawable/ic_batas_mak_verifikasi_lupa_sandi_postpaid_new</item>
+        <item name="limitChangePasswordIcon">@drawable/ic_batas_maks_verifikasi_pembuatan_sandi_postpaid_new</item>
+        <item name="limitOtpIcon">@drawable/ic_batas_otp_postpaid_new</item>
+
+        <item name="billingEstimationIcon">@drawable/ic_billing_estimation_postpaid_new</item>
+        <item name="iconEmptyTrasaction">@drawable/ic_belumpunyatransaksipostpaid</item>
+        <item name="deactivateBiometricIcon">@drawable/ic_biometrik_diaktifkan_postpaid_new</item>
+        <item name="deactivateBiometricSuccessIcon">@drawable/ic_biometrik_nonaktif_berhasil_postpaid_new</item>
+        <item name="deactivateBiometricConfirmationIcon">@drawable/ic_biometrik_nonaktif_konfirmasi_postpaid_new</item>
+        <item name="changeBirthdayConfirmationIcon">@drawable/ic_change_birthday_confirmation_postpaid_new</item>
+
+        <item name="changeBirthdaySuccessIcon">@drawable/ic_change_birthday_success_postpaid_new</item>
+        <item name="confirmationIcon">@drawable/ic_confirmation_postpaid_new</item>
+        <item name="confirmationIcon2">@drawable/ic_confirmation_2_prio_gold</item>
+        <item name="depositNotEnoughIcon">@drawable/ic_deposit_not_enough_postpaid_new</item>
+        <item name="depositSuccessIcon">@drawable/ic_deposit_success_postpaid_new</item>
+        <item name="emailSuccessfulChangeIcon">@drawable/ic_email_berhasil_diubah_postpaid_new</item>
+
+        <item name="failedAutoLoginIcon">@drawable/ic_gagal_auto_login_postpaid_new</item>
+        <item name="eraseAccountIcon">@drawable/ic_hapus_akun_postpaid_new</item>
+        <item name="passwordLimitEntryIcon">@drawable/ic_input_sandi_melebihi_batas_postpaid_new</item>
+        <item name="passwordCreatedIcon">@drawable/ic_sandi_berhasil_dibuat_postpaid_new</item>
+        <item name="passwordChangeSuccessIcon">@drawable/ic_sandi_berhasil_diperbaharui_postpaid_new</item>
+
+        <item name="pukCodeIcon">@drawable/ic_kode_puk_home_new</item>
+        <item name="goPayConfirmationIcon">@drawable/ic_konfirmasi_bayar__gopay_postpaid_new</item>
+        <item name="logOutIcon">@drawable/ic_logout_postpaid_new</item>
+        <item name="tryAgainIcon">@drawable/ic_mohon_tunggu_sebelum_cobalagi_postpaid_new</item>
+        <item name="unregisteredNumberIcon">@drawable/ic_nomor_belum_terdaftar_postpaid_new</item>
+        <item name="iconAddPoint">@drawable/ic_caratambahpointpostpaid</item>
+
+        <item name="numberHasAddedIcon">@drawable/ic_nomor_sudah_diakun_postpaid_new</item>
+        <item name="nonActivatePasswordIcon">@drawable/ic_nonaktifkan_sandi_postpaid_new</item>
+        <item name="notEnoughCreditIcon">@drawable/ic_not_enough_credit_postpaid_new</item>
+        <item name="emptyNotificationIcon">@drawable/ic_notif_empty_postpaid_new</item>
+        <item name="paymentFailedIcon">@drawable/ic_payment_failed_postpaid_new</item>
+
+        <item name="paymentHistoryEmptyIcon">@drawable/ic_payment_history_empty_postpaid_new</item>
+        <item name="redemptionEntryIcon">@drawable/ic_redemption_entry_postpaid_new</item>
+        <item name="roamingEmptyIcon">@drawable/ic_roaming_empty_postpaid_new</item>
+        <item name="roamingIconNew">@drawable/ic_roaming_postpaid_new</item>
+        <item name="searchIconNew">@drawable/ic_search_postpaid_new</item>
+
+        <item name="searchNoResultIcon">@drawable/ic_search_no_result_postpaid_new</item>
+        <item name="secureAccountIcon">@drawable/ic_segera_amankan_akun_postpaid_new</item>
+        <item name="unSubPackIcon">@drawable/ic_store_empty_postpaid_new</item>
+        <item name="unsuccessfulIconNew">@drawable/ic_tambah_akun_gagal_postpaid_new</item>
+        <item name="iconAboutTarif">@drawable/ic_tentangtarifnormalprio</item>
+        <item name="waitingIconNew">@drawable/ic_tambah_akun_gagal_postpaid_new</item>
+
+        <item name="welcomeRoamingIconNew">@drawable/ic_welcome_roaming_postpaid_new</item>
+        <item name="xlCenterEmptyIcon">@drawable/ic_xl_center_empty_postpaid_new</item>
+
+        <item name="foreverLoginIcon">@drawable/ic_forever_login_postpaid_new</item>
+        <item name="surveyIcon">@drawable/ic_forever_login_postpaid_new</item>
+        <item name="emptyPackageIcon">@drawable/ic_forever_login_postpaid_new</item>
+
+        <item name="emptyPackagePngIcon">@drawable/ic_belum_punya_paket_postpaid_icon</item>
+
+        <item name="emptyInboxIconNew">@drawable/ic_empty_inbox_postpaid_new</item>
+        <item name="emptyStoreIconNew">@drawable/ic_store_empty_postpaid_new</item>
+
+        <item name="cashMethodIconNew">@drawable/ic_info_card_metode_pemb_tunai_postpaid_new</item>
+
+        <item name="tickIcon">@drawable/ic_tick_gold</item>
+        <item name="customBackgroundTabColor">@color/mud_palette_basic_light_grey</item>
+        <item name="roamingDeactivateIcon">@drawable/ic_half_card_roaming_deactivate_gold</item>
+        <item name="helloHandIcon">@drawable/ic_hellohand_postpaid_new</item>
+
+        <item name="pointAndPlayNew">@drawable/ic_point_and_play_prio</item>
+        <item name="inActiveFeatureIcon">@drawable/ic_inactive_feature_prio</item>
+        <item name="topUpPulsaNewIcon">@drawable/ic_top_up_pulsa_postpaid_new</item>
+        <item name="changePlanNewIcon">@drawable/ic_change_plan_postpaid_new_icon</item>
+
+        <item name="promoTapeBackground">@drawable/ic_label_promo_prio</item>
+        <item name="inactiveNumberIcon">@drawable/ic_belum_aktivasi_postpaid</item>
+
+        <item name="contextualImageDefault">@string/banner_default_xl_care_prio</item>
+        <item name="mainDashboardBackground">@drawable/header_background</item>
+        <item name="contextualImageXLCare">@string/banner_default_xl_care_prio</item>
+        <item name="icChecked">@drawable/ic_checked_prio</item>
+        <item name="icCheckedSquare">@drawable/ic_checked_square_prio</item>
+
+        <item name="pinLockShareIcon">@drawable/ic_akun_telah_menggunakan_pass_postpaid</item>
+        <item name="icConfirmationCancelPin">@drawable/ic_confirmation_cancel_pin_postpaid</item>
+        <item name="icMaximumForgetPin">@drawable/ic_maximum_forget_pin_postpaid</item>
+        <item name="icMaximumVerificationPin">@drawable/ic_maximum_verification_pin_postpaid</item>
+        <item name="icMaximumInputPin">@drawable/ic_maximum_input_pin_postpaid</item>
+        <item name="icSuccessCreatePin">@drawable/ic_success_create_pin_postpaid</item>
+        <item name="icSuccessUpdatePin">@drawable/ic_success_update_pin_postpaid</item>
+
+        <item name="icErrorCantAccessPage">@drawable/ic_error_anda_tidak_dapat_mengakses_halaman_ini_postpaid</item>
+
+        <item name="icDefaultTransaction">@drawable/ic_wallet_prio</item>
+        <item name="icDefaultData">@drawable/ic_data_prio</item>
+        <item name="icDefaultPhone">@drawable/ic_phone_prio</item>
+        <item name="icDefaultSms">@drawable/ic_sms_prio</item>
+
+        <item name="icLiveChat">@drawable/ic_live_chat_prio</item>
+        <item name="icLastTransaction">@drawable/ic_last_transaction_prio</item>
+        <item name="icFaq">@drawable/ic_faq_prio</item>
+
+        <item name="icAccountDeactivate">@drawable/ic_akun_dinonatifkan_postpaid</item>
+        <item name="icEmailNotListed">@drawable/ic_email_tidak_terdaftar_postpaid</item>
+
+        <item name="icLoadingErrorIcon">@drawable/ic_loading_error_prio</item>
+
+        <item name="icSharePackageLimit">@drawable/ic_daily_package_limitation</item>
+        <item name="icNotAkrabOrganizer">@drawable/ic_akrab_not_organizer_error</item>
+
+        <item name="icClock24Hours">@drawable/ic_info_card_batas_pengaduan_postpaid</item>
+        <item name="icAddCCOtc">@drawable/ic_add_cc_otc_postpaid</item>
+        <item name="icBillingReady">@drawable/ic_billing_ready_postpaid</item>
+
+        <item name="icTroubleshootAcsModem">@drawable/ic_tbs_acs_postpaid</item>
+
+        <item name="icConsentYes">@drawable/ic_yes_consent_postpaid</item>
+        <item name="icConsentNo">@drawable/ic_no_consent_postpaid</item>
+
+
+        <item name="extensionCardBG">@color/mud_palette_gold_soft</item>
+        <item name="darkModeTextColor">@color/mud_palette_prio_gold</item>
+        <item name="icMaintenance">@drawable/ic_maintenance_postpaid</item>
+        <item name="icNoInternet">@drawable/ic_no_internet_postpaid</item>
+        <item name="icDeviceIcon">@drawable/ic_home_coverage</item>
+        <item name="icDeviceExclm">@drawable/ic_exclamation_mark_satu</item>
+        <item name="icDeviceConnected">@drawable/ic_home_connected_device</item>
+    </style>
+
+    <style name="AppThemeXLSatu" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/mud_palette_dark_blue</item>
+        <item name="colorBackgroundPrimary">@color/mud_palette_dark_blue</item>
+        <item name="colorPrimaryDark">@color/mud_palette_dark_blue</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccentDark">@color/mud_palette_pale_blue</item>
+        <item name="colorControlNormal">@color/mud_palette_blue_green</item>
+        <item name="colorSecondary">@color/mud_palette_light_dark_blue</item>
+        <item name="colorBackgroundLight">@color/mud_palette_pale_blue</item>
+        <item name="iconEmptyTrasaction">@drawable/ic_belumpunyatransaksihome</item>
+        <item name="iconAboutTarif">@drawable/ic_tentangtarifnormalprio</item>
+        <item name="iconAdjustSpendLimit">@drawable/ic_spend_limit_home</item>
+        <item name="iconFamyliPlanHeader">@drawable/ic_familyplanprepaid</item>
+        <item name="iconFamilyPlanInfo">@drawable/ic_family_plan_prepaid_opaque</item>
+        <item name="iconHajj">@drawable/ic_hajiprepaid</item>
+        <item name="tentangXLPassIcon">@drawable/ic_tentangxlpasspostpaid</item>
+        <item name="iconAboutBaseRate">@drawable/ic_tentangtarifnormalprepaid</item>
+        <item name="backgroundQuickLink">@color/mud_palette_dark_blue</item>
+
+        <item name="bottomSheetDialogTheme">@style/AppBottomSheetDialogTheme</item>
+        <item name="balanceIcon">@drawable/ic_balance_prepaid</item>
+        <item name="prioFlexBalanceIcon">@drawable/ic_prio_flex_home</item>
+
+        <item name="pointIcon">@drawable/ic_rewards_prepaid</item>
+        <item name="contextItemTitleColor">@color/mud_palette_prepaid_turquoise</item>
+        <item name="welcomeHeaderBottomTitleColor">@color/mud_palette_basic_white</item>
+        <item name="iconRoamingActive">@drawable/ic_infocardroamingaktifprepaid</item>
+        <item name="iconRoamingNonActive">@drawable/ic_infocardroamingtidakaktifprepaid</item>
+
+        <item name="loadingIcon">@drawable/ic_loading_prepaid</item>
+        <item name="successIcon">@drawable/ic_success_prepaid</item>
+        <item name="errorIcon">@drawable/ic_error_prepaid</item>
+        <item name="searchIcon">@drawable/ic_magnifier_prepaid</item>
+        <item name="addIcon">@drawable/ic_add_prepaid</item>
+        <item name="warningIcon">@drawable/ic_alert_prepaid</item>
+        <item name="talkIcon">@drawable/ic_xtra_bicara_prepaid</item>
+        <item name="packageIcon">@drawable/ic_paket_xlsatu</item>
+        <item name="timesUp">@drawable/ic_times_up</item>
+
+        <item name="iconAddPoint">@drawable/ic_caratambahpointprepaid</item>
+
+        <item name="patternImage">@drawable/ic_pattern_prepaid</item>
+        <item name="quotaWidgetColor">@color/mud_palette_prepaid_turquoise</item>
+        <item name="quotaWidgetImage">@string/quota_image_prepaid</item>
+        <item name="addOnPrepaid">@string/add_on_prepaid</item>
+
+        <item name="topUpImage">@drawable/ic_topupprepaid</item>
+
+        <item name="pointLoyaltyImage">@drawable/ic_point_prepaid</item>
+
+        <item name="arrowRightIcon">@drawable/ic_rightarrowcustom_xlsatu</item>
+        <item name="arrowRightCustomIcon">@drawable/ic_rightarrowcustom_xlsatu</item>
+
+        <item name="billInfoIcon">@drawable/ic_bill_info_postpaid</item>
+        <item name="billInfoValueColor">@color/mud_palette_home_primary</item>
+        <item name="handWithPhone">@drawable/ic_hand_with_phone_prepaid</item>
+        <item name="myPointIcon">@drawable/ic_tentangpointplayprepaid</item>
+
+        <item name="globeIcon">@drawable/ic_roaming_glode_prepaid</item>
+
+        <item name="questionIcon">@drawable/ic_question_prepaid</item>
+
+        <item name="prioFlexFeatureTopUpIcon">@drawable/ic_prio_flex_feature_topup_home</item>
+        <item name="prioFlexFeatureBoosterIcon">@drawable/ic_prio_flex_feature_booster_home</item>
+        <item name="prioFlexFeaturePayBillsIcon">@drawable/ic_prio_flex_feature_pay_bill_home</item>
+        <item name="recurringBoosterIcon">@drawable/ic_booster_recurring_prio</item>
+
+        <item name="creditCardCcvIcon">@drawable/ic_cc_cvv_prepaid</item>
+        <item name="creditCardExpIcon">@drawable/ic_cc_exp_prepaid</item>
+
+        <item name="checkboxBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxBackgroundChecked">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxDarkBackground">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxDarkBackgroundChecked">@color/mud_palette_basic_light_grey</item>
+        <item name="checkboxIcon">@drawable/ic_baseline_check_24</item>
+
+        <item name="emptyPlusIcon">@drawable/ic_empty_state_prepaid_plus</item>
+        <item name="nextIcon">@drawable/ic_next_home</item>
+
+        <item name="changeToCreditCardIcon">@drawable/ic_change_cash_tocredit_home_new</item>
+        <item name="successNewIcon">@drawable/ic_illustration_xlsatu_success</item>
+        <item name="unsuccessfulNewIcon">@drawable/ic_unsuccessful_prepaid_new</item>
+
+        <item name="roamingActiveIcon">@drawable/ic_roaming_active_prepaid</item>
+        <item name="roamingNonActiveIcon">@drawable/ic_roaming_non_active_prepaid</item>
+
+        <item name="popUpInfoBackgroundColor">@color/mud_palette_pale_blue</item>
+
+        <item name="axisAccountIcon">@drawable/ic_akun_axis_prepaid_new</item>
+        <item name="addAccountSuccessIcon">@drawable/ic_akun_berhasil_ditambah_prepaid_new</item>
+        <item name="inActiveAccountIcon">@drawable/ic_akun_sudah_tidak_aktif_prepaid_new</item>
+        <item name="accountIsUsedIcon">@drawable/ic_akun_telah_menggunakan_pass_prepaid_new</item>
+
+        <item name="cancelNewPasswordIcon">@drawable/ic_batalkan_pembuatan_katasan_dibaru_prepaid_new</item>
+        <item name="shareIcon">@drawable/ic_bagi_bagi_prepaid_new</item>
+        <item name="limitForgetPasswordIcon">@drawable/ic_batas_mak_verifikasi_lupa_sandi_prepaid_new</item>
+        <item name="limitChangePasswordIcon">@drawable/ic_batas_maks_verifikasi_pembuatan_sandi_prepaid_new</item>
+        <item name="limitOtpIcon">@drawable/ic_batas_otp_prepaid_new</item>
+
+        <item name="billingEstimationIcon">@drawable/ic_billing_estimation_home_new</item>
+        <item name="deactivateBiometricIcon">@drawable/ic_biometrik_diaktifkan_prepaid_new</item>
+        <item name="deactivateBiometricSuccessIcon">@drawable/ic_biometrik_nonaktif_berhasil_prepaid_new</item>
+        <item name="deactivateBiometricConfirmationIcon">@drawable/ic_biometrik_nonaktif_konfirmasi_prepaid_new</item>
+        <item name="changeBirthdayConfirmationIcon">@drawable/ic_change_birthday_confirmation_prepaid_new</item>
+
+        <item name="changeBirthdaySuccessIcon">@drawable/ic_change_birthday_success_xl_satu</item>
+        <item name="confirmationIcon">@drawable/ic_confirmation_xl_satu_icon</item>
+        <item name="confirmationIcon2">@drawable/ic_confirmation_2_satu</item>
+        <item name="depositNotEnoughIcon">@drawable/ic_deposit_not_enough_home_new</item>
+        <item name="depositSuccessIcon">@drawable/ic_deposit_success_home_new</item>
+        <item name="emailSuccessfulChangeIcon">@drawable/ic_email_berhasil_diubah_prepaid_new</item>
+
+
+        <item name="failedAutoLoginIcon">@drawable/ic_gagal_auto_login_prepaid_new</item>
+        <item name="eraseAccountIcon">@drawable/ic_hapus_akun_prepaid_new</item>
+        <item name="passwordLimitEntryIcon">@drawable/ic_input_sandi_melebihi_batas_prepaid_new</item>
+        <item name="passwordCreatedIcon">@drawable/ic_sandi_berhasil_dibuat_prepaid_new</item>
+        <item name="passwordChangeSuccessIcon">@drawable/ic_sandi_berhasil_diperbaharui_prepaid_new</item>
+
+        <item name="pukCodeIcon">@drawable/ic_kode_puk_prepaid_new</item>
+        <item name="goPayConfirmationIcon">@drawable/ic_konfirmasi_bayar__gopay_prepaid_new</item>
+        <item name="logOutIcon">@drawable/ic_logout_xl_satu</item>
+        <item name="tryAgainIcon">@drawable/ic_mohon_tunggu_sebelum_cobalagi_prepaid_new</item>
+        <item name="unregisteredNumberIcon">@drawable/ic_nomor_belum_terdaftar_prepaid_new</item>
+
+
+        <item name="numberHasAddedIcon">@drawable/ic_nomor_sudah_diakun_prepaid_new</item>
+        <item name="nonActivatePasswordIcon">@drawable/ic_nonaktifkan_sandi_prepaid_new</item>
+        <item name="notEnoughCreditIcon">@drawable/ic_not_enough_credit_xl_satu</item>
+        <item name="emptyNotificationIcon">@drawable/ic_notif_empty_prepaid_new</item>
+        <item name="paymentFailedIcon">@drawable/ic_payment_failed_prepaid_new</item>
+
+        <item name="paymentHistoryEmptyIcon">@drawable/ic_payment_history_empty_prepaid_new</item>
+        <item name="redemptionEntryIcon">@drawable/ic_redemption_entry_xl_satu</item>
+        <item name="roamingEmptyIcon">@drawable/ic_roaming_empty_prepaid_new</item>
+        <item name="roamingIconNew">@drawable/ic_roaming_prepaid_new</item>
+        <item name="searchIconNew">@drawable/ic_search_prepaid_new</item>
+
+        <item name="searchNoResultIcon">@drawable/ic_search_no_result_prepaid_new</item>
+        <item name="secureAccountIcon">@drawable/ic_segera_amankan_akun_prepaid_new</item>
+        <item name="unSubPackIcon">@drawable/ic_store_empty_prepaid_new</item>
+        <item name="unsuccessfulIconNew">@drawable/ic_tambah_akun_gagal_prepaid_new</item>
+        <item name="waitingIconNew">@drawable/ic_tambah_akun_gagal_prepaid_new</item>
+
+        <item name="welcomeRoamingIconNew">@drawable/ic_welcome_roaming_prepaid_new</item>
+        <item name="xlCenterEmptyIcon">@drawable/ic_xl_center_empty_prepaid_new</item>
+
+        <item name="foreverLoginIcon">@drawable/ic_forever_login_prepaid_new</item>
+        <item name="surveyIcon">@drawable/ic_forever_login_prepaid_new</item>
+        <item name="emptyPackageIcon">@drawable/ic_forever_login_prepaid_new</item>
+
+        <item name="emptyPackagePngIcon">@drawable/ic_belum_punya_paket_prepaid_icon</item>
+
+        <item name="emptyInboxIconNew">@drawable/ic_empty_inbox_prepaid_new</item>
+        <item name="emptyStoreIconNew">@drawable/ic_store_empty_prepaid_new</item>
+        <item name="cashMethodIconNew">@drawable/ic_info_card_metode_pemb_tunai_home_new</item>
+
+        <item name="tickIcon">@drawable/ic_tick_gold</item> <!-- blue prepaid is not exist yet-->
+        <item name="customBackgroundTabColor">@color/mud_palette_pale_blue</item>
+        <item name="roamingDeactivateIcon">@drawable/ic_half_card_roaming_deactivate_blue</item>
+        <item name="helloHandIcon">@drawable/ic_hellohand_new</item>
+
+        <item name="pointAndPlayNew">@drawable/ic_point_play_prepaid_new</item>
+        <item name="topUpPulsaNewIcon">@drawable/ic_top_up_pulsa_postpaid_new</item>
+
+        <item name="changePlanNewIcon">@drawable/ic_change_plan_satu_icon</item>
+
+        <item name="promoTapeBackground">@drawable/ic_label_promo_prepaid</item>
+
+        <item name="inactiveNumberIcon">@drawable/ic_belum_aktivasi_xl_satu</item>
+
+        <item name="contextualImageDefault">@string/banner_default_xl_care_xl_satu</item>
+        <item name="mainDashboardBackground">@drawable/header_background_xlhome</item>
+        <item name="contextualImageXLCare">@string/banner_default_xl_care_xl_satu</item>
+        <item name="icChecked">@drawable/ic_checked_xl_satu</item>
+        <item name="icCheckedSquare">@drawable/ic_checked_square_xl_satu</item>
+        <item name="pinLockShareIcon">@drawable/ic_akun_telah_menggunakan_pass_xl_lite</item>
+        <item name="icConfirmationCancelPin">@drawable/ic_confirmation_cancel_pin_xl_satu</item>
+        <item name="icMaximumForgetPin">@drawable/ic_maximum_forget_pin_xl_satu</item>
+        <item name="icMaximumVerificationPin">@drawable/ic_maximum_verification_pin_xl_satu</item>
+        <item name="icMaximumInputPin">@drawable/ic_maximum_input_pin_xl_satu</item>
+        <item name="icSuccessCreatePin">@drawable/ic_success_create_pin_xl_satu</item>
+        <item name="icSuccessUpdatePin">@drawable/ic_success_update_pin_xl_satu</item>
+
+        <item name="icErrorCantAccessPage">@drawable/ic_error_anda_tidak_dapat_mengakses_halaman_ini_xl_satu</item>
+
+        <item name="icDefaultTransaction">@drawable/ic_wallet_satu</item>
+        <item name="icDefaultData">@drawable/ic_data_satu</item>
+        <item name="icDefaultPhone">@drawable/ic_phone_satu</item>
+        <item name="icDefaultSms">@drawable/ic_sms_satu</item>
+
+        <item name="icLiveChat">@drawable/ic_live_chat_xl_satu</item>
+        <item name="icLastTransaction">@drawable/ic_last_transaction_xl_satu</item>
+        <item name="icFaq">@drawable/ic_faq_xl_satu</item>
+
+        <item name="icAccountDeactivate">@drawable/ic_akun_dinonatifkan_xl_satu</item>
+        <item name="icEmailNotListed">@drawable/ic_email_tidak_terdaftar_satu</item>
+
+        <item name="icLoadingErrorIcon">@drawable/ic_loading_error_xl_satu</item>
+
+        <item name="icSharePackageLimit">@drawable/ic_daily_package_limitation</item>
+        <item name="icNotAkrabOrganizer">@drawable/ic_akrab_not_organizer_error</item>
+
+        <item name="icClock24Hours">@drawable/ic_info_card_batas_pengaduan_xl_satu</item>
+        <item name="icAddCCOtc">@drawable/ic_add_cc_otc_home</item>
+        <item name="icBillingReady">@drawable/ic_billing_ready_home</item>
+
+
+        <item name="icTroubleshootAcsModem">@drawable/ic_tbs_acs_xl_satu</item>
+
+        <item name="icConsentYes">@drawable/ic_yes_consent_xl_satu</item>
+        <item name="icConsentNo">@drawable/ic_no_consent_xl_satu</item>
+
+
+        <item name="extensionCardBG">@color/mud_palette_basic_white</item>
+        <item name="darkModeTextColor">@color/mud_palette_basic_white</item>
+        <item name="icMaintenance">@drawable/ic_maintenance_satu</item>
+        <item name="icNoInternet">@drawable/ic_no_internet_satu</item>
+        <item name="icDeviceIcon">@drawable/ic_satu_coverage</item>
+        <item name="icDeviceExclm">@drawable/ic_exclamation_mark_satu</item>
+        <item name="icDeviceConnected">@drawable/ic_satu_connected_device</item>
+    </style>
+
+    <!-- OTP Restricted Input Cursor Dragger Color -->
+    <style name="RestrictedInputTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="colorAccent">@android:color/transparent</item>
+    </style>
+
+    <style name="AppBottomSheetDialogTheme" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/AppModalStyle</item>
+    </style>
+
+    <style name="AppModalStyle" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bottomsheet_rounded_background</item>
+    </style>
+
+    <style name="FullscreenDialogTheme" parent="Base.Theme.AppCompat.DialogWhenLarge">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/basicWhite</item>
+        <item name="android:windowIsFloating">false</item>
+
+        <item name="android:windowEnterAnimation">@android:anim/slide_in_left</item>
+        <item name="android:windowExitAnimation">@android:anim/slide_out_right</item>
+    </style>
+
+    <style name="AppTheme.Slide">
+        <item name="android:windowEnterAnimation">@anim/slide_up</item>
+        <item name="android:windowExitAnimation">@anim/slide_down</item>
+    </style>
+
+    <style name="CustomDialogTheme">
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Apptheme.Toolbar" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="ProgressBarPrimary" parent="android:Widget.ProgressBar.Horizontal">
+        <item name="android:indeterminateOnly">false</item>
+        <item name="android:progressDrawable">@drawable/progress_bar_drawable</item>
+        <item name="android:minHeight">8dip</item>
+        <item name="android:maxHeight">20dip</item>
+    </style>
+
+    <style name="ShapeAppearance.Xl.LargeComponent" parent="ShapeAppearance.MaterialComponents.LargeComponent">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">18dp</item>
+    </style>
+
+    <style name="Bottom.Navigation.Xl" parent="Theme.MaterialComponents.Light.DarkActionBar">
+        <item name="bottomNavigationStyle">
+            @style/Widget.MaterialComponents.BottomNavigationView.Colored
+        </item>
+        <item name="colorPrimary">@color/mud_palette_basic_black</item>
+        <item name="colorOnPrimary">@color/mud_palette_basic_dark_grey</item>
+    </style>
+
+    <style name="scrollbar_style">
+        <item name="android:scrollbarAlwaysDrawVerticalTrack">true</item>
+        <item name="android:scrollbarStyle">outsideOverlay</item>
+        <item name="android:scrollbars">vertical</item>
+        <item name="android:fadeScrollbars">true</item>
+        <item name="android:scrollbarThumbVertical">@drawable/scrollbar_design</item>
+        <item name="android:scrollbarTrackVertical">@drawable/scrollbar_design_background</item>
+        <item name="android:scrollbarSize">4dp</item>
+        <item name="android:scrollbarFadeDuration">800</item>
+        <item name="android:scrollbarDefaultDelayBeforeFade">500</item>
+    </style>
+</resources>

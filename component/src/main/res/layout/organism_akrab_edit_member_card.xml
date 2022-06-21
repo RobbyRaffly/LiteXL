@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mud_dimens_4dp"
+    app:cardCornerRadius="@dimen/mud_dimens_16dp"
+    app:cardElevation="@dimen/mud_dimens_4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mud_dimens_12dp"
+        android:paddingVertical="@dimen/mud_dimens_16dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clChangeMember"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <com.myxlultimate.component.token.imageView.ImageView
+                android:id="@+id/ivReplace"
+                android:layout_width="@dimen/mud_dimens_24dp"
+                android:layout_height="@dimen/mud_dimens_24dp"
+                app:imageSourceType="DRAWABLE"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_reload" />
+
+            <TextView
+                android:id="@+id/tvChangeMember"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="@dimen/mud_dimens_8dp"
+                android:gravity="center_vertical"
+                android:text="@string/family_akrab_change_member"
+                app:layout_constraintBottom_toBottomOf="@+id/ivReplace"
+                app:layout_constraintEnd_toStartOf="@+id/tvIconChangeMember"
+                app:layout_constraintStart_toEndOf="@id/ivReplace"
+                app:layout_constraintTop_toTopOf="@id/ivReplace" />
+
+            <TextView
+                android:id="@+id/tvIconChangeMember"
+                style="@style/IconAppearance.MudComponents.Body1"
+                android:layout_width="@dimen/mud_dimens_20dp"
+                android:layout_height="@dimen/mud_dimens_20dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="?attr/colorAccentDark"
+                android:gravity="center"
+                android:paddingStart="@dimen/mud_dimens_2dp"
+                android:text="@string/xl_chevron_right"
+                android:textColor="?android:attr/colorPrimary"
+                app:layout_constraintBottom_toBottomOf="@+id/tvChangeMember"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvChangeMember" />
+
+            <TextView
+                android:id="@+id/tvLimitInfo"
+                style="@style/TextAppearance.MudComponents.Body3"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mud_dimens_6dp"
+                android:text="@string/family_akrab_change_member_limit_info"
+                android:textColor="@color/basicMediumGrey"
+                android:visibility="gone"
+                app:layout_constraintEnd_toEndOf="@+id/tvChangeMember"
+                app:layout_constraintStart_toStartOf="@+id/tvChangeMember"
+                app:layout_constraintTop_toBottomOf="@id/ivReplace" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clChangeMember" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRemoveMember"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line">
+
+            <TextView
+                android:id="@+id/tvRemoveMember"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                android:drawablePadding="@dimen/mud_dimens_8dp"
+                android:gravity="center_vertical"
+                android:text="@string/family_akrab_remove_member"
+                android:textColor="@color/basicRed"
+                app:drawableStartCompat="@drawable/ic_exit_red"
+                app:drawableTint="@color/basicRed"
+                app:layout_constraintEnd_toStartOf="@id/tvIconRemoveMember"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvIconRemoveMember"
+                style="@style/IconAppearance.MudComponents.Body1"
+                android:layout_width="@dimen/mud_dimens_20dp"
+                android:layout_height="@dimen/mud_dimens_20dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/mud_palette_red_soft"
+                android:gravity="center"
+                android:paddingStart="@dimen/mud_dimens_2dp"
+                android:text="@string/xl_chevron_right"
+                android:textColor="@color/basicRed"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRemoveMember"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvRemoveMember" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/mud_dimens_1dp"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:background="@color/mud_palette_basic_light_grey"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/clRemoveMember"
+            tools:visibility="visible" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clRemoveSlot"
+            android:layout_width="@dimen/mud_dimens_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mud_dimens_16dp"
+            android:visibility="gone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/line2"
+            tools:visibility="visible">
+
+            <TextView
+                android:id="@+id/tvRemoveSlot"
+                style="@style/TextAppearance.MudComponents.H5"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/mud_dimens_8dp"
+                android:drawablePadding="@dimen/mud_dimens_8dp"
+                android:gravity="center_vertical"
+                android:text="@string/family_akrab_remove_slot"
+                android:textColor="@color/basicRed"
+                app:drawableStartCompat="@drawable/ic_trash"
+                app:drawableTint="@color/basicRed"
+                app:layout_constraintEnd_toStartOf="@id/tvIconRemoveSlot"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tvIconRemoveSlot"
+                style="@style/IconAppearance.MudComponents.Body1"
+                android:layout_width="@dimen/mud_dimens_20dp"
+                android:layout_height="@dimen/mud_dimens_20dp"
+                android:background="@drawable/circle_background"
+                android:backgroundTint="@color/mud_palette_red_soft"
+                android:gravity="center"
+                android:paddingStart="@dimen/mud_dimens_2dp"
+                android:text="@string/xl_chevron_right"
+                android:textColor="@color/basicRed"
+                app:layout_constraintBottom_toBottomOf="@+id/tvRemoveSlot"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tvRemoveSlot" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

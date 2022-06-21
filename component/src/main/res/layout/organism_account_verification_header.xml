@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="10dp"
+    android:layout_marginBottom="@dimen/mud_dimens_12dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingHorizontal="@dimen/mud_dimens_24dp"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/mud_dimens_16dp"
+            android:gravity="center_vertical">
+
+            <com.myxlultimate.component.token.icon.IconXl
+                android:id="@+id/backIconEl"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:iconCode="@string/xl_left_arrow"
+                app:size="55" />
+
+            <com.myxlultimate.component.token.text.TextH4
+                android:id="@+id/titleView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:align="CENTER"/>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingVertical="@dimen/mud_dimens_16dp"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <com.myxlultimate.component.token.image.ImageAsset
+                android:id="@+id/iconView"
+                android:layout_width="48dp"
+                android:layout_height="48dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/mud_dimens_16dp"
+                android:orientation="vertical">
+
+                <com.myxlultimate.component.token.text.TextH5
+                    android:id="@+id/nameView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <com.myxlultimate.component.token.text.TextBody2
+                    android:id="@+id/idView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <com.myxlultimate.component.token.imageView.ImageView
+        android:id="@+id/iconView"
+        android:layout_width="@dimen/mud_dimens_32dp"
+        android:layout_height="@dimen/mud_dimens_32dp"
+        android:layout_marginTop="@dimen/mud_dimens_24dp"
+        android:layout_marginEnd="@dimen/mud_dimens_24dp"
+        android:elevation="2dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.myxlultimate.component.template.cardWidget.CardWidget
+        android:id="@+id/containerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cwaIconMode="NO_ICON"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/titleView"
+                    style="@style/TextAppearance.MudComponents.H2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    tools:text="value" />
+
+                <Button
+                    android:id="@+id/buttonCta"
+                    style="@style/ButtonAppearance.MudComponents.Primary"
+                    android:layout_width="81dp"
+                    android:layout_height="@dimen/mud_dimens_40dp"
+                    android:layout_marginVertical="-5dp"
+                    android:maxHeight="@dimen/mud_dimens_40dp"
+                    android:visibility="gone" />
+
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/informationView"
+                style="@style/TextAppearance.MudComponents.H6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/mud_palette_blue_grey"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/titleView"
+                tools:text="information" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/bottomContainerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <View
+                    android:id="@+id/lineView"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/mud_dimens_1dp"
+                    android:layout_marginTop="@dimen/mud_dimens_16dp"
+                    android:background="@color/mud_palette_basic_light_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/bottomLabelView"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mud_dimens_8dp"
+                    android:textColor="@color/mud_palette_basic_dark_grey"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/lineView" />
+
+                <TextView
+                    android:id="@+id/bottomTitleView"
+                    style="@style/TextAppearance.MudComponents.H2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/mud_dimens_8dp"
+                    android:gravity="start"
+                    android:textColor="@color/mud_palette_basic_dark_grey"
+                    app:layout_constraintEnd_toStartOf="@id/bottomCta"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bottomLabelView"
+                    tools:text="123"/>
+
+                <Button
+                    android:id="@+id/bottomCta"
+                    style="@style/ButtonAppearance.MudComponents.FlatPrimaryWithoutInset"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@+id/bottomTitleView"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="@id/bottomTitleView" />
+
+                <com.myxlultimate.component.atom.informationView.InformationView
+                    android:id="@+id/bottomInformationWithWarning"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mud_dimens_2dp"
+                    android:visibility="gone"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bottomTitleView"
+                    app:title="some text" />
+
+                <TextView
+                    android:id="@+id/bottomInformationWithoutWarning"
+                    style="@style/TextAppearance.MudComponents.H6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/mud_dimens_2dp"
+                    android:text="some information bottom text"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/bottomTitleView" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </com.myxlultimate.component.template.cardWidget.CardWidget>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

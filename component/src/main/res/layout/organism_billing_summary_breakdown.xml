@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical">
+
+    <TextView
+        style="@style/TextAppearance.MudComponents.H5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/organism_billing_breakdown_title"/>
+    <View
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/mud_dimens_2dp"
+        android:background="@color/mud_palette_basic_light_grey"
+        android:layout_marginTop="@dimen/mud_dimens_6dp"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:paddingTop="6dp"
+        android:id="@+id/itemContainerView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+        tools:listitem="@layout/organism_transaction_summary_row" />
+</LinearLayout>
